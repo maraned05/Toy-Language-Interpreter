@@ -25,8 +25,8 @@ public class MyList<T> implements IMyList<T> {
         StringBuilder str = new StringBuilder();
         for (T element : list) {
             str.append(element.toString());
-            str.append("\n");
+            str.append(" ");
         }
-        return "MyList contains: " + str.toString();
+        return str.toString();
     }
 }

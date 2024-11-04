@@ -6,7 +6,7 @@ import model.values.IValue;
 public class ValueExpression implements IExpression {
     private IValue value;
 
-    ValueExpression(IValue val) {
+    public ValueExpression(IValue val) {
         this.value = val;
     }
 

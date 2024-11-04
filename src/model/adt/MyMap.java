@@ -36,8 +36,8 @@ public class MyMap<K, V> implements IMyMap<K, V> {
         StringBuilder str = new StringBuilder();
         for (K key : map.keySet()) {
             str.append(key.toString()).append(" -> ").append(map.get(key));
-            str.append("\n");
+            str.append(" ");
         }
-        return "MyMap contains: " + str.toString();
+        return str.toString();
     }
 }

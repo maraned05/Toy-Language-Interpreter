@@ -12,7 +12,7 @@ public class IfStmt implements IStmt{
     private IStmt thenS;
     private IStmt elseS;
 
-    IfStmt (IExpression e, IStmt t, IStmt el) {
+    public IfStmt (IExpression e, IStmt t, IStmt el) {
         this.exp = e;
         this.thenS = t;
         this.elseS = el;

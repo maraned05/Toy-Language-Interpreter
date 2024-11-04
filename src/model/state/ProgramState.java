@@ -12,7 +12,7 @@ public class ProgramState {
     IStmt originalProgram;
     IMyMap<String, BufferedReader> fileTable;
 
-    ProgramState(IMyStack<IStmt> stk, IMyMap<String, IValue> symtbl, IMyList<IValue> out, IStmt prg, IMyMap<String, BufferedReader> fTb) {
+    public ProgramState(IMyStack<IStmt> stk, IMyMap<String, IValue> symtbl, IMyList<IValue> out, IStmt prg, IMyMap<String, BufferedReader> fTb) {
         this.exeStack = stk;
         this.symTable = symtbl;
         this.out = out;

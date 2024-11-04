@@ -42,8 +42,8 @@ public class MyStack<T> implements IMyStack<T> {
         StringBuilder str = new StringBuilder();
         for (T item : stack) {
             str.append(item);
-            str.append("\n");
+            str.append(" ");
         }
-        return "MyStack contains: " + str.toString();
+        return str.toString();
     }
 }
