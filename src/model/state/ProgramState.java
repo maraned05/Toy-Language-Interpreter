@@ -36,4 +36,10 @@ public class ProgramState {
     public IMyMap<String, BufferedReader> getFileTable() {
         return this.fileTable;
     }
+
+    @Override
+    public String toString() {
+        return "Execution Stack: " + this.exeStack.toString() + "\nSymbols Table: " + this.symTable.toString() 
+        + "\nOut: " + this.out.toString(); 
+    }
 }

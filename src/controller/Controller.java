@@ -8,7 +8,7 @@ import model.statements.IStmt;
 import repository.IRepository;
 import repository.Repository;
 
-public class Controller {
+public class Controller implements IController{
     private IRepository repo;
 
     public Controller(Repository r) {
@@ -26,8 +26,14 @@ public class Controller {
 
     public void allStep() throws EmptyStackException, StatementException, ExpressionException {
         ProgramState currentPrgState = this.repo.getCurrent();
+        displayPrgState(currentPrgState);
         while (! currentPrgState.getExeStack().isEmpty()) {
-            oneStep(currentPrgState);
+            ProgramState newState = oneStep(currentPrgState);
+            displayPrgState(newState);
         }
+    }
+
+    public void displayPrgState(ProgramState state) {
+        System.out.println(state.toString());
     }
 }
