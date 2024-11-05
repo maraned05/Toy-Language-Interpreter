@@ -38,7 +38,7 @@ public class Controller implements IController{
     }
 
     public void displayPrgState(ProgramState state) {
-        System.out.println(state.toString());
+        System.out.println(state.toString() + '\n');
     }
 
     public void addPrgState(ProgramState state) {
