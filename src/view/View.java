@@ -35,7 +35,8 @@ public class View {
     
     public void executeProgram() {
         System.out.println("Please select one of the programs: \n1. int v; v = 2; print(v);" +
-        "\n2. int a; int b; a = 2+3*5; b = a+1; print(b);\n3. bool a; int v; a = true; (if a then v = 2 else v = 3); print(v)\n");
+        "\n2. int a; int b; a = 2+3*5; b = a+1; print(b);\n3. bool a; int v; a = true; (if a then v = 2 else v = 3); print(v)\n" + 
+        "4. int v; c = 2; print(c);");
         System.out.println("Your option: ");
         Scanner scanner = new Scanner(System.in);
         int opt = scanner.nextInt();
@@ -66,6 +67,13 @@ public class View {
                 IntValue(2))), new AssignStmt("v", new ValueExpression(new IntValue(3)))), new PrintStmt(new
                 VariableExpression("v"))))));
                 break;
+
+            case 4:
+                statement = new CompStmt (new VarDeclStmt("v",new IntType()),
+                new CompStmt (new AssignStmt ("c", new ValueExpression(new IntValue(2))), 
+                new PrintStmt(new VariableExpression("c"))));
+                break;
+
         
             default:
                 statement = new NoStmt();
