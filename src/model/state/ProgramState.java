@@ -2,6 +2,8 @@ package model.state;
 import model.adt.*;
 import model.statements.*;
 import model.values.IValue;
+import model.values.StringValue;
+
 import java.io.BufferedReader;
 
 
@@ -10,9 +12,9 @@ public class ProgramState {
     IMyMap<String, IValue> symTable;
     IMyList<IValue> out;
     IStmt originalProgram;
-    IMyMap<String, BufferedReader> fileTable;
+    IMyMap<StringValue, BufferedReader> fileTable;
 
-    public ProgramState(IMyStack<IStmt> stk, IMyMap<String, IValue> symtbl, IMyList<IValue> out, IStmt prg, IMyMap<String, BufferedReader> fTb) {
+    public ProgramState(IMyStack<IStmt> stk, IMyMap<String, IValue> symtbl, IMyList<IValue> out, IStmt prg, IMyMap<StringValue, BufferedReader> fTb) {
         this.exeStack = stk;
         this.symTable = symtbl;
         this.out = out;
@@ -33,7 +35,7 @@ public class ProgramState {
         return this.out;
     }
 
-    public IMyMap<String, BufferedReader> getFileTable() {
+    public IMyMap<StringValue, BufferedReader> getFileTable() {
         return this.fileTable;
     }
 

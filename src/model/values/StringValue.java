@@ -22,4 +22,9 @@ public class StringValue implements IValue{
         return  other.getType() instanceof StringValue
                 && this.getValue() == ((StringValue)other).getValue();
     }
+
+    @Override 
+    public String toString() {
+        return this.val;
+    }
 }

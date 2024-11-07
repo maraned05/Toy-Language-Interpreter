@@ -40,7 +40,7 @@ public class ReadFileStmt implements IStmt{
 
         BufferedReader r;
         try {
-            r = state.getFileTable().get(varName);
+            r = state.getFileTable().get((StringValue) res);
         }
         catch (KeyNotFoundException e) {
             throw new StatementException("Variable name is undefined!");
@@ -49,19 +49,25 @@ public class ReadFileStmt implements IStmt{
 
         try {
             String readResult = r.readLine();
-            if (readResult == "") {
+            if (readResult == null) {
                 readResult = "0";
             }
             int parsedResult = Integer.parseInt(readResult);
             state.getSymTable().insert(this.varName, new IntValue(parsedResult));
-            return state;
         }
         catch (IOException e) {
             throw new StatementException("I/O Exception trying to read file " + ((StringValue) res).getValue());
         }
+
+        return state;
     }
 
     public IStmt deepCopy() {
         return new ReadFileStmt(exp, varName);
+    }
+
+    @Override
+    public String toString() {
+        return "readFile(" + this.exp.toString() + ", " + this.varName + ")";
     }
 }

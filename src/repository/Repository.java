@@ -27,8 +27,8 @@ public class Repository implements IRepository {
 
     public void logPrgStateExec() throws RepoException{
         try {
-            PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(fileName)));
-            writer.println(getCurrent());
+            PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(fileName, true)));
+            writer.println(getCurrent() + "\n");
             writer.close();
         }
         catch (IOException exc) {

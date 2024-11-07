@@ -5,8 +5,8 @@ import model.state.ProgramState;
 import model.types.BoolType;
 import model.types.IType;
 import model.types.IntType;
-import model.values.BoolValue;
-import model.values.IntValue;
+import model.types.StringType;
+
 
 public class VarDeclStmt implements IStmt {
     private String name;
@@ -23,10 +23,13 @@ public class VarDeclStmt implements IStmt {
             throw new StatementException("Variable already declared!");
 
         if (this.varType.equals(new IntType())) 
-            state.getSymTable().insert(this.name, new IntValue(0));
+            state.getSymTable().insert(this.name, new IntType().defaultValue());
         
         else if (this.varType.equals(new BoolType()))
-            state.getSymTable().insert(this.name, new BoolValue(false));
+            state.getSymTable().insert(this.name, new BoolType().defaultValue());
+
+        else if (this.varType.equals(new StringType()))
+            state.getSymTable().insert(this.name, new StringType().defaultValue());
 
         return state;
     }

@@ -1,6 +1,7 @@
 package controller;
 import exceptions.EmptyStackException;
 import exceptions.ExpressionException;
+import exceptions.RepoException;
 import exceptions.StatementException;
 import model.adt.IMyStack;
 import model.state.ProgramState;
@@ -26,14 +27,18 @@ public class Controller implements IController{
         return currentStmt.execute(state);
     }
 
-    public void allStep() throws EmptyStackException, StatementException, ExpressionException {
+    public void allStep() throws EmptyStackException, StatementException, ExpressionException, RepoException {
         ProgramState currentPrgState = this.repo.getCurrent();
-        if (this.displayFlag)
+        if (this.displayFlag) 
             displayPrgState(currentPrgState);
+
+        this.repo.logPrgStateExec();
         while (! currentPrgState.getExeStack().isEmpty()) {
             ProgramState newState = oneStep(currentPrgState);
             if (this.displayFlag)
                 displayPrgState(newState);
+            
+            this.repo.logPrgStateExec();
         }
     }
 
