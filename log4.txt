@@ -39,298 +39,34 @@ Symbols Table: varf -> test.in, varc -> 0,
 Out: 
 
 Execution Stack: ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) 
-Symbols Table: varf -> test.in, varc -> 15, 
+Symbols Table: varf -> test.in, varc -> 2, 
 Out: 
 
 Execution Stack: ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) print(varc) 
-Symbols Table: varf -> test.in, varc -> 15, 
+Symbols Table: varf -> test.in, varc -> 2, 
 Out: 
 
 Execution Stack: ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) 
-Symbols Table: varf -> test.in, varc -> 15, 
-Out: 15 
+Symbols Table: varf -> test.in, varc -> 2, 
+Out: 2 
 
 Execution Stack: ( print(varc); closeFile(varf) ) readFile(varf, varc) 
-Symbols Table: varf -> test.in, varc -> 15, 
-Out: 15 
+Symbols Table: varf -> test.in, varc -> 2, 
+Out: 2 
 
 Execution Stack: ( print(varc); closeFile(varf) ) 
-Symbols Table: varf -> test.in, varc -> 50, 
-Out: 15 
+Symbols Table: varf -> test.in, varc -> 4, 
+Out: 2 
 
 Execution Stack: closeFile(varf) print(varc) 
-Symbols Table: varf -> test.in, varc -> 50, 
-Out: 15 
+Symbols Table: varf -> test.in, varc -> 4, 
+Out: 2 
 
 Execution Stack: closeFile(varf) 
-Symbols Table: varf -> test.in, varc -> 50, 
-Out: 15 50 
+Symbols Table: varf -> test.in, varc -> 4, 
+Out: 2 4 
 
 Execution Stack: 
-Symbols Table: varf -> test.in, varc -> 50, 
-Out: 15 50 
-
-Execution Stack: ( String varf; ( varf = test.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) ) ) 
-Symbols Table: 
-Out: 
-
-Execution Stack: ( varf = test.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) ) String varf 
-Symbols Table: 
-Out: 
-
-Execution Stack: ( varf = test.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) ) 
-Symbols Table: varf -> , 
-Out: 
-
-Execution Stack: ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) varf = test.in 
-Symbols Table: varf -> , 
-Out: 
-
-Execution Stack: ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) 
-Symbols Table: varf -> test.in, 
-Out: 
-
-Execution Stack: ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) openFile(varf) 
-Symbols Table: varf -> test.in, 
-Out: 
-
-Execution Stack: ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) 
-Symbols Table: varf -> test.in, 
-Out: 
-
-Execution Stack: ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) Int varc 
-Symbols Table: varf -> test.in, 
-Out: 
-
-Execution Stack: ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) 
-Symbols Table: varf -> test.in, varc -> 0, 
-Out: 
-
-Execution Stack: ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) readFile(varf, varc) 
-Symbols Table: varf -> test.in, varc -> 0, 
-Out: 
-
-Execution Stack: ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) 
-Symbols Table: varf -> test.in, varc -> 15, 
-Out: 
-
-Execution Stack: ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) print(varc) 
-Symbols Table: varf -> test.in, varc -> 15, 
-Out: 
-
-Execution Stack: ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) 
-Symbols Table: varf -> test.in, varc -> 15, 
-Out: 15 
-
-Execution Stack: ( print(varc); closeFile(varf) ) readFile(varf, varc) 
-Symbols Table: varf -> test.in, varc -> 15, 
-Out: 15 
-
-Execution Stack: ( print(varc); closeFile(varf) ) 
-Symbols Table: varf -> test.in, varc -> 25, 
-Out: 15 
-
-Execution Stack: closeFile(varf) print(varc) 
-Symbols Table: varf -> test.in, varc -> 25, 
-Out: 15 
-
-Execution Stack: closeFile(varf) 
-Symbols Table: varf -> test.in, varc -> 25, 
-Out: 15 25 
-
-Execution Stack: 
-Symbols Table: varf -> test.in, varc -> 25, 
-Out: 15 25 
-
-Execution Stack: ( String varf; ( varf = test.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) ) ) 
-Symbols Table: 
-Out: 
-
-Execution Stack: ( varf = test.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) ) String varf 
-Symbols Table: 
-Out: 
-
-Execution Stack: ( varf = test.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) ) 
-Symbols Table: varf -> , 
-Out: 
-
-Execution Stack: ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) varf = test.in 
-Symbols Table: varf -> , 
-Out: 
-
-Execution Stack: ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) 
-Symbols Table: varf -> test.in, 
-Out: 
-
-Execution Stack: ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) openFile(varf) 
-Symbols Table: varf -> test.in, 
-Out: 
-
-Execution Stack: ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) 
-Symbols Table: varf -> test.in, 
-Out: 
-
-Execution Stack: ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) Int varc 
-Symbols Table: varf -> test.in, 
-Out: 
-
-Execution Stack: ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) 
-Symbols Table: varf -> test.in, varc -> 0, 
-Out: 
-
-Execution Stack: ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) readFile(varf, varc) 
-Symbols Table: varf -> test.in, varc -> 0, 
-Out: 
-
-Execution Stack: ( String varf; ( varf = test.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) ) ) 
-Symbols Table: 
-Out: 
-
-Execution Stack: ( varf = test.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) ) String varf 
-Symbols Table: 
-Out: 
-
-Execution Stack: ( varf = test.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) ) 
-Symbols Table: varf -> , 
-Out: 
-
-Execution Stack: ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) varf = test.in 
-Symbols Table: varf -> , 
-Out: 
-
-Execution Stack: ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) 
-Symbols Table: varf -> test.in, 
-Out: 
-
-Execution Stack: ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) openFile(varf) 
-Symbols Table: varf -> test.in, 
-Out: 
-
-Execution Stack: ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) 
-Symbols Table: varf -> test.in, 
-Out: 
-
-Execution Stack: ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) Int varc 
-Symbols Table: varf -> test.in, 
-Out: 
-
-Execution Stack: ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) 
-Symbols Table: varf -> test.in, varc -> 0, 
-Out: 
-
-Execution Stack: ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) readFile(varf, varc) 
-Symbols Table: varf -> test.in, varc -> 0, 
-Out: 
-
-Execution Stack: ( String varf; ( varf = test.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) ) ) 
-Symbols Table: 
-Out: 
-
-Execution Stack: ( varf = test.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) ) String varf 
-Symbols Table: 
-Out: 
-
-Execution Stack: ( varf = test.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) ) 
-Symbols Table: varf -> , 
-Out: 
-
-Execution Stack: ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) varf = test.in 
-Symbols Table: varf -> , 
-Out: 
-
-Execution Stack: ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) 
-Symbols Table: varf -> test.in, 
-Out: 
-
-Execution Stack: ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) openFile(varf) 
-Symbols Table: varf -> test.in, 
-Out: 
-
-Execution Stack: ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) 
-Symbols Table: varf -> test.in, 
-Out: 
-
-Execution Stack: ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) Int varc 
-Symbols Table: varf -> test.in, 
-Out: 
-
-Execution Stack: ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) 
-Symbols Table: varf -> test.in, varc -> 0, 
-Out: 
-
-Execution Stack: ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) readFile(varf, varc) 
-Symbols Table: varf -> test.in, varc -> 0, 
-Out: 
-
-Execution Stack: ( String varf; ( varf = test.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) ) ) 
-Symbols Table: 
-Out: 
-
-Execution Stack: ( varf = test.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) ) String varf 
-Symbols Table: 
-Out: 
-
-Execution Stack: ( varf = test.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) ) 
-Symbols Table: varf -> , 
-Out: 
-
-Execution Stack: ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) varf = test.in 
-Symbols Table: varf -> , 
-Out: 
-
-Execution Stack: ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) 
-Symbols Table: varf -> test.in, 
-Out: 
-
-Execution Stack: ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) openFile(varf) 
-Symbols Table: varf -> test.in, 
-Out: 
-
-Execution Stack: ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) 
-Symbols Table: varf -> test.in, 
-Out: 
-
-Execution Stack: ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) Int varc 
-Symbols Table: varf -> test.in, 
-Out: 
-
-Execution Stack: ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) 
-Symbols Table: varf -> test.in, varc -> 0, 
-Out: 
-
-Execution Stack: ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) readFile(varf, varc) 
-Symbols Table: varf -> test.in, varc -> 0, 
-Out: 
-
-Execution Stack: ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) 
-Symbols Table: varf -> test.in, varc -> 0, 
-Out: 
-
-Execution Stack: ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) print(varc) 
-Symbols Table: varf -> test.in, varc -> 0, 
-Out: 
-
-Execution Stack: ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) 
-Symbols Table: varf -> test.in, varc -> 0, 
-Out: 0 
-
-Execution Stack: ( print(varc); closeFile(varf) ) readFile(varf, varc) 
-Symbols Table: varf -> test.in, varc -> 0, 
-Out: 0 
-
-Execution Stack: ( print(varc); closeFile(varf) ) 
-Symbols Table: varf -> test.in, varc -> 0, 
-Out: 0 
-
-Execution Stack: closeFile(varf) print(varc) 
-Symbols Table: varf -> test.in, varc -> 0, 
-Out: 0 
-
-Execution Stack: closeFile(varf) 
-Symbols Table: varf -> test.in, varc -> 0, 
-Out: 0 0 
-
-Execution Stack: 
-Symbols Table: varf -> test.in, varc -> 0, 
-Out: 0 0 
+Symbols Table: varf -> test.in, varc -> 4, 
+Out: 2 4 
 

@@ -1,208 +1,52 @@
-Execution Stack: ( Int a; ( Int b; ( Int c; ( a = 3; ( b = 4; (IF(a LESS_OR_EQUAL b) THEN(c = 1) ELSE(c = 0)) ) ) ) ) ) 
+Execution Stack: ( Int a; ( Int b; ( Int c; ( a = 3; ( b = 4; (IF(a GREATER b) THEN(c = 1) ELSE(c = -1)) ) ) ) ) ) 
 Symbols Table: 
 Out: 
 
-Execution Stack: ( Int b; ( Int c; ( a = 3; ( b = 4; (IF(a LESS_OR_EQUAL b) THEN(c = 1) ELSE(c = 0)) ) ) ) ) Int a 
+Execution Stack: ( Int b; ( Int c; ( a = 3; ( b = 4; (IF(a GREATER b) THEN(c = 1) ELSE(c = -1)) ) ) ) ) Int a 
 Symbols Table: 
 Out: 
 
-Execution Stack: ( Int b; ( Int c; ( a = 3; ( b = 4; (IF(a LESS_OR_EQUAL b) THEN(c = 1) ELSE(c = 0)) ) ) ) ) 
+Execution Stack: ( Int b; ( Int c; ( a = 3; ( b = 4; (IF(a GREATER b) THEN(c = 1) ELSE(c = -1)) ) ) ) ) 
 Symbols Table: a -> 0, 
 Out: 
 
-Execution Stack: ( Int c; ( a = 3; ( b = 4; (IF(a LESS_OR_EQUAL b) THEN(c = 1) ELSE(c = 0)) ) ) ) Int b 
+Execution Stack: ( Int c; ( a = 3; ( b = 4; (IF(a GREATER b) THEN(c = 1) ELSE(c = -1)) ) ) ) Int b 
 Symbols Table: a -> 0, 
 Out: 
 
-Execution Stack: ( Int c; ( a = 3; ( b = 4; (IF(a LESS_OR_EQUAL b) THEN(c = 1) ELSE(c = 0)) ) ) ) 
+Execution Stack: ( Int c; ( a = 3; ( b = 4; (IF(a GREATER b) THEN(c = 1) ELSE(c = -1)) ) ) ) 
 Symbols Table: a -> 0, b -> 0, 
 Out: 
 
-Execution Stack: ( a = 3; ( b = 4; (IF(a LESS_OR_EQUAL b) THEN(c = 1) ELSE(c = 0)) ) ) Int c 
+Execution Stack: ( a = 3; ( b = 4; (IF(a GREATER b) THEN(c = 1) ELSE(c = -1)) ) ) Int c 
 Symbols Table: a -> 0, b -> 0, 
 Out: 
 
-Execution Stack: ( a = 3; ( b = 4; (IF(a LESS_OR_EQUAL b) THEN(c = 1) ELSE(c = 0)) ) ) 
+Execution Stack: ( a = 3; ( b = 4; (IF(a GREATER b) THEN(c = 1) ELSE(c = -1)) ) ) 
 Symbols Table: a -> 0, b -> 0, c -> 0, 
 Out: 
 
-Execution Stack: ( b = 4; (IF(a LESS_OR_EQUAL b) THEN(c = 1) ELSE(c = 0)) ) a = 3 
+Execution Stack: ( b = 4; (IF(a GREATER b) THEN(c = 1) ELSE(c = -1)) ) a = 3 
 Symbols Table: a -> 0, b -> 0, c -> 0, 
 Out: 
 
-Execution Stack: ( b = 4; (IF(a LESS_OR_EQUAL b) THEN(c = 1) ELSE(c = 0)) ) 
+Execution Stack: ( b = 4; (IF(a GREATER b) THEN(c = 1) ELSE(c = -1)) ) 
 Symbols Table: a -> 3, b -> 0, c -> 0, 
 Out: 
 
-Execution Stack: (IF(a LESS_OR_EQUAL b) THEN(c = 1) ELSE(c = 0)) b = 4 
+Execution Stack: (IF(a GREATER b) THEN(c = 1) ELSE(c = -1)) b = 4 
 Symbols Table: a -> 3, b -> 0, c -> 0, 
 Out: 
 
-Execution Stack: (IF(a LESS_OR_EQUAL b) THEN(c = 1) ELSE(c = 0)) 
+Execution Stack: (IF(a GREATER b) THEN(c = 1) ELSE(c = -1)) 
 Symbols Table: a -> 3, b -> 4, c -> 0, 
 Out: 
 
-Execution Stack: c = 1 
+Execution Stack: c = -1 
 Symbols Table: a -> 3, b -> 4, c -> 0, 
 Out: 
 
 Execution Stack: 
-Symbols Table: a -> 3, b -> 4, c -> 1, 
-Out: 
-
-Execution Stack: ( Int a; ( Int b; ( Int c; ( a = 3; ( b = 4; (IF(a LESS_OR_EQUAL b) THEN(c = 1) ELSE(c = 0)) ) ) ) ) ) 
-Symbols Table: 
-Out: 
-
-Execution Stack: ( Int b; ( Int c; ( a = 3; ( b = 4; (IF(a LESS_OR_EQUAL b) THEN(c = 1) ELSE(c = 0)) ) ) ) ) Int a 
-Symbols Table: 
-Out: 
-
-Execution Stack: ( Int b; ( Int c; ( a = 3; ( b = 4; (IF(a LESS_OR_EQUAL b) THEN(c = 1) ELSE(c = 0)) ) ) ) ) 
-Symbols Table: a -> 0, 
-Out: 
-
-Execution Stack: ( Int c; ( a = 3; ( b = 4; (IF(a LESS_OR_EQUAL b) THEN(c = 1) ELSE(c = 0)) ) ) ) Int b 
-Symbols Table: a -> 0, 
-Out: 
-
-Execution Stack: ( Int c; ( a = 3; ( b = 4; (IF(a LESS_OR_EQUAL b) THEN(c = 1) ELSE(c = 0)) ) ) ) 
-Symbols Table: a -> 0, b -> 0, 
-Out: 
-
-Execution Stack: ( a = 3; ( b = 4; (IF(a LESS_OR_EQUAL b) THEN(c = 1) ELSE(c = 0)) ) ) Int c 
-Symbols Table: a -> 0, b -> 0, 
-Out: 
-
-Execution Stack: ( a = 3; ( b = 4; (IF(a LESS_OR_EQUAL b) THEN(c = 1) ELSE(c = 0)) ) ) 
-Symbols Table: a -> 0, b -> 0, c -> 0, 
-Out: 
-
-Execution Stack: ( b = 4; (IF(a LESS_OR_EQUAL b) THEN(c = 1) ELSE(c = 0)) ) a = 3 
-Symbols Table: a -> 0, b -> 0, c -> 0, 
-Out: 
-
-Execution Stack: ( b = 4; (IF(a LESS_OR_EQUAL b) THEN(c = 1) ELSE(c = 0)) ) 
-Symbols Table: a -> 3, b -> 0, c -> 0, 
-Out: 
-
-Execution Stack: (IF(a LESS_OR_EQUAL b) THEN(c = 1) ELSE(c = 0)) b = 4 
-Symbols Table: a -> 3, b -> 0, c -> 0, 
-Out: 
-
-Execution Stack: (IF(a LESS_OR_EQUAL b) THEN(c = 1) ELSE(c = 0)) 
-Symbols Table: a -> 3, b -> 4, c -> 0, 
-Out: 
-
-Execution Stack: c = 1 
-Symbols Table: a -> 3, b -> 4, c -> 0, 
-Out: 
-
-Execution Stack: 
-Symbols Table: a -> 3, b -> 4, c -> 1, 
-Out: 
-
-Execution Stack: ( Int a; ( Int b; ( Int c; ( a = 3; ( b = 4; (IF(a DIFFERENT b) THEN(c = 1) ELSE(c = 0)) ) ) ) ) ) 
-Symbols Table: 
-Out: 
-
-Execution Stack: ( Int b; ( Int c; ( a = 3; ( b = 4; (IF(a DIFFERENT b) THEN(c = 1) ELSE(c = 0)) ) ) ) ) Int a 
-Symbols Table: 
-Out: 
-
-Execution Stack: ( Int b; ( Int c; ( a = 3; ( b = 4; (IF(a DIFFERENT b) THEN(c = 1) ELSE(c = 0)) ) ) ) ) 
-Symbols Table: a -> 0, 
-Out: 
-
-Execution Stack: ( Int c; ( a = 3; ( b = 4; (IF(a DIFFERENT b) THEN(c = 1) ELSE(c = 0)) ) ) ) Int b 
-Symbols Table: a -> 0, 
-Out: 
-
-Execution Stack: ( Int c; ( a = 3; ( b = 4; (IF(a DIFFERENT b) THEN(c = 1) ELSE(c = 0)) ) ) ) 
-Symbols Table: a -> 0, b -> 0, 
-Out: 
-
-Execution Stack: ( a = 3; ( b = 4; (IF(a DIFFERENT b) THEN(c = 1) ELSE(c = 0)) ) ) Int c 
-Symbols Table: a -> 0, b -> 0, 
-Out: 
-
-Execution Stack: ( a = 3; ( b = 4; (IF(a DIFFERENT b) THEN(c = 1) ELSE(c = 0)) ) ) 
-Symbols Table: a -> 0, b -> 0, c -> 0, 
-Out: 
-
-Execution Stack: ( b = 4; (IF(a DIFFERENT b) THEN(c = 1) ELSE(c = 0)) ) a = 3 
-Symbols Table: a -> 0, b -> 0, c -> 0, 
-Out: 
-
-Execution Stack: ( b = 4; (IF(a DIFFERENT b) THEN(c = 1) ELSE(c = 0)) ) 
-Symbols Table: a -> 3, b -> 0, c -> 0, 
-Out: 
-
-Execution Stack: (IF(a DIFFERENT b) THEN(c = 1) ELSE(c = 0)) b = 4 
-Symbols Table: a -> 3, b -> 0, c -> 0, 
-Out: 
-
-Execution Stack: (IF(a DIFFERENT b) THEN(c = 1) ELSE(c = 0)) 
-Symbols Table: a -> 3, b -> 4, c -> 0, 
-Out: 
-
-Execution Stack: c = 1 
-Symbols Table: a -> 3, b -> 4, c -> 0, 
-Out: 
-
-Execution Stack: 
-Symbols Table: a -> 3, b -> 4, c -> 1, 
-Out: 
-
-Execution Stack: ( Int a; ( Int b; ( Int c; ( a = 3; ( b = 4; (IF(a GREATER b) THEN(c = 1) ELSE(c = 0)) ) ) ) ) ) 
-Symbols Table: 
-Out: 
-
-Execution Stack: ( Int b; ( Int c; ( a = 3; ( b = 4; (IF(a GREATER b) THEN(c = 1) ELSE(c = 0)) ) ) ) ) Int a 
-Symbols Table: 
-Out: 
-
-Execution Stack: ( Int b; ( Int c; ( a = 3; ( b = 4; (IF(a GREATER b) THEN(c = 1) ELSE(c = 0)) ) ) ) ) 
-Symbols Table: a -> 0, 
-Out: 
-
-Execution Stack: ( Int c; ( a = 3; ( b = 4; (IF(a GREATER b) THEN(c = 1) ELSE(c = 0)) ) ) ) Int b 
-Symbols Table: a -> 0, 
-Out: 
-
-Execution Stack: ( Int c; ( a = 3; ( b = 4; (IF(a GREATER b) THEN(c = 1) ELSE(c = 0)) ) ) ) 
-Symbols Table: a -> 0, b -> 0, 
-Out: 
-
-Execution Stack: ( a = 3; ( b = 4; (IF(a GREATER b) THEN(c = 1) ELSE(c = 0)) ) ) Int c 
-Symbols Table: a -> 0, b -> 0, 
-Out: 
-
-Execution Stack: ( a = 3; ( b = 4; (IF(a GREATER b) THEN(c = 1) ELSE(c = 0)) ) ) 
-Symbols Table: a -> 0, b -> 0, c -> 0, 
-Out: 
-
-Execution Stack: ( b = 4; (IF(a GREATER b) THEN(c = 1) ELSE(c = 0)) ) a = 3 
-Symbols Table: a -> 0, b -> 0, c -> 0, 
-Out: 
-
-Execution Stack: ( b = 4; (IF(a GREATER b) THEN(c = 1) ELSE(c = 0)) ) 
-Symbols Table: a -> 3, b -> 0, c -> 0, 
-Out: 
-
-Execution Stack: (IF(a GREATER b) THEN(c = 1) ELSE(c = 0)) b = 4 
-Symbols Table: a -> 3, b -> 0, c -> 0, 
-Out: 
-
-Execution Stack: (IF(a GREATER b) THEN(c = 1) ELSE(c = 0)) 
-Symbols Table: a -> 3, b -> 4, c -> 0, 
-Out: 
-
-Execution Stack: c = 0 
-Symbols Table: a -> 3, b -> 4, c -> 0, 
-Out: 
-
-Execution Stack: 
-Symbols Table: a -> 3, b -> 4, c -> 0, 
+Symbols Table: a -> 3, b -> 4, c -> -1, 
 Out: 
 

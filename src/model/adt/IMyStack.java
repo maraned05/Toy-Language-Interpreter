@@ -1,4 +1,5 @@
 package model.adt;
+
 import exceptions.EmptyStackException;
 
 public interface IMyStack<T> {
@@ -6,4 +7,5 @@ public interface IMyStack<T> {
     void push(T elem);
     int getSize();
     boolean isEmpty();
+    String getInversedStack();
 }

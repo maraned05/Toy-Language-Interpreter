@@ -29,11 +29,33 @@ public class MyStack<T> implements IMyStack<T> {
         return this.stack.isEmpty();
     }
 
-    Stack<T> getStack() {
+    public Stack<T> getStack() {
         return this.stack;
     }
 
-    void setStack(Stack<T> stack) {
+    public String getInversedStack() {
+    StringBuilder elemsInString = new StringBuilder();
+        Stack<T> copyElementsReverse = new Stack<T>();
+        T topOfStack;
+        while (!this.stack.empty()) {
+            topOfStack = this.stack.pop();
+            copyElementsReverse.push(topOfStack);
+            elemsInString.append(topOfStack.toString());
+            elemsInString.append(", ");
+        }
+        String elemsInStringAsString = elemsInString.toString();
+        if (elemsInStringAsString.length() > 2) {
+            elemsInStringAsString = elemsInStringAsString.substring(0, elemsInStringAsString.length() - 2);
+        }   
+        while (!copyElementsReverse.empty()) {
+            topOfStack = copyElementsReverse.pop();
+            this.stack.push(topOfStack);
+        }
+        return elemsInStringAsString;
+    }
+
+
+    public void setStack(Stack<T> stack) {
         this.stack = stack;
     }
     

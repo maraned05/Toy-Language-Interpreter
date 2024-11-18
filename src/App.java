@@ -103,7 +103,7 @@ public class App {
         new CompStmt(new AssignStmt("b", new ValueExpression(new IntValue(4))), 
         new IfStmt(new RelationalExpression(new VariableExpression("a"), new VariableExpression("b"), RelationalOperation.GREATER), 
         new AssignStmt("c", new ValueExpression(new IntValue(1))), 
-        new AssignStmt("c", new ValueExpression(new IntValue(0)))))))));
+        new AssignStmt("c", new ValueExpression(new IntValue(-1)))))))));
 
         ProgramState state5 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
         new MyList<IValue>(), statement5, new MyMap<StringValue, BufferedReader>());
