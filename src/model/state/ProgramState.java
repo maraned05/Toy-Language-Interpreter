@@ -13,14 +13,16 @@ public class ProgramState {
     IMyList<IValue> out;
     IStmt originalProgram;
     IMyMap<StringValue, BufferedReader> fileTable;
+    IMyHeap<Integer, IValue> heap;
 
-    public ProgramState(IMyStack<IStmt> stk, IMyMap<String, IValue> symtbl, IMyList<IValue> out, IStmt prg, IMyMap<StringValue, BufferedReader> fTb) {
+    public ProgramState(IMyStack<IStmt> stk, IMyMap<String, IValue> symtbl, IMyList<IValue> out, IStmt prg, IMyMap<StringValue, BufferedReader> fTb, IMyHeap<Integer, IValue> h) {
         this.exeStack = stk;
         this.symTable = symtbl;
         this.out = out;
         this.originalProgram = prg;
         this.exeStack.push(prg);
         this.fileTable = fTb;
+        this.heap = h;
     }
 
     public IMyStack<IStmt> getExeStack() {
@@ -37,6 +39,10 @@ public class ProgramState {
 
     public IMyMap<StringValue, BufferedReader> getFileTable() {
         return this.fileTable;
+    }
+
+    public IMyHeap<Integer, IValue> getHeap() {
+        return this.heap;
     }
 
     @Override
