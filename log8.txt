@@ -1,0 +1,340 @@
+Execution Stack: ( Ref(Int) v; ( new(v, 20); ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Execution Stack: Ref(Int) v, ( new(v, 20); ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Execution Stack: ( new(v, 20); ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+
+Execution Stack: new(v, 20), ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+
+Execution Stack: ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) )
+Symbols Table: v -> 1, 
+Out: 
+Heap: 1 -> 20, 
+
+Execution Stack: print(rH(v)), ( wH(v, 30); print(rH(v) ADD 5) )
+Symbols Table: v -> 1, 
+Out: 
+Heap: 1 -> 20, 
+
+Execution Stack: ( wH(v, 30); print(rH(v) ADD 5) )
+Symbols Table: v -> 1, 
+Out: 20 
+Heap: 1 -> 20, 
+
+Execution Stack: wH(v, 30), print(rH(v) ADD 5)
+Symbols Table: v -> 1, 
+Out: 20 
+Heap: 1 -> 20, 
+
+Execution Stack: print(rH(v) ADD 5)
+Symbols Table: v -> 1, 
+Out: 20 
+Heap: 1 -> 30, 
+
+Execution Stack: 
+Symbols Table: v -> 1, 
+Out: 20 35 
+Heap: 1 -> 30, 
+
+Execution Stack: ( Ref(Int) v; ( new(v, 20); ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Execution Stack: Ref(Int) v, ( new(v, 20); ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Execution Stack: ( new(v, 20); ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) ) )
+Symbols Table: v -> (0, Int), 
+Out: 
+Heap: 
+
+Execution Stack: new(v, 20), ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) )
+Symbols Table: v -> (0, Int), 
+Out: 
+Heap: 
+
+Execution Stack: ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) )
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Execution Stack: print(rH(v)), ( wH(v, 30); print(rH(v) ADD 5) )
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Execution Stack: ( wH(v, 30); print(rH(v) ADD 5) )
+Symbols Table: v -> (1, Int), 
+Out: 20 
+Heap: 1 -> 20, 
+
+Execution Stack: wH(v, 30), print(rH(v) ADD 5)
+Symbols Table: v -> (1, Int), 
+Out: 20 
+Heap: 1 -> 20, 
+
+Execution Stack: print(rH(v) ADD 5)
+Symbols Table: v -> (1, Int), 
+Out: 20 
+Heap: 1 -> 30, 
+
+Execution Stack: 
+Symbols Table: v -> (1, Int), 
+Out: 20 35 
+Heap: 1 -> 30, 
+
+Execution Stack: ( Ref(Int) v; ( new(v, 20); ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Execution Stack: Ref(Int) v, ( new(v, 20); ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Execution Stack: ( new(v, 20); ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) ) )
+Symbols Table: v -> (0, Int), 
+Out: 
+Heap: 
+
+Execution Stack: new(v, 20), ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) )
+Symbols Table: v -> (0, Int), 
+Out: 
+Heap: 
+
+Execution Stack: ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) )
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Execution Stack: print(rH(v)), ( wH(v, 30); print(rH(v) ADD 5) )
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Execution Stack: ( wH(v, 30); print(rH(v) ADD 5) )
+Symbols Table: v -> (1, Int), 
+Out: 20 
+Heap: 1 -> 20, 
+
+Execution Stack: wH(v, 30), print(rH(v) ADD 5)
+Symbols Table: v -> (1, Int), 
+Out: 20 
+Heap: 1 -> 20, 
+
+Execution Stack: print(rH(v) ADD 5)
+Symbols Table: v -> (1, Int), 
+Out: 20 
+Heap: 1 -> 30, 
+
+Execution Stack: 
+Symbols Table: v -> (1, Int), 
+Out: 20 35 
+Heap: 1 -> 30, 
+
+Execution Stack: ( Ref(Int) v; ( new(v, 20); ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Execution Stack: Ref(Int) v, ( new(v, 20); ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Execution Stack: ( new(v, 20); ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) ) )
+Symbols Table: v -> (0, Int), 
+Out: 
+Heap: 
+
+Execution Stack: new(v, 20), ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) )
+Symbols Table: v -> (0, Int), 
+Out: 
+Heap: 
+
+Execution Stack: ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) )
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Execution Stack: print(rH(v)), ( wH(v, 30); print(rH(v) ADD 5) )
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Execution Stack: ( wH(v, 30); print(rH(v) ADD 5) )
+Symbols Table: v -> (1, Int), 
+Out: 20 
+Heap: 1 -> 20, 
+
+Execution Stack: wH(v, 30), print(rH(v) ADD 5)
+Symbols Table: v -> (1, Int), 
+Out: 20 
+Heap: 1 -> 20, 
+
+Execution Stack: print(rH(v) ADD 5)
+Symbols Table: v -> (1, Int), 
+Out: 20 
+Heap: 1 -> 30, 
+
+Execution Stack: 
+Symbols Table: v -> (1, Int), 
+Out: 20 35 
+Heap: 1 -> 30, 
+
+Execution Stack: ( Ref(Int) v; ( new(v, 20); ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Execution Stack: Ref(Int) v, ( new(v, 20); ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Execution Stack: ( new(v, 20); ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) ) )
+Symbols Table: v -> (0, Int), 
+Out: 
+Heap: 
+
+Execution Stack: new(v, 20), ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) )
+Symbols Table: v -> (0, Int), 
+Out: 
+Heap: 
+
+Execution Stack: ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) )
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Execution Stack: print(rH(v)), ( wH(v, 30); print(rH(v) ADD 5) )
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Execution Stack: ( wH(v, 30); print(rH(v) ADD 5) )
+Symbols Table: v -> (1, Int), 
+Out: 20 
+Heap: 1 -> 20, 
+
+Execution Stack: wH(v, 30), print(rH(v) ADD 5)
+Symbols Table: v -> (1, Int), 
+Out: 20 
+Heap: 1 -> 20, 
+
+Execution Stack: print(rH(v) ADD 5)
+Symbols Table: v -> (1, Int), 
+Out: 20 
+Heap: 1 -> 30, 
+
+Execution Stack: 
+Symbols Table: v -> (1, Int), 
+Out: 20 35 
+Heap: 1 -> 30, 
+
+Execution Stack: ( Ref(Int) v; ( new(v, 20); ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Execution Stack: Ref(Int) v, ( new(v, 20); ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Execution Stack: ( new(v, 20); ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) ) )
+Symbols Table: v -> (0, Int), 
+Out: 
+Heap: 
+
+Execution Stack: new(v, 20), ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) )
+Symbols Table: v -> (0, Int), 
+Out: 
+Heap: 
+
+Execution Stack: ( print(rH(v)); ( wH(v, 30); print(rH(v) ADD 5) ) )
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Execution Stack: print(rH(v)), ( wH(v, 30); print(rH(v) ADD 5) )
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Execution Stack: ( wH(v, 30); print(rH(v) ADD 5) )
+Symbols Table: v -> (1, Int), 
+Out: 20 
+Heap: 1 -> 20, 
+
+Execution Stack: wH(v, 30), print(rH(v) ADD 5)
+Symbols Table: v -> (1, Int), 
+Out: 20 
+Heap: 1 -> 20, 
+
+Execution Stack: print(rH(v) ADD 5)
+Symbols Table: v -> (1, Int), 
+Out: 20 
+Heap: 1 -> 30, 
+
+Execution Stack: 
+Symbols Table: v -> (1, Int), 
+Out: 20 35 
+Heap: 1 -> 30, 
+
+Execution Stack: ( Ref(Int) v; ( new(v, 20); ( print(rH(v)); ( wH(v, true); print(rH(v) ADD 5) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Execution Stack: Ref(Int) v, ( new(v, 20); ( print(rH(v)); ( wH(v, true); print(rH(v) ADD 5) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Execution Stack: ( new(v, 20); ( print(rH(v)); ( wH(v, true); print(rH(v) ADD 5) ) ) )
+Symbols Table: v -> (0, Int), 
+Out: 
+Heap: 
+
+Execution Stack: new(v, 20), ( print(rH(v)); ( wH(v, true); print(rH(v) ADD 5) ) )
+Symbols Table: v -> (0, Int), 
+Out: 
+Heap: 
+
+Execution Stack: ( print(rH(v)); ( wH(v, true); print(rH(v) ADD 5) ) )
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Execution Stack: print(rH(v)), ( wH(v, true); print(rH(v) ADD 5) )
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Execution Stack: ( wH(v, true); print(rH(v) ADD 5) )
+Symbols Table: v -> (1, Int), 
+Out: 20 
+Heap: 1 -> 20, 
+
+Execution Stack: wH(v, true), print(rH(v) ADD 5)
+Symbols Table: v -> (1, Int), 
+Out: 20 
+Heap: 1 -> 20, 
+

@@ -2,6 +2,7 @@ package model.adt;
 
 import exceptions.KeyNotFoundException;
 import model.values.IValue;
+import java.util.Map;
 
 public interface IMyHeap<K, V> {
     int allocate(IValue value);
@@ -9,5 +10,7 @@ public interface IMyHeap<K, V> {
     boolean exists(int addr);
     void set(int addr, IValue value);
     IValue get(int addr) throws KeyNotFoundException;
+    Map<Integer, IValue> getContent();
+    void setContent(Map<Integer, IValue> r);
     IMyMap<Integer, IValue> getValues();
 }

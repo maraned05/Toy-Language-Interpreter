@@ -23,7 +23,7 @@ public class AssignStmt implements IStmt {
         }
 
 
-        IValue evalValue = this.exp.evaluate(state.getSymTable());
+        IValue evalValue = this.exp.evaluate(state.getSymTable(), state.getHeap());
         try {
             IType type = state.getSymTable().get(this.variable).getType();
             if (evalValue.getType().equals(type)) 

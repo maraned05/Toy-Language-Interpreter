@@ -1,6 +1,7 @@
 package model.expressions;
 
 import exceptions.ExpressionException;
+import model.adt.IMyHeap;
 import model.adt.IMyMap;
 import model.types.IntType;
 import model.values.BoolValue;
@@ -18,9 +19,9 @@ public class RelationalExpression implements IExpression {
         this.op = operator;
     }
 
-    public IValue evaluate (IMyMap<String, IValue> symTable) throws ExpressionException {
-        var leftExp = this.exp1.evaluate(symTable);
-        var rightExp = this.exp2.evaluate(symTable);
+    public IValue evaluate (IMyMap<String, IValue> symTable, IMyHeap<Integer, IValue> heap) throws ExpressionException {
+        var leftExp = this.exp1.evaluate(symTable, heap);
+        var rightExp = this.exp2.evaluate(symTable, heap);
 
         if (! leftExp.getType().equals(new IntType()) || ! rightExp.getType().equals(new IntType())) 
             throw new ExpressionException("The expressions are not of INT type!\n");

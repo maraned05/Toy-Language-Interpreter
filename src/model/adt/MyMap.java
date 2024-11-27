@@ -1,6 +1,7 @@
 package model.adt;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 import exceptions.KeyNotFoundException;
 
 public class MyMap<K, V> implements IMyMap<K, V> {
@@ -8,6 +9,10 @@ public class MyMap<K, V> implements IMyMap<K, V> {
 
     public MyMap() {
         this.map = new HashMap<K, V>();
+    }
+
+    public Set<Map.Entry<K, V>> entrySet() {
+        return this.map.entrySet();
     }
 
     public V get(K key) throws KeyNotFoundException {
@@ -21,6 +26,14 @@ public class MyMap<K, V> implements IMyMap<K, V> {
         this.map.put(key, value);
     }
 
+    public void setContent (Map<K, V> r) {
+        this.map = r;
+    }
+
+    public Map<K, V> getContent() {
+        return this.map;
+    }
+
     public boolean contains(K key) {
         return this.map.containsKey(key);
     }
@@ -31,7 +44,7 @@ public class MyMap<K, V> implements IMyMap<K, V> {
 
         this.map.remove(key);
     }
-
+ 
     public String toString() {
         StringBuilder str = new StringBuilder();
         for (K key : map.keySet()) {

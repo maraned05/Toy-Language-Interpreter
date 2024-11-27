@@ -48,6 +48,6 @@ public class ProgramState {
     @Override
     public String toString() {
         return "Execution Stack: " + this.exeStack.getInversedStack() + "\nSymbols Table: " + this.symTable.toString() 
-        + "\nOut: " + this.out.toString(); 
+        + "\nOut: " + this.out.toString() + "\nHeap: " + this.heap.toString(); 
     }
 }

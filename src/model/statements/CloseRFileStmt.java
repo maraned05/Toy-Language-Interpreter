@@ -20,7 +20,7 @@ public class CloseRFileStmt implements IStmt {
     }
 
     public ProgramState execute (ProgramState state) throws StatementException, ExpressionException {
-        IValue val = this.exp.evaluate(state.getSymTable());
+        IValue val = this.exp.evaluate(state.getSymTable(), state.getHeap());
         if (! val.getType().equals(new StringType())) 
             throw new StatementException("Value read is not a string!\n");
 

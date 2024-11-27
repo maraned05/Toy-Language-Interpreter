@@ -21,6 +21,10 @@ public class MyList<T> implements IMyList<T> {
         this.list = list;
     }
 
+    public boolean contains (T elem) {
+        return this.list.contains(elem);
+    }
+
     public String toString() {
         StringBuilder str = new StringBuilder();
         for (T element : list) {

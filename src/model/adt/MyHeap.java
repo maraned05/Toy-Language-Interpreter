@@ -2,6 +2,7 @@ package model.adt;
 
 import exceptions.KeyNotFoundException;
 import model.values.IValue;
+import java.util.Map;
 
 public class MyHeap<K, V> implements IMyHeap<K, V>{
     private MyMap<Integer, IValue> values;
@@ -33,12 +34,20 @@ public class MyHeap<K, V> implements IMyHeap<K, V>{
         this.values.remove(addr);
     }
 
+    public void setContent (Map<Integer, IValue> r) {
+        this.values.setContent(r);
+    }
+
+    public Map<Integer, IValue> getContent() {
+        return this.values.getContent();
+    }
+ 
     public IMyMap<Integer, IValue> getValues() {
         return this.values;
     }
 
     @Override
     public String toString() {
-        return "Heap";
+        return this.values.toString();
     }
 }

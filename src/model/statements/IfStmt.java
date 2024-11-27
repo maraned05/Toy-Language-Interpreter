@@ -24,7 +24,7 @@ public class IfStmt implements IStmt{
     }
 
     public ProgramState execute (ProgramState state) throws StatementException, ExpressionException{
-        IValue expVal = this.exp.evaluate(state.getSymTable());
+        IValue expVal = this.exp.evaluate(state.getSymTable(), state.getHeap());
         if (!(expVal.getType() instanceof BoolType)) {
             throw new StatementException(expVal.toString() + " is not a boolean");
         }

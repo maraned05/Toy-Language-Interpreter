@@ -5,6 +5,7 @@ import model.state.ProgramState;
 import model.types.BoolType;
 import model.types.IType;
 import model.types.IntType;
+import model.types.RefType;
 import model.types.StringType;
 
 
@@ -15,6 +16,14 @@ public class VarDeclStmt implements IStmt {
     public VarDeclStmt(String name, IType type) {
         this.name = name;
         this.varType = type;
+    }
+
+    private static RefType createRef(RefType type) {
+        if (! (type.getInnerType() instanceof RefType))
+            return new RefType(type.getInnerType());
+
+        RefType res = createRef(((RefType)type.getInnerType()));
+        return new RefType(res);
     }
 
     public ProgramState execute (ProgramState state) throws StatementException {
@@ -30,6 +39,10 @@ public class VarDeclStmt implements IStmt {
 
         else if (this.varType.equals(new StringType()))
             state.getSymTable().insert(this.name, new StringType().defaultValue());
+
+        else if (this.varType instanceof RefType) {
+            state.getSymTable().insert(this.name, createRef(((RefType)this.varType)).defaultValue());    
+        }
 
         return state;
     }

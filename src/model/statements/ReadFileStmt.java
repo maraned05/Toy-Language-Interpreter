@@ -33,7 +33,7 @@ public class ReadFileStmt implements IStmt{
             throw new StatementException("Variable name is undefined!");
         }
 
-        IValue res = exp.evaluate(state.getSymTable());
+        IValue res = exp.evaluate(state.getSymTable(), state.getHeap());
         if (! res.getType().equals(new StringType())) {
             throw new StatementException("Value read is not a string!\n");
         }

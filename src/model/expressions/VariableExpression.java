@@ -2,6 +2,7 @@ package model.expressions;
 
 import exceptions.ExpressionException;
 import exceptions.KeyNotFoundException;
+import model.adt.IMyHeap;
 import model.adt.IMyMap;
 import model.values.IValue;
 
@@ -12,7 +13,7 @@ public class VariableExpression implements IExpression{
         this.variable = var;
     }
 
-    public IValue evaluate (IMyMap<String, IValue> symbTbl) throws ExpressionException {
+    public IValue evaluate (IMyMap<String, IValue> symbTbl, IMyHeap<Integer, IValue> heap) throws ExpressionException {
         try {
             return symbTbl.get(this.variable);
         }

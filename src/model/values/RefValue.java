@@ -16,6 +16,10 @@ public class RefValue implements IValue {
         return this.address;
     }
 
+    public IType getLocationType() {
+        return this.locationType;
+    }
+
     public IType getType() {
         return new RefType(this.locationType);
     }
@@ -26,6 +30,6 @@ public class RefValue implements IValue {
 
     @Override
     public String toString() {
-        return String.valueOf(this.address);  
+        return "(" + String.valueOf(this.address) + ", " + this.locationType.toString() + ")";  
     }
 }

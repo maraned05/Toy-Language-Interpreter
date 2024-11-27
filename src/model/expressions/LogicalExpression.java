@@ -1,6 +1,7 @@
 package model.expressions;
 
 import exceptions.ExpressionException;
+import model.adt.IMyHeap;
 import model.adt.IMyMap;
 import model.types.BoolType;
 import model.values.BoolValue;
@@ -17,9 +18,9 @@ public class LogicalExpression implements IExpression {
         this.operation = operation;
     }
 
-    public IValue evaluate(IMyMap<String, IValue> symTable) throws ExpressionException {
-        var leftExpression = expression1.evaluate(symTable);
-        var rightExpression = expression2.evaluate(symTable);
+    public IValue evaluate(IMyMap<String, IValue> symTable, IMyHeap<Integer, IValue> heap) throws ExpressionException {
+        var leftExpression = expression1.evaluate(symTable, heap);
+        var rightExpression = expression2.evaluate(symTable, heap);
 
         if(!leftExpression.getType().equals(new BoolType()) || !rightExpression.getType().equals(new BoolType())) {
             throw new ExpressionException("Left and right expressions are not the same");

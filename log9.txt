@@ -1,0 +1,120 @@
+Execution Stack: ( Ref(Int) v; ( new(v, 20); ( Ref(Ref(Int)) a; ( new(a, v); ( new(v, 30); print(rH(rH(a))) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Execution Stack: Ref(Int) v, ( new(v, 20); ( Ref(Ref(Int)) a; ( new(a, v); ( new(v, 30); print(rH(rH(a))) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Execution Stack: ( new(v, 20); ( Ref(Ref(Int)) a; ( new(a, v); ( new(v, 30); print(rH(rH(a))) ) ) ) )
+Symbols Table: v -> (0, Int), 
+Out: 
+Heap: 
+
+Execution Stack: new(v, 20), ( Ref(Ref(Int)) a; ( new(a, v); ( new(v, 30); print(rH(rH(a))) ) ) )
+Symbols Table: v -> (0, Int), 
+Out: 
+Heap: 
+
+Execution Stack: ( Ref(Ref(Int)) a; ( new(a, v); ( new(v, 30); print(rH(rH(a))) ) ) )
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Execution Stack: Ref(Ref(Int)) a, ( new(a, v); ( new(v, 30); print(rH(rH(a))) ) )
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Execution Stack: ( new(a, v); ( new(v, 30); print(rH(rH(a))) ) )
+Symbols Table: a -> (0, Ref(Int)), v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Execution Stack: new(a, v), ( new(v, 30); print(rH(rH(a))) )
+Symbols Table: a -> (0, Ref(Int)), v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Execution Stack: ( new(v, 30); print(rH(rH(a))) )
+Symbols Table: a -> (2, Ref(Int)), v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> (1, Int), 
+
+Execution Stack: new(v, 30), print(rH(rH(a)))
+Symbols Table: a -> (2, Ref(Int)), v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> (1, Int), 
+
+Execution Stack: print(rH(rH(a)))
+Symbols Table: a -> (2, Ref(Int)), v -> (3, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> (1, Int), 3 -> 30, 
+
+Execution Stack: 
+Symbols Table: a -> (2, Ref(Int)), v -> (3, Int), 
+Out: 20 
+Heap: 1 -> 20, 2 -> (1, Int), 3 -> 30, 
+
+Execution Stack: ( Ref(Int) v; ( new(v, 20); ( Ref(Ref(Int)) a; ( new(a, v); ( new(v, 30); print(rH(rH(a))) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Execution Stack: Ref(Int) v, ( new(v, 20); ( Ref(Ref(Int)) a; ( new(a, v); ( new(v, 30); print(rH(rH(a))) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Execution Stack: ( new(v, 20); ( Ref(Ref(Int)) a; ( new(a, v); ( new(v, 30); print(rH(rH(a))) ) ) ) )
+Symbols Table: v -> (0, Int), 
+Out: 
+Heap: 
+
+Execution Stack: new(v, 20), ( Ref(Ref(Int)) a; ( new(a, v); ( new(v, 30); print(rH(rH(a))) ) ) )
+Symbols Table: v -> (0, Int), 
+Out: 
+Heap: 
+
+Execution Stack: ( Ref(Ref(Int)) a; ( new(a, v); ( new(v, 30); print(rH(rH(a))) ) ) )
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Execution Stack: Ref(Ref(Int)) a, ( new(a, v); ( new(v, 30); print(rH(rH(a))) ) )
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Execution Stack: ( new(a, v); ( new(v, 30); print(rH(rH(a))) ) )
+Symbols Table: a -> (0, Ref(Int)), v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Execution Stack: new(a, v), ( new(v, 30); print(rH(rH(a))) )
+Symbols Table: a -> (0, Ref(Int)), v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Execution Stack: ( new(v, 30); print(rH(rH(a))) )
+Symbols Table: a -> (2, Ref(Int)), v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> (1, Int), 
+
+Execution Stack: new(v, 30), print(rH(rH(a)))
+Symbols Table: a -> (2, Ref(Int)), v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> (1, Int), 
+
+Execution Stack: print(rH(rH(a)))
+Symbols Table: a -> (2, Ref(Int)), v -> (3, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> (1, Int), 3 -> 30, 
+
+Execution Stack: 
+Symbols Table: a -> (2, Ref(Int)), v -> (3, Int), 
+Out: 20 
+Heap: 1 -> 20, 2 -> (1, Int), 3 -> 30, 
+
