@@ -35,4 +35,12 @@ public class Repository implements IRepository {
             throw new RepoException("Cannot write in the file!\n");
         }
     }
+
+    public List<ProgramState> getPrgList() {
+        return this.states;
+    }
+
+    public void setPrgList(List<ProgramState> l) {
+        this.states = l;
+    }
 }

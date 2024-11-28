@@ -42,11 +42,9 @@ public class Controller implements IController{
                         result.add(v1.getAddress());
                     }
                 }
-                //result.add(v1.getAddress());
             }
         }
         return result;
-        // return symTbl.stream().filter(v -> v instanceof RefValue).map(v -> {RefValue v1 = (RefValue) v; return v1.getAddress();}).collect(Collectors.toList());
     } 
 
     public ProgramState oneStep(ProgramState state) throws EmptyStackException, StatementException, ExpressionException {
@@ -69,7 +67,6 @@ public class Controller implements IController{
             if (this.displayFlag)
                 displayPrgState(newState);
             
-            //currentPrgState.getHeap().setContent(GarbageCollector(getAddrFromSymTable(currentPrgState.getSymTable().getContent().values()), currentPrgState.getHeap().getContent())); 
             currentPrgState.getHeap().setContent(GarbageCollector(getAddrFromSymTable(currentPrgState.getSymTable().getContent().values(), currentPrgState.getHeap().getContent()), currentPrgState.getHeap().getContent())); 
             this.repo.logPrgStateExec();
         }

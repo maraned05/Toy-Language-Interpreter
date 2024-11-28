@@ -103,7 +103,6 @@ public class App {
         Controller ctr4 = new Controller(repo4, true);
 
 
-        // int a; int b; int c; a = 3; b = 4; if (a <= b) c = 1 else c = 0;
         IStmt statement5 = new CompStmt(new VarDeclStmt("a", new IntType()), 
         new CompStmt(new VarDeclStmt("b", new IntType()), 
         new CompStmt(new VarDeclStmt("c", new IntType()), 
@@ -200,7 +199,9 @@ public class App {
         new CompStmt(new AssignStmt("v", new ValueExpression(new IntValue(2))), 
         new CompStmt(new VarDeclStmt("b", new IntType()), 
         new CompStmt(new AssignStmt("b", new ValueExpression(new IntValue(1))), 
-        new WhileStmt(new LogicalExpression(new RelationalExpression(new VariableExpression("v"), new ValueExpression(new IntValue(0)), RelationalOperation.GREATER), new RelationalExpression(new VariableExpression("v"), new ValueExpression(new IntValue(10)), RelationalOperation.LESS), LogicalOperation.AND), 
+        new WhileStmt(new LogicalExpression(new RelationalExpression(new VariableExpression("v"), 
+        new ValueExpression(new IntValue(0)), RelationalOperation.GREATER), 
+        new RelationalExpression(new VariableExpression("v"), new ValueExpression(new IntValue(10)), RelationalOperation.LESS), LogicalOperation.AND), 
         new CompStmt(new AssignStmt("v", new ArithmeticExpression(new VariableExpression("v"), new ValueExpression(new IntValue(1)), ArithmeticOperation.SUBTRACT)), 
         new AssignStmt("b", new ArithmeticExpression(new VariableExpression("b"), new ValueExpression(new IntValue(2)), ArithmeticOperation.MULTIPLY))))))));
 
