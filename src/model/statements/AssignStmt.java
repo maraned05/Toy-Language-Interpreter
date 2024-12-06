@@ -31,7 +31,7 @@ public class AssignStmt implements IStmt {
 
             else throw new StatementException("The values do not match.");
 
-            return state;
+            return null;
         }
         catch (KeyNotFoundException e) {
             throw new ExpressionException("Invalid variable!");

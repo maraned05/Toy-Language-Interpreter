@@ -2,6 +2,8 @@ package model.adt;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
+
 import exceptions.KeyNotFoundException;
 
 public class MyMap<K, V> implements IMyMap<K, V> {
@@ -52,5 +54,11 @@ public class MyMap<K, V> implements IMyMap<K, V> {
             str.append(", ");
         }
         return str.toString();
+    }
+
+    public MyMap<K, V> deepCopy() {
+        MyMap<K, V> newMap = new MyMap<K, V>();
+        newMap.setContent(this.map.entrySet().stream().collect(Collectors.toMap(e -> e.getKey(), e -> e.getValue())));
+        return newMap;
     }
 }

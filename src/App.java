@@ -5,43 +5,46 @@ import model.adt.MyHeap;
 import model.adt.MyList;
 import model.adt.MyMap;
 import model.adt.MyStack;
-import model.expressions.ArithmeticExpression;
-import model.expressions.ArithmeticOperation;
-import model.expressions.LogicalExpression;
-import model.expressions.LogicalOperation;
+// import model.expressions.ArithmeticExpression;
+// import model.expressions.ArithmeticOperation;
+// import model.expressions.LogicalExpression;
+// import model.expressions.LogicalOperation;
 import model.expressions.ReadHeapExpression;
-import model.expressions.RelationalExpression;
-import model.expressions.RelationalOperation;
+// import model.expressions.RelationalExpression;
+// import model.expressions.RelationalOperation;
 import model.expressions.ValueExpression;
 import model.expressions.VariableExpression;
 import model.state.ProgramState;
 import model.statements.AssignStmt;
-import model.statements.CloseRFileStmt;
+// import model.statements.CloseRFileStmt;
 import model.statements.CompStmt;
+import model.statements.ForkStmt;
 import model.statements.HeapAllocStmt;
+// import model.statements.HeapAllocStmt;
 import model.statements.IStmt;
-import model.statements.IfStmt;
-import model.statements.OpenRFileStmt;
+// import model.statements.IfStmt;
+// import model.statements.OpenRFileStmt;
 import model.statements.PrintStmt;
-import model.statements.ReadFileStmt;
+// import model.statements.ReadFileStmt;
 import model.statements.VarDeclStmt;
-import model.statements.WhileStmt;
+// import model.statements.WhileStmt;
 import model.statements.WriteHeapStmt;
-import model.types.BoolType;
+// import model.types.BoolType;
 import model.types.IntType;
 import model.types.RefType;
-import model.types.StringType;
-import model.values.BoolValue;
+// import model.types.StringType;
+// import model.values.BoolValue;
 import model.values.IValue;
 import model.values.IntValue;
 import model.values.StringValue;
 import repository.Repository;
 import view.TextMenu;
-import view.commands.ExitCommand;
+// import view.commands.ExitCommand;
 import view.commands.RunExampleCommand;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        /*
         IStmt statement1 = new CompStmt (new VarDeclStmt("v",new IntType()),
         new CompStmt (new AssignStmt ("v", new ValueExpression(new IntValue(2))), 
         new PrintStmt(new VariableExpression("v"))));
@@ -163,7 +166,6 @@ public class App {
         repo8.add(state8);
         Controller ctr8 = new Controller(repo8, true);
 
-
         IStmt statement9 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())), 
         new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(20)), "v"), 
         new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType()))),
@@ -177,7 +179,6 @@ public class App {
         Repository repo9 = new Repository("log9.txt");
         repo9.add(state9);
         Controller ctr9 = new Controller(repo9, true);
-
 
         IStmt statement10 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())), 
         new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(20)), "v"), 
@@ -193,7 +194,6 @@ public class App {
         Repository repo10 = new Repository("log10.txt");
         repo10.add(state10);
         Controller ctr10 = new Controller(repo10, true);
-
 
         IStmt statement11 = new CompStmt(new VarDeclStmt("v", new IntType()), 
         new CompStmt(new AssignStmt("v", new ValueExpression(new IntValue(2))), 
@@ -211,8 +211,44 @@ public class App {
         Repository repo11 = new Repository("log11.txt");
         repo11.add(state11);
         Controller ctr11 = new Controller(repo11, true);
+        */
+
+
+        IStmt statement12 = new CompStmt(new VarDeclStmt("v", new IntType()), 
+        new CompStmt(new VarDeclStmt("a", new RefType(new IntType())), 
+        new CompStmt(new AssignStmt("v", new ValueExpression(new IntValue(10))), 
+        new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(22)), "a"),
+        new CompStmt(new ForkStmt(new CompStmt(new WriteHeapStmt(new ValueExpression(new IntValue(30)), "a"), 
+        new CompStmt(new AssignStmt("v", new ValueExpression(new IntValue(32))), 
+        new CompStmt(new PrintStmt(new VariableExpression("v")), new PrintStmt(new ReadHeapExpression(new VariableExpression("a"))))))), 
+        new CompStmt(new PrintStmt(new VariableExpression("v")), 
+        new PrintStmt(new ReadHeapExpression(new VariableExpression("a")))))))));
+
+        ProgramState state12 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
+        new MyList<IValue>(), statement12, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
+
+        Repository repo12 = new Repository("log12.txt");
+        repo12.add(state12);
+        Controller ctr12 = new Controller(repo12, true);
+
+
+        IStmt statement13 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())), 
+        new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(20)), "v"), 
+        new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType()))), 
+        new CompStmt(new HeapAllocStmt(new VariableExpression("v"), "a"), 
+        new CompStmt(new ForkStmt(new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(30)), "v"), 
+        new HeapAllocStmt(new VariableExpression("v"), "a"))), 
+        new HeapAllocStmt(new ValueExpression(new IntValue(50)), "v"))))));
+
+        ProgramState state13 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
+        new MyList<IValue>(), statement13, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
+
+        Repository repo13 = new Repository("log13.txt");
+        repo13.add(state13);
+        Controller ctr13 = new Controller(repo13, true);
 
         TextMenu menu = new TextMenu();
+        /* 
         menu.addCommand(new ExitCommand("0", "exit"));
         menu.addCommand(new RunExampleCommand("1", statement1.toString(), ctr1));
         menu.addCommand(new RunExampleCommand("2", statement2.toString(), ctr2));
@@ -221,10 +257,13 @@ public class App {
         menu.addCommand(new RunExampleCommand("5", statement5.toString(), ctr5));
         menu.addCommand(new RunExampleCommand("6", statement6.toString(), ctr6));
         menu.addCommand(new RunExampleCommand("7", statement7.toString(), ctr7));
-        menu.addCommand(new RunExampleCommand("8", statement8.toString(), ctr8));
-        menu.addCommand(new RunExampleCommand("9", statement9.toString(), ctr9));
-        menu.addCommand(new RunExampleCommand("10", statement10.toString(), ctr10));
+        menu.addCommand(new RunExampleCommand("8", statement8.toString(), ctr8)); 
+        menu.addCommand(new RunExampleCommand("9", statement9.toString(), ctr9)); 
+        menu.addCommand(new RunExampleCommand("10", statement10.toString(), ctr10)); 
         menu.addCommand(new RunExampleCommand("11", statement11.toString(), ctr11));
+        */
+        menu.addCommand(new RunExampleCommand("12", statement12.toString(), ctr12));
+        menu.addCommand(new RunExampleCommand("13", statement13.toString(), ctr13));
         menu.show();
     }
 }

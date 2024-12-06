@@ -59,7 +59,7 @@ public class ReadFileStmt implements IStmt{
             throw new StatementException("I/O Exception trying to read file " + ((StringValue) res).getValue());
         }
 
-        return state;
+        return null;
     }
 
     public IStmt deepCopy() {

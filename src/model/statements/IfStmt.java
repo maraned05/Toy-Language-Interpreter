@@ -34,7 +34,7 @@ public class IfStmt implements IStmt{
             state.getExeStack().push(elseS);
         }
 
-        return state;    
+        return null;    
     }
 
     public IStmt deepCopy() {

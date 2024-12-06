@@ -8,12 +8,10 @@ import java.io.*;
 
 public class Repository implements IRepository {
     private List<ProgramState> states;
-    private int currentState;
     private String fileName;
 
     public Repository(String file) {
         this.states = new ArrayList<ProgramState>();
-        this.currentState = 0;
         this.fileName = file;
     } 
 
@@ -21,14 +19,10 @@ public class Repository implements IRepository {
         this.states.add(state);
     }
 
-    public ProgramState getCurrent() {
-        return this.states.get(this.currentState);
-    }
-
-    public void logPrgStateExec() throws RepoException{
+    public void logPrgStateExec(ProgramState state) throws RepoException{
         try {
             PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(fileName, true)));
-            writer.println(getCurrent() + "\n");
+            writer.println(state + "\n");
             writer.close();
         }
         catch (IOException exc) {

@@ -14,7 +14,8 @@ public class PrintStmt implements IStmt {
     public ProgramState execute(ProgramState state) throws ExpressionException {
       var res = expr.evaluate(state.getSymTable(), state.getHeap());
       state.getOut().add(res);
-      return state;
+      
+      return null;
   }
 
     @Override

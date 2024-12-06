@@ -44,7 +44,7 @@ public class VarDeclStmt implements IStmt {
             state.getSymTable().insert(this.name, createRef(((RefType)this.varType)).defaultValue());    
         }
 
-        return state;
+        return null;
     }
 
     @Override

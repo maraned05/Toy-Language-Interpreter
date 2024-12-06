@@ -48,7 +48,7 @@ public class CloseRFileStmt implements IStmt {
             throw new StatementException("File name doesn't exist in the table!\n");
         }
 
-        return state;
+        return null;
     }
 
     public IStmt deepCopy() {

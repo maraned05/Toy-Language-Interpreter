@@ -5,8 +5,7 @@ import java.util.List;
 
 public interface IRepository {
     void add(ProgramState state);
-    ProgramState getCurrent();
-    void logPrgStateExec() throws RepoException;
+    void logPrgStateExec(ProgramState state) throws RepoException;
     List<ProgramState> getPrgList();
     void setPrgList(List<ProgramState> l);
 }

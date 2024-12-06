@@ -28,7 +28,7 @@ public class WhileStmt implements IStmt{
             
         }
 
-        return state;
+        return null;
     }
 
     @Override

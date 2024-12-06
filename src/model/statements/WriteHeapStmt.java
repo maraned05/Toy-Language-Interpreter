@@ -36,7 +36,7 @@ public class WriteHeapStmt implements IStmt {
 
         state.getHeap().set(((RefValue)varValue).getAddress(), expValue);
 
-        return state;
+        return null;
     }
     
     @Override

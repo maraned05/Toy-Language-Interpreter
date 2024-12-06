@@ -10,4 +10,5 @@ public interface IMyMap<K, V> {
     void remove(K key) throws KeyNotFoundException;
     void setContent(Map<K, V> r);
     Map<K, V> getContent();
+    IMyMap<K, V> deepCopy();
 }

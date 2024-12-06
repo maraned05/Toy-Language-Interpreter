@@ -36,7 +36,7 @@ public class HeapAllocStmt implements IStmt {
         int newAddr = state.getHeap().allocate(res);
         state.getSymTable().insert(varName, new RefValue(newAddr, res.getType()));
         
-        return state;
+        return null;
     }
 
     @Override

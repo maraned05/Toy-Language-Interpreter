@@ -1,0 +1,96 @@
+Program id: 2
+Execution Stack: ( Ref(Int) v; ( new(v, 20); ( Ref(Ref(Int)) a; ( new(a, v); ( fork(( new(v, 30); new(a, v) )); new(v, 50) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Program id: 2
+Execution Stack: Ref(Int) v, ( new(v, 20); ( Ref(Ref(Int)) a; ( new(a, v); ( fork(( new(v, 30); new(a, v) )); new(v, 50) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Program id: 2
+Execution Stack: ( new(v, 20); ( Ref(Ref(Int)) a; ( new(a, v); ( fork(( new(v, 30); new(a, v) )); new(v, 50) ) ) ) )
+Symbols Table: v -> (0, Int), 
+Out: 
+Heap: 
+
+Program id: 2
+Execution Stack: new(v, 20), ( Ref(Ref(Int)) a; ( new(a, v); ( fork(( new(v, 30); new(a, v) )); new(v, 50) ) ) )
+Symbols Table: v -> (0, Int), 
+Out: 
+Heap: 
+
+Program id: 2
+Execution Stack: ( Ref(Ref(Int)) a; ( new(a, v); ( fork(( new(v, 30); new(a, v) )); new(v, 50) ) ) )
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Program id: 2
+Execution Stack: Ref(Ref(Int)) a, ( new(a, v); ( fork(( new(v, 30); new(a, v) )); new(v, 50) ) )
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Program id: 2
+Execution Stack: ( new(a, v); ( fork(( new(v, 30); new(a, v) )); new(v, 50) ) )
+Symbols Table: a -> (0, Ref(Int)), v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Program id: 2
+Execution Stack: new(a, v), ( fork(( new(v, 30); new(a, v) )); new(v, 50) )
+Symbols Table: a -> (0, Ref(Int)), v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Program id: 2
+Execution Stack: ( fork(( new(v, 30); new(a, v) )); new(v, 50) )
+Symbols Table: a -> (2, Ref(Int)), v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> (1, Int), 
+
+Program id: 2
+Execution Stack: fork(( new(v, 30); new(a, v) )), new(v, 50)
+Symbols Table: a -> (2, Ref(Int)), v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> (1, Int), 
+
+Program id: 2
+Execution Stack: new(v, 50)
+Symbols Table: a -> (2, Ref(Int)), v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> (1, Int), 
+
+Program id: 3
+Execution Stack: ( new(v, 30); new(a, v) )
+Symbols Table: a -> (2, Ref(Int)), v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> (1, Int), 
+
+Program id: 2
+Execution Stack: 
+Symbols Table: a -> (2, Ref(Int)), v -> (3, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> (1, Int), 3 -> 50, 
+
+Program id: 3
+Execution Stack: new(v, 30), new(a, v)
+Symbols Table: a -> (2, Ref(Int)), v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> (1, Int), 3 -> 50, 
+
+Program id: 3
+Execution Stack: new(a, v)
+Symbols Table: a -> (2, Ref(Int)), v -> (4, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> (1, Int), 4 -> 30, 
+
+Program id: 3
+Execution Stack: 
+Symbols Table: a -> (5, Ref(Int)), v -> (4, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> (1, Int), 4 -> 30, 5 -> (4, Int), 
+

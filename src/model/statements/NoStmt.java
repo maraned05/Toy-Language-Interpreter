@@ -8,7 +8,7 @@ public class NoStmt implements IStmt{
     }
 
     public ProgramState execute (ProgramState state) {
-        return state;
+        return null;
     }
 
     @Override

@@ -37,7 +37,7 @@ public class OpenRFileStmt implements IStmt {
             throw new StatementException("I/O Exception!\n");
         }
 
-        return state;
+        return null;
     }
 
     public IStmt deepCopy() {
