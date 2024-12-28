@@ -15,7 +15,6 @@ import model.expressions.ReadHeapExpression;
 import model.expressions.ValueExpression;
 import model.expressions.VariableExpression;
 import model.state.ProgramState;
-import model.statements.AssignStmt;
 // import model.statements.CloseRFileStmt;
 import model.statements.CompStmt;
 import model.statements.ForkStmt;
@@ -27,11 +26,10 @@ import model.statements.IStmt;
 import model.statements.PrintStmt;
 // import model.statements.ReadFileStmt;
 import model.statements.VarDeclStmt;
+import model.statements.WhileStmt;
 // import model.statements.WhileStmt;
-import model.statements.WriteHeapStmt;
 // import model.types.BoolType;
 import model.types.IntType;
-import model.types.RefType;
 // import model.types.StringType;
 // import model.values.BoolValue;
 import model.values.IValue;
@@ -214,38 +212,85 @@ public class App {
         */
 
 
-        IStmt statement12 = new CompStmt(new VarDeclStmt("v", new IntType()), 
-        new CompStmt(new VarDeclStmt("a", new RefType(new IntType())), 
-        new CompStmt(new AssignStmt("v", new ValueExpression(new IntValue(10))), 
-        new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(22)), "a"),
-        new CompStmt(new ForkStmt(new CompStmt(new WriteHeapStmt(new ValueExpression(new IntValue(30)), "a"), 
-        new CompStmt(new AssignStmt("v", new ValueExpression(new IntValue(32))), 
-        new CompStmt(new PrintStmt(new VariableExpression("v")), new PrintStmt(new ReadHeapExpression(new VariableExpression("a"))))))), 
-        new CompStmt(new PrintStmt(new VariableExpression("v")), 
-        new PrintStmt(new ReadHeapExpression(new VariableExpression("a")))))))));
+        // IStmt statement12 = new CompStmt(new VarDeclStmt("v", new IntType()), 
+        // new CompStmt(new VarDeclStmt("a", new RefType(new IntType())), 
+        // new CompStmt(new AssignStmt("v", new ValueExpression(new IntValue(10))), 
+        // new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(22)), "a"),
+        // new CompStmt(new ForkStmt(new CompStmt(new WriteHeapStmt(new ValueExpression(new IntValue(30)), "a"), 
+        // new CompStmt(new AssignStmt("v", new ValueExpression(new IntValue(32))), 
+        // new CompStmt(new PrintStmt(new VariableExpression("v")), new PrintStmt(new ReadHeapExpression(new VariableExpression("a"))))))), 
+        // new CompStmt(new PrintStmt(new VariableExpression("v")), 
+        // new PrintStmt(new ReadHeapExpression(new VariableExpression("a")))))))));
 
-        ProgramState state12 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        new MyList<IValue>(), statement12, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
+        // ProgramState state12 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
+        // new MyList<IValue>(), statement12, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
 
-        Repository repo12 = new Repository("log12.txt");
-        repo12.add(state12);
-        Controller ctr12 = new Controller(repo12, true);
+        // Repository repo12 = new Repository("log12.txt");
+        // repo12.add(state12);
+        // Controller ctr12 = new Controller(repo12, true);
 
 
-        IStmt statement13 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())), 
+        // IStmt statement13 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())), 
+        // new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(20)), "v"), 
+        // new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType()))), 
+        // new CompStmt(new HeapAllocStmt(new VariableExpression("v"), "a"), 
+        // new CompStmt(new ForkStmt(new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(30)), "v"), 
+        // new HeapAllocStmt(new VariableExpression("v"), "a"))), 
+        // new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(50)), "v"), 
+        // new CompStmt(new HeapAllocStmt(new VariableExpression("v"), "a"), 
+        // new PrintStmt(new ReadHeapExpression(new VariableExpression("v"))))))))));
+
+        // IStmt statement13 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())),
+        // new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(20)), "v"), 
+        // new CompStmt(new ForkStmt(new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(30)), "v"), 
+        // new ForkStmt(new HeapAllocStmt(new ValueExpression(new IntValue(40)), "v")))), 
+        // new PrintStmt(new ReadHeapExpression(new VariableExpression("v"))))));
+
+        // ProgramState state13 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
+        // new MyList<IValue>(), statement13, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
+
+        // Repository repo13 = new Repository("log13.txt");
+        // repo13.add(state13);
+        // Controller ctr13 = new Controller(repo13, true);
+
+
+        // IStmt statement14 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())), 
+        // new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(20)), "v"), 
+        // new CompStmt(new ForkStmt(new CompStmt(new WriteHeapStmt(new ValueExpression(new IntValue(30)), "v"), 
+        // new HeapAllocStmt(new ValueExpression(new IntValue(50)), "v"))), 
+        // new CompStmt(new ForkStmt(new WriteHeapStmt(new ValueExpression(new IntValue(40)), "v")), 
+        // new PrintStmt(new ReadHeapExpression(new VariableExpression("v")))))));
+
+        // ProgramState state14 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
+        // new MyList<IValue>(), statement14, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
+
+        // Repository repo14 = new Repository("log14.txt");
+        // repo14.add(state14);
+        //Controller ctr14 = new Controller(repo14, true);
+
+
+        IStmt badstatement = new CompStmt(new VarDeclStmt("v", new IntType()),
         new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(20)), "v"), 
-        new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType()))), 
-        new CompStmt(new HeapAllocStmt(new VariableExpression("v"), "a"), 
         new CompStmt(new ForkStmt(new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(30)), "v"), 
-        new HeapAllocStmt(new VariableExpression("v"), "a"))), 
-        new HeapAllocStmt(new ValueExpression(new IntValue(50)), "v"))))));
+        new ForkStmt(new HeapAllocStmt(new ValueExpression(new IntValue(40)), "v")))), 
+        new PrintStmt(new ReadHeapExpression(new VariableExpression("v"))))));
 
-        ProgramState state13 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        new MyList<IValue>(), statement13, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
+        ProgramState stateb = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
+        new MyList<IValue>(), badstatement, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
 
-        Repository repo13 = new Repository("log13.txt");
-        repo13.add(state13);
-        Controller ctr13 = new Controller(repo13, true);
+        Repository repob = new Repository("log.txt");
+        repob.add(stateb);
+        Controller ctrb = new Controller(repob, true);
+
+        IStmt badstatement1 = new CompStmt(new VarDeclStmt("v", new IntType()),
+        new WhileStmt(new ValueExpression(new IntValue(5)), new PrintStmt(new VariableExpression("v"))));
+
+        ProgramState stateb1 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
+        new MyList<IValue>(), badstatement1, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
+
+        Repository repob1 = new Repository("log.txt");
+        repob1.add(stateb1);
+        Controller ctrb1 = new Controller(repob1, true);
 
         TextMenu menu = new TextMenu();
         /* 
@@ -262,8 +307,11 @@ public class App {
         menu.addCommand(new RunExampleCommand("10", statement10.toString(), ctr10)); 
         menu.addCommand(new RunExampleCommand("11", statement11.toString(), ctr11));
         */
-        menu.addCommand(new RunExampleCommand("12", statement12.toString(), ctr12));
-        menu.addCommand(new RunExampleCommand("13", statement13.toString(), ctr13));
+        // menu.addCommand(new RunExampleCommand("12", statement12.toString(), ctr12));
+        // menu.addCommand(new RunExampleCommand("13", statement13.toString(), ctr13));
+        // menu.addCommand(new RunExampleCommand("14", statement14.toString(), ctr14));
+        menu.addCommand(new RunExampleCommand("1", badstatement.toString(), ctrb));
+        menu.addCommand(new RunExampleCommand("2", badstatement1.toString(), ctrb1));
         menu.show();
     }
 }

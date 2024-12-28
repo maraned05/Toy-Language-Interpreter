@@ -4,6 +4,7 @@ import exceptions.ExpressionException;
 import exceptions.KeyNotFoundException;
 import model.adt.IMyHeap;
 import model.adt.IMyMap;
+import model.types.IType;
 import model.values.IValue;
 
 public class VariableExpression implements IExpression{
@@ -20,6 +21,10 @@ public class VariableExpression implements IExpression{
         catch (KeyNotFoundException e) {
             throw new ExpressionException("Invalid variable!");
         }
+    }
+
+    public IType typeCheck(IMyMap<String, IType> typeEnv) throws KeyNotFoundException {
+        return typeEnv.get(variable);
     }
 
     public IExpression deepCopy() {

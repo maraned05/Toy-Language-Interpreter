@@ -5,7 +5,10 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.List;
 import exceptions.RepoException;
+import model.adt.IMyMap;
+import model.adt.MyMap;
 import model.state.ProgramState;
+import model.types.IType;
 import model.types.RefType;
 import model.values.IValue;
 import model.values.RefValue;
@@ -21,6 +24,14 @@ public class Controller implements IController{
     public Controller(Repository r, boolean flag) {
         this.repo = r;
         this.displayFlag = flag;
+    }
+
+    public void runTypeChecker(List<ProgramState> prgList) throws Exception {
+        for (ProgramState state : prgList) {
+            IMyMap<String, IType> typeEnv = new MyMap<>();
+            if (!state.getExeStack().isEmpty())
+                state.getExeStack().peek().typeCheck(typeEnv);
+        }
     }
 
     public Map<Integer, IValue> GarbageCollector(List<Integer> symTblAddr, Map<Integer, IValue> heap) {
@@ -49,7 +60,9 @@ public class Controller implements IController{
         return inPrgList.stream().filter(p -> p.isNotCompleted()).collect(Collectors.toList());
     }
 
-    public void oneStepForAllPrg(List<ProgramState> states) throws RepoException, InterruptedException {
+    public void oneStepForAllPrg(List<ProgramState> states) throws Exception, RepoException, InterruptedException {
+        runTypeChecker(states);
+
         List<Callable<ProgramState>> callList = states.stream().map((ProgramState s) -> (Callable<ProgramState>) (() -> {return s.oneStep(); })).collect(Collectors.toList());
         List<ProgramState> newPrgList = this.executor.invokeAll(callList).stream().map(future -> {
             try {
@@ -71,20 +84,28 @@ public class Controller implements IController{
         this.repo.setPrgList(states);
     }
 
-    public void allStep() throws RepoException, InterruptedException {
+    public void allStep() throws Exception, RepoException, InterruptedException {
         this.executor = Executors.newFixedThreadPool(2);
         List<ProgramState> prgList = removeCompletedPrg(this.repo.getPrgList());
 
         if (this.displayFlag) {
-            for (ProgramState state : prgList) {
+            for (ProgramState state : prgList)
                 this.repo.logPrgStateExec(state);
-            }
         }
 
         while (prgList.size() > 0) {
+            List<Integer> symbTables = new ArrayList<Integer>();
             for (ProgramState state : prgList) {
-                state.getHeap().setContent(GarbageCollector(getAddrFromSymTable(state.getSymTable().getContent().values(), state.getHeap().getContent()), state.getHeap().getContent()));  
+                List<Integer> list = getAddrFromSymTable(state.getSymTable().getContent().values(), state.getHeap().getContent());
+                for (Integer elem : list) {
+                    if (! symbTables.contains(elem))
+                        symbTables.add(elem);
+                }
             }
+
+            for (ProgramState state : prgList) 
+                state.getHeap().setContent(GarbageCollector(symbTables, state.getHeap().getContent()));  
+            
             oneStepForAllPrg(prgList);
             prgList = removeCompletedPrg(this.repo.getPrgList());
         }

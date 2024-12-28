@@ -64,7 +64,7 @@ Symbols Table: a -> (1, Int), v -> 10,
 Out: 
 Heap: 1 -> 22, 
 
-Program id: 2
+Program id: 4
 Execution Stack: ( wH(a, 30); ( v = 32; ( print(v); print(rH(a)) ) ) )
 Symbols Table: a -> (1, Int), v -> 10, 
 Out: 
@@ -76,7 +76,7 @@ Symbols Table: a -> (1, Int), v -> 10,
 Out: 
 Heap: 1 -> 22, 
 
-Program id: 2
+Program id: 4
 Execution Stack: wH(a, 30), ( v = 32; ( print(v); print(rH(a)) ) )
 Symbols Table: a -> (1, Int), v -> 10, 
 Out: 
@@ -88,7 +88,7 @@ Symbols Table: a -> (1, Int), v -> 10,
 Out: 10 
 Heap: 1 -> 30, 
 
-Program id: 2
+Program id: 4
 Execution Stack: ( v = 32; ( print(v); print(rH(a)) ) )
 Symbols Table: a -> (1, Int), v -> 10, 
 Out: 10 
@@ -100,31 +100,31 @@ Symbols Table: a -> (1, Int), v -> 10,
 Out: 10 30 
 Heap: 1 -> 30, 
 
-Program id: 2
+Program id: 4
 Execution Stack: v = 32, ( print(v); print(rH(a)) )
 Symbols Table: a -> (1, Int), v -> 10, 
 Out: 10 30 
 Heap: 1 -> 30, 
 
-Program id: 2
+Program id: 4
 Execution Stack: ( print(v); print(rH(a)) )
 Symbols Table: a -> (1, Int), v -> 32, 
 Out: 10 30 
 Heap: 1 -> 30, 
 
-Program id: 2
+Program id: 4
 Execution Stack: print(v), print(rH(a))
 Symbols Table: a -> (1, Int), v -> 32, 
 Out: 10 30 
 Heap: 1 -> 30, 
 
-Program id: 2
+Program id: 4
 Execution Stack: print(rH(a))
 Symbols Table: a -> (1, Int), v -> 32, 
 Out: 10 30 32 
 Heap: 1 -> 30, 
 
-Program id: 2
+Program id: 4
 Execution Stack: 
 Symbols Table: a -> (1, Int), v -> 32, 
 Out: 10 30 32 30 

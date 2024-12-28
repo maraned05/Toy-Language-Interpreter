@@ -1,8 +1,12 @@
 package model.statements;
 
 import exceptions.ExpressionException;
+import exceptions.KeyNotFoundException;
+import exceptions.StatementException;
+import model.adt.IMyMap;
 import model.expressions.IExpression;
 import model.state.ProgramState;
+import model.types.IType;
 
 public class PrintStmt implements IStmt {
     private IExpression expr;
@@ -16,8 +20,13 @@ public class PrintStmt implements IStmt {
       state.getOut().add(res);
       
       return null;
-  }
+    }
 
+    public IMyMap<String, IType> typeCheck (IMyMap<String, IType> typeEnv) throws KeyNotFoundException, ExpressionException, StatementException {
+        this.expr.typeCheck(typeEnv);
+        return typeEnv;
+    }
+ 
     @Override
     public String toString() {
       return  "print("+expr.toString()+")";

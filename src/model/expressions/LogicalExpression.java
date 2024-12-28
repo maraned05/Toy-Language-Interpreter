@@ -1,9 +1,11 @@
 package model.expressions;
 
 import exceptions.ExpressionException;
+import exceptions.KeyNotFoundException;
 import model.adt.IMyHeap;
 import model.adt.IMyMap;
 import model.types.BoolType;
+import model.types.IType;
 import model.values.BoolValue;
 import model.values.IValue;
 
@@ -31,6 +33,19 @@ public class LogicalExpression implements IExpression {
             return new BoolValue(((BoolValue) leftExpression).getValue() || ((BoolValue) rightExpression).getValue());
         }
 
+    }
+
+    public IType typeCheck(IMyMap<String, IType> typeEnv) throws KeyNotFoundException, ExpressionException {
+        IType type1, type2;
+        type1 = this.expression1.typeCheck(typeEnv);
+        type2 = this.expression2.typeCheck(typeEnv);
+        if (type1.equals(new BoolType())) {
+            if (type2.equals(new BoolType()))
+                return new BoolType();
+
+            else throw new ExpressionException("Second expression is not of boolean type!");
+        }
+        else throw new ExpressionException("First expression is not of boolean type!");
     }
 
     public IExpression deepCopy() {

@@ -1,10 +1,13 @@
 package model.statements;
 
+import model.adt.IMyMap;
 import model.expressions.IExpression;
 import model.state.ProgramState;
 import model.types.BoolType;
+import model.types.IType;
 import model.values.*;
 import exceptions.ExpressionException;
+import exceptions.KeyNotFoundException;
 import exceptions.StatementException;
 
 public class IfStmt implements IStmt{
@@ -16,6 +19,16 @@ public class IfStmt implements IStmt{
         this.exp = e;
         this.thenS = t;
         this.elseS = el;
+    }
+
+    public IMyMap<String, IType> typeCheck (IMyMap<String, IType> typeEnv) throws KeyNotFoundException, ExpressionException, StatementException {
+        IType type = this.exp.typeCheck(typeEnv);
+        if (type.equals(new BoolType())) {
+            this.thenS.typeCheck(typeEnv.deepCopy());
+            this.elseS.typeCheck(typeEnv.deepCopy());
+            return typeEnv;
+        }
+        else throw new ExpressionException("The IF condition is not of type bool.");
     }
 
     @Override

@@ -6,8 +6,10 @@ import java.io.IOException;
 import exceptions.ExpressionException;
 import exceptions.KeyNotFoundException;
 import exceptions.StatementException;
+import model.adt.IMyMap;
 import model.expressions.IExpression;
 import model.state.ProgramState;
+import model.types.IType;
 import model.types.StringType;
 import model.values.IValue;
 import model.values.StringValue;
@@ -22,7 +24,7 @@ public class CloseRFileStmt implements IStmt {
     public ProgramState execute (ProgramState state) throws StatementException, ExpressionException {
         IValue val = this.exp.evaluate(state.getSymTable(), state.getHeap());
         if (! val.getType().equals(new StringType())) 
-            throw new StatementException("Value read is not a string!\n");
+            throw new StatementException("The read value is not a string!\n");
 
         StringValue valString = (StringValue) val;
         var fileTable = state.getFileTable();
@@ -49,6 +51,14 @@ public class CloseRFileStmt implements IStmt {
         }
 
         return null;
+    }
+
+    public IMyMap<String, IType> typeCheck (IMyMap<String, IType> typeEnv) throws KeyNotFoundException, ExpressionException, StatementException {
+        IType type = this.exp.typeCheck(typeEnv);
+        if (type.equals(new StringType()))
+            return typeEnv;
+
+        else throw new StatementException("The read value is not a string.");
     }
 
     public IStmt deepCopy() {

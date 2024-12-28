@@ -1,8 +1,10 @@
 package model.expressions;
 
 import exceptions.ExpressionException;
+import exceptions.KeyNotFoundException;
 import model.adt.IMyHeap;
 import model.adt.IMyMap;
+import model.types.IType;
 import model.types.IntType;
 import model.values.IValue;
 import model.values.IntValue;
@@ -51,6 +53,19 @@ public class ArithmeticExpression implements IExpression {
             default:
                 return null;
         }
+    }
+
+    public IType typeCheck(IMyMap<String, IType> typeEnv) throws KeyNotFoundException, ExpressionException {
+        IType type1, type2;
+        type1 = this.exp1.typeCheck(typeEnv);
+        type2 = this.exp2.typeCheck(typeEnv);
+        
+        if (type1.equals(new IntType())) {
+            if (type2.equals(new IntType()))
+                return new IntType();
+            else throw new ExpressionException("Second operand is not an integer!");
+        } 
+        else throw new ExpressionException("First operand is not an integer!");
     }
 
     public IExpression deepCopy() {

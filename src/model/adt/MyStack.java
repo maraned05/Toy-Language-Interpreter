@@ -17,6 +17,13 @@ public class MyStack<T> implements IMyStack<T> {
         return stack.pop();
     }
 
+    public T peek() throws EmptyStackException {
+        if (this.stack.isEmpty())
+            throw new EmptyStackException("The stack is empty!");
+
+        return this.stack.peek();
+    }
+
     public void push(T elem) {
         this.stack.push(elem);
     }

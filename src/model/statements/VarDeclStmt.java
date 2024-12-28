@@ -1,6 +1,9 @@
 package model.statements;
 
+import exceptions.ExpressionException;
+import exceptions.KeyNotFoundException;
 import exceptions.StatementException;
+import model.adt.IMyMap;
 import model.state.ProgramState;
 import model.types.BoolType;
 import model.types.IType;
@@ -45,6 +48,11 @@ public class VarDeclStmt implements IStmt {
         }
 
         return null;
+    }
+
+    public IMyMap<String, IType> typeCheck (IMyMap<String, IType> typeEnv) throws KeyNotFoundException, ExpressionException, StatementException {
+        typeEnv.insert(this.name, this.varType);
+        return typeEnv;
     }
 
     @Override

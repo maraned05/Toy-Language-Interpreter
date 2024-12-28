@@ -4,6 +4,8 @@ import exceptions.ExpressionException;
 import exceptions.KeyNotFoundException;
 import model.adt.IMyHeap;
 import model.adt.IMyMap;
+import model.types.IType;
+import model.types.RefType;
 import model.values.IValue;
 import model.values.RefValue;
 
@@ -25,6 +27,14 @@ public class ReadHeapExpression implements IExpression{
         catch (KeyNotFoundException e) {
             throw new ExpressionException("Invalid variable.");
         }
+    }
+
+    public IType typeCheck (IMyMap<String, IType> typeEnv) throws KeyNotFoundException, ExpressionException {
+        IType type = this.exp.typeCheck(typeEnv);
+        if (type instanceof RefType) {
+            return ((RefType) type).getInnerType();
+        }
+        else throw new ExpressionException("The expression isn't of reference type!");
     }
 
     @Override

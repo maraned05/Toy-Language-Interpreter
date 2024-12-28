@@ -1,0 +1,114 @@
+Program id: 3
+Execution Stack: ( Ref(Int) v; ( new(v, 20); ( fork(( wH(v, 30); new(v, 50) )); ( fork(wH(v, 40)); print(rH(v)) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Program id: 3
+Execution Stack: Ref(Int) v, ( new(v, 20); ( fork(( wH(v, 30); new(v, 50) )); ( fork(wH(v, 40)); print(rH(v)) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Program id: 3
+Execution Stack: ( new(v, 20); ( fork(( wH(v, 30); new(v, 50) )); ( fork(wH(v, 40)); print(rH(v)) ) ) )
+Symbols Table: v -> (0, Int), 
+Out: 
+Heap: 
+
+Program id: 3
+Execution Stack: new(v, 20), ( fork(( wH(v, 30); new(v, 50) )); ( fork(wH(v, 40)); print(rH(v)) ) )
+Symbols Table: v -> (0, Int), 
+Out: 
+Heap: 
+
+Program id: 3
+Execution Stack: ( fork(( wH(v, 30); new(v, 50) )); ( fork(wH(v, 40)); print(rH(v)) ) )
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Program id: 3
+Execution Stack: fork(( wH(v, 30); new(v, 50) )), ( fork(wH(v, 40)); print(rH(v)) )
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Program id: 3
+Execution Stack: ( fork(wH(v, 40)); print(rH(v)) )
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Program id: 4
+Execution Stack: ( wH(v, 30); new(v, 50) )
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Program id: 3
+Execution Stack: fork(wH(v, 40)), print(rH(v))
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Program id: 4
+Execution Stack: wH(v, 30), new(v, 50)
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+
+Program id: 3
+Execution Stack: print(rH(v))
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 30, 
+
+Program id: 4
+Execution Stack: new(v, 50)
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 30, 
+
+Program id: 5
+Execution Stack: wH(v, 40)
+Symbols Table: v -> (1, Int), 
+Out: 
+Heap: 1 -> 30, 
+
+Program id: 3
+Execution Stack: 
+Symbols Table: v -> (1, Int), 
+Out: 30 
+Heap: 1 -> 40, 2 -> 50, 
+
+Program id: 4
+Execution Stack: 
+Symbols Table: v -> (2, Int), 
+Out: 30 
+Heap: 1 -> 40, 2 -> 50, 
+
+Program id: 5
+Execution Stack: 
+Symbols Table: v -> (1, Int), 
+Out: 30 
+Heap: 1 -> 40, 2 -> 50, 
+
+Program id: 3
+Execution Stack: ( Ref(Int) v; ( new(v, 20); ( fork(( wH(v, 30); new(v, 50) )); ( fork(wH(v, 40)); print(rH(v)) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Program id: 3
+Execution Stack: Ref(Int) v, ( new(v, 20); ( fork(( wH(v, 30); new(v, 50) )); ( fork(wH(v, 40)); print(rH(v)) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Program id: 3
+Execution Stack: ( new(v, 20); ( fork(( wH(v, 30); new(v, 50) )); ( fork(wH(v, 40)); print(rH(v)) ) ) )
+Symbols Table: v -> (0, Int), 
+Out: 
+Heap: 
+

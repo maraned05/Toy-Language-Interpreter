@@ -6,8 +6,10 @@ import java.io.IOException;
 import exceptions.ExpressionException;
 import exceptions.KeyNotFoundException;
 import exceptions.StatementException;
+import model.adt.IMyMap;
 import model.expressions.IExpression;
 import model.state.ProgramState;
+import model.types.IType;
 import model.types.IntType;
 import model.types.StringType;
 import model.values.*;
@@ -35,7 +37,7 @@ public class ReadFileStmt implements IStmt{
 
         IValue res = exp.evaluate(state.getSymTable(), state.getHeap());
         if (! res.getType().equals(new StringType())) {
-            throw new StatementException("Value read is not a string!\n");
+            throw new StatementException("The read value is not a string!\n");
         }
 
         BufferedReader r;
@@ -60,6 +62,18 @@ public class ReadFileStmt implements IStmt{
         }
 
         return null;
+    }
+
+    public IMyMap<String, IType> typeCheck (IMyMap<String, IType> typeEnv) throws KeyNotFoundException, ExpressionException, StatementException {
+        IType typeVar = typeEnv.get(this.varName);
+        IType typeExp = this.exp.typeCheck(typeEnv);
+        if (typeVar.equals(new IntType())) {
+            if (typeExp.equals(new StringType()))
+                return typeEnv;
+
+            else throw new StatementException("The read value is not a string!\n");
+        } 
+        else throw new StatementException("Variable is not of type INT!\n");
     }
 
     public IStmt deepCopy() {
