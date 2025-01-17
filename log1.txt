@@ -1,72 +1,72 @@
-Program id: 1
 Execution Stack: ( Int v; ( v = 2; print(v) ) )
 Symbols Table: 
 Out: 
-Heap: 
 
-Program id: 1
 Execution Stack: Int v, ( v = 2; print(v) )
 Symbols Table: 
 Out: 
-Heap: 
 
-Program id: 1
 Execution Stack: ( v = 2; print(v) )
 Symbols Table: v -> 0, 
 Out: 
-Heap: 
 
-Program id: 1
 Execution Stack: v = 2, print(v)
 Symbols Table: v -> 0, 
 Out: 
-Heap: 
 
-Program id: 1
 Execution Stack: print(v)
 Symbols Table: v -> 2, 
 Out: 
-Heap: 
 
-Program id: 1
 Execution Stack: 
 Symbols Table: v -> 2, 
 Out: 2 
-Heap: 
 
-Program id: 1
 Execution Stack: ( Int v; ( v = 2; print(v) ) )
 Symbols Table: 
 Out: 
-Heap: 
 
-Program id: 1
 Execution Stack: Int v, ( v = 2; print(v) )
 Symbols Table: 
 Out: 
-Heap: 
 
-Program id: 1
 Execution Stack: ( v = 2; print(v) )
 Symbols Table: v -> 0, 
 Out: 
-Heap: 
 
-Program id: 1
 Execution Stack: v = 2, print(v)
 Symbols Table: v -> 0, 
 Out: 
-Heap: 
 
-Program id: 1
 Execution Stack: print(v)
 Symbols Table: v -> 2, 
 Out: 
-Heap: 
 
-Program id: 1
 Execution Stack: 
 Symbols Table: v -> 2, 
 Out: 2 
-Heap: 
+
+Execution Stack: ( Int v; ( v = 2; print(v) ) )
+Symbols Table: 
+Out: 
+
+Execution Stack: Int v, ( v = 2; print(v) )
+Symbols Table: 
+Out: 
+
+Execution Stack: ( v = 2; print(v) )
+Symbols Table: v -> 0, 
+Out: 
+
+Execution Stack: v = 2, print(v)
+Symbols Table: v -> 0, 
+Out: 
+
+Execution Stack: print(v)
+Symbols Table: v -> 2, 
+Out: 
+
+Execution Stack: 
+Symbols Table: v -> 2, 
+Out: 2 
 

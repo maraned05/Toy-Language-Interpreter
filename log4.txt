@@ -1,126 +1,72 @@
-Program id: 2
-Execution Stack: ( String varf; ( varf = test.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) ) )
+Execution Stack: ( String varf; ( varf = test.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) ) ) 
 Symbols Table: 
 Out: 
-Heap: 
-File Table: 
 
-Program id: 2
-Execution Stack: String varf, ( varf = test.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) )
+Execution Stack: ( varf = test.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) ) String varf 
 Symbols Table: 
 Out: 
-Heap: 
-File Table: 
 
-Program id: 2
-Execution Stack: ( varf = test.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) )
+Execution Stack: ( varf = test.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) ) 
 Symbols Table: varf -> , 
 Out: 
-Heap: 
-File Table: 
 
-Program id: 2
-Execution Stack: varf = test.in, ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) )
+Execution Stack: ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) varf = test.in 
 Symbols Table: varf -> , 
 Out: 
-Heap: 
-File Table: 
 
-Program id: 2
-Execution Stack: ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) )
+Execution Stack: ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) 
 Symbols Table: varf -> test.in, 
 Out: 
-Heap: 
-File Table: 
 
-Program id: 2
-Execution Stack: openFile(varf), ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) )
+Execution Stack: ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) openFile(varf) 
 Symbols Table: varf -> test.in, 
 Out: 
-Heap: 
-File Table: 
 
-Program id: 2
-Execution Stack: ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) )
+Execution Stack: ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) 
 Symbols Table: varf -> test.in, 
 Out: 
-Heap: 
-File Table: test.in -> java.io.BufferedReader@776ec8df, 
 
-Program id: 2
-Execution Stack: Int varc, ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) )
+Execution Stack: ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) Int varc 
 Symbols Table: varf -> test.in, 
 Out: 
-Heap: 
-File Table: test.in -> java.io.BufferedReader@776ec8df, 
 
-Program id: 2
-Execution Stack: ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) )
+Execution Stack: ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) 
 Symbols Table: varf -> test.in, varc -> 0, 
 Out: 
-Heap: 
-File Table: test.in -> java.io.BufferedReader@776ec8df, 
 
-Program id: 2
-Execution Stack: readFile(varf, varc), ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) )
+Execution Stack: ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) readFile(varf, varc) 
 Symbols Table: varf -> test.in, varc -> 0, 
 Out: 
-Heap: 
-File Table: test.in -> java.io.BufferedReader@776ec8df, 
 
-Program id: 2
-Execution Stack: ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) )
+Execution Stack: ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) 
 Symbols Table: varf -> test.in, varc -> 2, 
 Out: 
-Heap: 
-File Table: test.in -> java.io.BufferedReader@776ec8df, 
 
-Program id: 2
-Execution Stack: print(varc), ( readFile(varf, varc); ( print(varc); closeFile(varf) ) )
+Execution Stack: ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) print(varc) 
 Symbols Table: varf -> test.in, varc -> 2, 
 Out: 
-Heap: 
-File Table: test.in -> java.io.BufferedReader@776ec8df, 
 
-Program id: 2
-Execution Stack: ( readFile(varf, varc); ( print(varc); closeFile(varf) ) )
+Execution Stack: ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) 
 Symbols Table: varf -> test.in, varc -> 2, 
 Out: 2 
-Heap: 
-File Table: test.in -> java.io.BufferedReader@776ec8df, 
 
-Program id: 2
-Execution Stack: readFile(varf, varc), ( print(varc); closeFile(varf) )
+Execution Stack: ( print(varc); closeFile(varf) ) readFile(varf, varc) 
 Symbols Table: varf -> test.in, varc -> 2, 
 Out: 2 
-Heap: 
-File Table: test.in -> java.io.BufferedReader@776ec8df, 
 
-Program id: 2
-Execution Stack: ( print(varc); closeFile(varf) )
+Execution Stack: ( print(varc); closeFile(varf) ) 
 Symbols Table: varf -> test.in, varc -> 4, 
 Out: 2 
-Heap: 
-File Table: test.in -> java.io.BufferedReader@776ec8df, 
 
-Program id: 2
-Execution Stack: print(varc), closeFile(varf)
+Execution Stack: closeFile(varf) print(varc) 
 Symbols Table: varf -> test.in, varc -> 4, 
 Out: 2 
-Heap: 
-File Table: test.in -> java.io.BufferedReader@776ec8df, 
 
-Program id: 2
-Execution Stack: closeFile(varf)
+Execution Stack: closeFile(varf) 
 Symbols Table: varf -> test.in, varc -> 4, 
 Out: 2 4 
-Heap: 
-File Table: test.in -> java.io.BufferedReader@776ec8df, 
 
-Program id: 2
 Execution Stack: 
 Symbols Table: varf -> test.in, varc -> 4, 
 Out: 2 4 
-Heap: 
-File Table: 
 

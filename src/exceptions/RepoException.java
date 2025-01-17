@@ -1,4 +1,4 @@
-package lab.example.exceptions;
+package exceptions;
 
 public class RepoException extends Exception{
     public RepoException(String message) {

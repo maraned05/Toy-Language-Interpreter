@@ -1,7 +1,7 @@
-package lab.example.controller;
+package controller;
 
-import lab.example.exceptions.RepoException;
-import lab.example.model.state.ProgramState;
+import exceptions.RepoException;
+import model.state.ProgramState;
 
 public interface IController {
     //public ProgramState oneStep(ProgramState state) throws EmptyStackException, StatementException, ExpressionException;

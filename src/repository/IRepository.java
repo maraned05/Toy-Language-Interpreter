@@ -1,6 +1,6 @@
-package lab.example.repository;
-import lab.example.exceptions.RepoException;
-import lab.example.model.state.ProgramState;
+package repository;
+import exceptions.RepoException;
+import model.state.ProgramState;
 import java.util.List;
 
 public interface IRepository {
@@ -8,5 +8,4 @@ public interface IRepository {
     void logPrgStateExec(ProgramState state) throws RepoException;
     List<ProgramState> getPrgList();
     void setPrgList(List<ProgramState> l);
-    ProgramState getProgramState(int id) throws RepoException;
 }

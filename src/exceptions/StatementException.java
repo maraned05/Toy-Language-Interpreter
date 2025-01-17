@@ -1,4 +1,4 @@
-package lab.example.exceptions;
+package exceptions;
 
 public class StatementException extends Exception {
     public StatementException(String message) {
