@@ -1,19 +1,19 @@
-package controller;
+package lab.example.controller;
 import java.util.stream.Collectors;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Map;
 import java.util.List;
-import exceptions.RepoException;
-import model.adt.IMyMap;
-import model.adt.MyMap;
-import model.state.ProgramState;
-import model.types.IType;
-import model.types.RefType;
-import model.values.IValue;
-import model.values.RefValue;
-import repository.IRepository;
-import repository.Repository;
+import lab.example.exceptions.RepoException;
+import lab.example.model.adt.IMyMap;
+import lab.example.model.adt.MyMap;
+import lab.example.model.state.ProgramState;
+import lab.example.model.types.IType;
+import lab.example.model.types.RefType;
+import lab.example.model.values.IValue;
+import lab.example.model.values.RefValue;
+import lab.example.repository.IRepository;
+import lab.example.repository.Repository;
 import java.util.concurrent.*;   
 
 public class Controller implements IController{
