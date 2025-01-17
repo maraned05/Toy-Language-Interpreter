@@ -1,13 +1,11 @@
 package lab.example;
 
-//helloo
 import javafx.application.Application;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 //import javafx.fxml.FXMLLoader;
 //import javafx.scene.Group;
 //import javafx.scene.Parent;
-//hello
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
