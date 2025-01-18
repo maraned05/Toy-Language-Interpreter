@@ -35,12 +35,13 @@ public class OpenRFileStmt implements IStmt {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(res.getValue()));
             fileTable.insert(res, reader);
+            return null;
         }
         catch (IOException e) {
             throw new StatementException("I/O Exception!\n");
         }
 
-        return null;
+        //return null;
     }
 
     public IMyMap<String, IType> typeCheck (IMyMap<String, IType> typeEnv) throws KeyNotFoundException, ExpressionException, StatementException {
@@ -48,7 +49,7 @@ public class OpenRFileStmt implements IStmt {
         if (type.equals(new StringType()))
             return typeEnv;
 
-        else throw new StatementException("The read value is not a string.");
+        else throw new StatementException("Typechecker Error: The read value is not a string.");
     }
 
     public IStmt deepCopy() {

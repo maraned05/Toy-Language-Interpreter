@@ -58,7 +58,7 @@ public class CloseRFileStmt implements IStmt {
         if (type.equals(new StringType()))
             return typeEnv;
 
-        else throw new StatementException("The read value is not a string.");
+        else throw new StatementException("Typechecker Error: The read value is not a string.");
     }
 
     public IStmt deepCopy() {

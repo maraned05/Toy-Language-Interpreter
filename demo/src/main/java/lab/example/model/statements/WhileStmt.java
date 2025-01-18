@@ -40,7 +40,7 @@ public class WhileStmt implements IStmt{
             this.statement.typeCheck(typeEnv);
             return typeEnv;
         }
-        else throw new ExpressionException("The WHILE condition isn't of bool type.");
+        else throw new ExpressionException("Typechecker Error: The WHILE condition isn't of bool type.");
     }
 
     @Override

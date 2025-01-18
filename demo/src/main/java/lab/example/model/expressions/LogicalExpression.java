@@ -43,9 +43,9 @@ public class LogicalExpression implements IExpression {
             if (type2.equals(new BoolType()))
                 return new BoolType();
 
-            else throw new ExpressionException("Second expression is not of boolean type!");
+            else throw new ExpressionException("Typechecker Error: Second expression is not of boolean type!");
         }
-        else throw new ExpressionException("First expression is not of boolean type!");
+        else throw new ExpressionException("Typechecker Error: First expression is not of boolean type!");
     }
 
     public IExpression deepCopy() {

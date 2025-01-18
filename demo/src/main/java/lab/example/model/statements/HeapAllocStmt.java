@@ -47,7 +47,7 @@ public class HeapAllocStmt implements IStmt {
         if (typeVar.equals(new RefType(typeExp)))
             return typeEnv;
             
-        else throw new StatementException("The RHS and LHS have different types.");
+        else throw new StatementException("Typechecker Error: The RHS and LHS have different types.");
     }
 
     @Override

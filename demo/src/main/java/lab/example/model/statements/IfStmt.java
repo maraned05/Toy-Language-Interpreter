@@ -28,7 +28,7 @@ public class IfStmt implements IStmt{
             this.elseS.typeCheck(typeEnv.deepCopy());
             return typeEnv;
         }
-        else throw new ExpressionException("The IF condition is not of type bool.");
+        else throw new ExpressionException("Typechecker Error: The IF condition is not of type bool.");
     }
 
     @Override

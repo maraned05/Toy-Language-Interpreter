@@ -156,6 +156,7 @@ public class Service implements IService {
                 return future.get();
             }
             catch (Exception e) {
+               System.err.println(e.getMessage()); 
                return null;
             }  
         }).filter(p -> p != null).collect(Collectors.toList());

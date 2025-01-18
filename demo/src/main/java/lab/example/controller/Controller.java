@@ -61,8 +61,6 @@ public class Controller implements IController{
     }
 
     public void oneStepForAllPrg(List<ProgramState> states) throws Exception, RepoException, InterruptedException {
-        runTypeChecker(states);
-
         List<Callable<ProgramState>> callList = states.stream().map((ProgramState s) -> (Callable<ProgramState>) (() -> {return s.oneStep(); })).collect(Collectors.toList());
         List<ProgramState> newPrgList = this.executor.invokeAll(callList).stream().map(future -> {
             try {
@@ -87,6 +85,7 @@ public class Controller implements IController{
     public void allStep() throws Exception, RepoException, InterruptedException {
         this.executor = Executors.newFixedThreadPool(2);
         List<ProgramState> prgList = removeCompletedPrg(this.repo.getPrgList());
+        this.runTypeChecker(prgList);
 
         if (this.displayFlag) {
             for (ProgramState state : prgList)

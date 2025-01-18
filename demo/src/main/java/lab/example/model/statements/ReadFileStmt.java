@@ -71,9 +71,9 @@ public class ReadFileStmt implements IStmt{
             if (typeExp.equals(new StringType()))
                 return typeEnv;
 
-            else throw new StatementException("The read value is not a string!\n");
+            else throw new StatementException("Typechecker Error: The read value is not a string!\n");
         } 
-        else throw new StatementException("Variable is not of type INT!\n");
+        else throw new StatementException("Typechecker Error: Variable is not of type INT!\n");
     }
 
     public IStmt deepCopy() {

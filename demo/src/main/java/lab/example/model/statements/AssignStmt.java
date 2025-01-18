@@ -46,7 +46,7 @@ public class AssignStmt implements IStmt {
         if (typeVar.equals(typeExp)) {
             return typeEnv;
         }
-        else throw new StatementException("RHS and LHS have different types.");
+        else throw new StatementException("Typechecker Error: The RHS and LHS have different types.");
     }
 
     @Override

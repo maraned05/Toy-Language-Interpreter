@@ -63,9 +63,9 @@ public class ArithmeticExpression implements IExpression {
         if (type1.equals(new IntType())) {
             if (type2.equals(new IntType()))
                 return new IntType();
-            else throw new ExpressionException("Second operand is not an integer!");
+            else throw new ExpressionException("Typechecker Error: Second operand is not an integer!");
         } 
-        else throw new ExpressionException("First operand is not an integer!");
+        else throw new ExpressionException("Typechecker Error: First operand is not an integer!");
     }
 
     public IExpression deepCopy() {

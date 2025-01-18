@@ -34,7 +34,7 @@ public class ReadHeapExpression implements IExpression{
         if (type instanceof RefType) {
             return ((RefType) type).getInnerType();
         }
-        else throw new ExpressionException("The expression isn't of reference type!");
+        else throw new ExpressionException("Typechecker Error: The expression isn't of reference type!");
     }
 
     @Override

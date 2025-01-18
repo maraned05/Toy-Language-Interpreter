@@ -46,7 +46,7 @@ public class WriteHeapStmt implements IStmt {
         IType typeExp = this.exp.typeCheck(typeEnv);
         if (typeVar.equals(new RefType(typeExp)))
             return typeEnv;
-        else throw new StatementException("The types don't match.");
+        else throw new StatementException("Typechecker Error: The types don't match.");
     }
     
     @Override

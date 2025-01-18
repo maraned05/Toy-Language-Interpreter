@@ -5,6 +5,7 @@ import lab.example.model.values.IValue;
 import lab.example.model.values.StringValue;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 
 import lab.example.exceptions.EmptyStackException;
 import lab.example.exceptions.ExpressionException;
@@ -64,7 +65,7 @@ public class ProgramState {
         return ! (this.exeStack.isEmpty());
     }
 
-    public ProgramState oneStep() throws EmptyStackException, StatementException, ExpressionException {
+    public ProgramState oneStep() throws EmptyStackException, StatementException, ExpressionException, IOException {
         if (this.exeStack.isEmpty())
             throw new EmptyStackException("The execution stack is empty.");
 

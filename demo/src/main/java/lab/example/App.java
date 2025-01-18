@@ -102,9 +102,7 @@ public class App extends Application {
                     errorWindow.setHeaderText("Type Check failed!");
                     errorWindow.setContentText(e.getMessage());
                     errorWindow.showAndWait();
-                    //System.out.println(e.getMessage());
                 }   
-                //this.mainWindow();
         });
     }
 

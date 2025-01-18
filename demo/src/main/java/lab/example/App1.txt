@@ -1,0 +1,11 @@
+package lab.example;
+
+import lab.example.view.TextMenu;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        TextMenu menu = new TextMenu();
+        menu.populateMenu();
+        menu.show();
+    }
+}

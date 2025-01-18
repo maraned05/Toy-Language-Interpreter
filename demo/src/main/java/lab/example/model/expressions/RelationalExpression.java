@@ -64,9 +64,9 @@ public class RelationalExpression implements IExpression {
             if (type2.equals(new IntType()))
                 return new BoolType();
 
-            else throw new ExpressionException("Second operand is not an integer!");
+            else throw new ExpressionException("Typechecker Error: Second operand is not an integer!");
         }
-        else throw new ExpressionException("First operand is not an integer!");
+        else throw new ExpressionException("Typechecker Error: First operand is not an integer!");
     }
 
     @Override
