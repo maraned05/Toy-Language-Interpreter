@@ -98,11 +98,7 @@ public class App extends Application {
                     this.mainWindow();
                 }
                 catch (Exception e) {
-                    Alert errorWindow = new Alert(AlertType.ERROR);
-                    errorWindow.setTitle("Error");
-                    errorWindow.setHeaderText("Type Check failed!");
-                    errorWindow.setContentText(e.getMessage());
-                    errorWindow.showAndWait();
+                    this.showErrorWindow("Error", "Type Check failed!", e.getMessage());
                 }   
         });
     }
@@ -171,12 +167,17 @@ public class App extends Application {
         this.oneStepButton = new Button("Run One Step");
         this.oneStepButton.setOnAction(event -> {
             try {
+                if (this.service.getNoOfPrgStates() == 0)
+                    throw new Exception("No Program States left!");
+
                 this.service.oneStepForAllPrg();
                 this.populateGeneralInformation();
                 this.populateSpecificInformation();
             }
             catch (Exception e) {
-                System.out.println(e.getMessage());
+                this.showErrorWindow("Error", "Exception thrown!", e.getMessage());
+                mainWindow.close();
+                this.service.closeService();
             }
         });
         rootPane.add(oneStepButton, 3, 2, 2, 1);
@@ -213,6 +214,13 @@ public class App extends Application {
         }
     }
 
+    public void showErrorWindow(String title, String header, String message) {
+        Alert errorWindow = new Alert(AlertType.ERROR);
+        errorWindow.setTitle(title);
+        errorWindow.setHeaderText(header);
+        errorWindow.setContentText(message);
+        errorWindow.showAndWait();
+    }
 
     // static void setRoot(String fxml) throws IOException {
     //     scene.setRoot(loadFXML(fxml));

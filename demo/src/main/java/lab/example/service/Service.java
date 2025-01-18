@@ -92,11 +92,7 @@ public class Service implements IService {
     public void oneStepForAllPrg() throws Exception {
         IRepository repository = this.controller.getRepository();
         repository.setPrgList(this.controller.removeCompletedPrg(repository.getPrgList()));
-        if (this.getNoOfPrgStates() == 0) {
-            this.closeService();
-            return;
-        }
-
+        
         List<ProgramState> states = repository.getPrgList();
         List<Integer> symbTables = new ArrayList<Integer>();
         for (ProgramState state : states) {

@@ -21,6 +21,7 @@ public class RunExampleCommand extends Command {
         }
         catch (Exception e) {
             System.out.println(e.getMessage());
+            this.ctr.closeExecutor();
         }
     }
 }

@@ -40,8 +40,6 @@ public class OpenRFileStmt implements IStmt {
         catch (IOException e) {
             throw new StatementException("I/O Exception!\n");
         }
-
-        //return null;
     }
 
     public IMyMap<String, IType> typeCheck (IMyMap<String, IType> typeEnv) throws KeyNotFoundException, ExpressionException, StatementException {

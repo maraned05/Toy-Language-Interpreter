@@ -1,4 +1,94 @@
 Program id: 3
+Execution Stack: String varf, ( varf = test1.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Program id: 3
+Execution Stack: ( varf = test1.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) )
+Symbols Table: varf -> , 
+Out: 
+Heap: 
+
+Program id: 3
+Execution Stack: varf = test1.in, ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) )
+Symbols Table: varf -> , 
+Out: 
+Heap: 
+
+Program id: 3
+Execution Stack: ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) )
+Symbols Table: varf -> test1.in, 
+Out: 
+Heap: 
+
+Program id: 3
+Execution Stack: openFile(varf), ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) )
+Symbols Table: varf -> test1.in, 
+Out: 
+Heap: 
+
+Program id: 3
+Execution Stack: String varf, ( varf = test1.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Program id: 3
+Execution Stack: ( varf = test1.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) )
+Symbols Table: varf -> , 
+Out: 
+Heap: 
+
+Program id: 3
+Execution Stack: varf = test1.in, ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) )
+Symbols Table: varf -> , 
+Out: 
+Heap: 
+
+Program id: 3
+Execution Stack: ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) )
+Symbols Table: varf -> test1.in, 
+Out: 
+Heap: 
+
+Program id: 3
+Execution Stack: openFile(varf), ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) )
+Symbols Table: varf -> test1.in, 
+Out: 
+Heap: 
+
+Program id: 3
+Execution Stack: String varf, ( varf = test1.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Program id: 3
+Execution Stack: ( varf = test1.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) )
+Symbols Table: varf -> , 
+Out: 
+Heap: 
+
+Program id: 3
+Execution Stack: varf = test1.in, ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) )
+Symbols Table: varf -> , 
+Out: 
+Heap: 
+
+Program id: 3
+Execution Stack: ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) )
+Symbols Table: varf -> test1.in, 
+Out: 
+Heap: 
+
+Program id: 3
+Execution Stack: openFile(varf), ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) )
+Symbols Table: varf -> test1.in, 
+Out: 
+Heap: 
+
+Program id: 3
 Execution Stack: String varf, ( varf = test.in; ( openFile(varf); ( Int varc; ( readFile(varf, varc); ( print(varc); ( readFile(varf, varc); ( print(varc); closeFile(varf) ) ) ) ) ) ) )
 Symbols Table: 
 Out: 

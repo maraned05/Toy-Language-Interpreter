@@ -1,5 +1,7 @@
 package lab.example.controller;
 import java.util.stream.Collectors;
+
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Map;
@@ -80,7 +82,7 @@ public class Controller implements IController{
                 return future.get();
             }
             catch (Exception e) {
-               return null;
+                throw new RuntimeException(e.getMessage());
             }  
         }).filter(p -> p != null).collect(Collectors.toList());
         
@@ -96,8 +98,8 @@ public class Controller implements IController{
     }
 
     public void allStep() throws Exception, RepoException, InterruptedException {
-        this.runTypeChecker();
         this.setExecutor();
+        this.runTypeChecker();
         this.repo.setPrgList(removeCompletedPrg(this.repo.getPrgList()));
         List<ProgramState> prgList = this.repo.getPrgList();
 
@@ -118,6 +120,7 @@ public class Controller implements IController{
 
             for (ProgramState state : prgList) 
                 state.getHeap().setContent(GarbageCollector(symbTables, state.getHeap().getContent()));  
+            
             
             oneStepForAllPrg(prgList);
             prgList = removeCompletedPrg(this.repo.getPrgList());
