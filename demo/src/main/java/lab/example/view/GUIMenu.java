@@ -6,6 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import lab.example.controller.Controller;
+import lab.example.controller.IController;
 import lab.example.model.adt.MyHeap;
 import lab.example.model.adt.MyList;
 import lab.example.model.adt.MyMap;
@@ -41,101 +43,16 @@ import lab.example.model.values.BoolValue;
 import lab.example.model.values.IValue;
 import lab.example.model.values.IntValue;
 import lab.example.model.values.StringValue;
-import lab.example.repository.IRepository;
 import lab.example.repository.Repository;
 
 public class GUIMenu {
-    private Map<String, IRepository> programs;
+    private Map<String, IController> programs;
 
     public GUIMenu() {
-        this.programs = new HashMap<String, IRepository>();
+        this.programs = new HashMap<String, IController>();
     }
 
     public void populateMenu() {
-        // IStmt statement1 = new CompStmt (new VarDeclStmt("v",new IntType()),
-        // new CompStmt (new AssignStmt ("v", new ValueExpression(new IntValue(2))), 
-        // new PrintStmt(new VariableExpression("v"))));
-
-        // ProgramState state1 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        // new MyList<IValue>(), statement1, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
-
-        // Repository repo1 = new Repository("log1.txt");
-        // repo1.add(state1);
-
-
-        // IStmt statement2 = new CompStmt (new VarDeclStmt("a",new IntType()),
-        // new CompStmt (new VarDeclStmt("b",new IntType()),
-        // new CompStmt (new AssignStmt("a", new ArithmeticExpression (new ValueExpression(new IntValue(2)),
-        // new ArithmeticExpression (new ValueExpression(new IntValue(3)), new ValueExpression(new IntValue(5)), ArithmeticOperation.MULTIPLY),
-        // ArithmeticOperation.ADD)), new CompStmt(new AssignStmt("b",new ArithmeticExpression(new VariableExpression("a"), new ValueExpression(new
-        // IntValue(1)), ArithmeticOperation.ADD)), new PrintStmt(new VariableExpression("b")))))
-        // );
-
-        // ProgramState state2 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        // new MyList<IValue>(), statement2, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
-
-        // Repository repo2 = new Repository("log2.txt");
-        // repo2.add(state2);
-
-
-        // IStmt statement3 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())), 
-        // new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(20)), "v"), 
-        // new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType()))), 
-        // new CompStmt(new HeapAllocStmt(new VariableExpression("v"), "a"), 
-        // new CompStmt(new ForkStmt(new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(30)), "v"), 
-        // new HeapAllocStmt(new VariableExpression("v"), "a"))), 
-        // new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(50)), "v"), 
-        // new CompStmt(new HeapAllocStmt(new VariableExpression("v"), "a"), 
-        // new PrintStmt(new ReadHeapExpression(new VariableExpression("v"))))))))));
-
-        // ProgramState state3 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        // new MyList<IValue>(), statement3, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
-
-        // Repository repo3 = new Repository("log3.txt");
-        // repo3.add(state3);
-
-        // IStmt statement4 = new CompStmt(new VarDeclStmt("varf", new StringType()), 
-        // new CompStmt(new AssignStmt("varf", new ValueExpression(new StringValue("test.in"))), 
-        // new CompStmt(new OpenRFileStmt(new VariableExpression("varf")), 
-        // new CompStmt(new VarDeclStmt("varc", new IntType()), 
-        // new CompStmt(new ReadFileStmt(new VariableExpression("varf"), "varc"), 
-        // new CompStmt(new PrintStmt(new VariableExpression("varc")), 
-        // new CompStmt(new ReadFileStmt(new VariableExpression("varf"), "varc"), 
-        // new CompStmt(new PrintStmt(new VariableExpression("varc")), 
-        // new CloseRFileStmt(new VariableExpression("varf"))))))))));
-
-        // ProgramState state4 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        // new MyList<IValue>(), statement4, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
-
-        // Repository repo4 = new Repository("log5.txt");
-        // repo4.add(state4);
-
-        // IStmt badstatement = new CompStmt(new VarDeclStmt("v", new IntType()),
-        // new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(20)), "v"), 
-        // new CompStmt(new ForkStmt(new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(30)), "v"), 
-        // new ForkStmt(new HeapAllocStmt(new ValueExpression(new IntValue(40)), "v")))), 
-        // new PrintStmt(new ReadHeapExpression(new VariableExpression("v"))))));
-
-        // ProgramState stateb = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        // new MyList<IValue>(), badstatement, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
-
-        // Repository repob = new Repository("log4.txt");
-        // repob.add(stateb);
-
-        // IStmt statement10 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())), 
-        // new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(20)), "v"), 
-        // new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType()))),
-        // new CompStmt(new HeapAllocStmt(new VariableExpression("v"), "a"), 
-        // new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(30)), "v"), 
-        // new CompStmt(new HeapAllocStmt(new VariableExpression("v"), "a"), 
-        // new PrintStmt(new ReadHeapExpression(new ReadHeapExpression(new VariableExpression("a"))))))))));
-
-        // ProgramState state10 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        // new MyList<IValue>(), statement10, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
-
-        // Repository repo10 = new Repository("log10.txt");
-        // repo10.add(state10);
-
         IStmt statement2 = new CompStmt (new VarDeclStmt("a",new IntType()),
         new CompStmt (new VarDeclStmt("b",new IntType()),
         new CompStmt (new AssignStmt("a", new ArithmeticExpression (new ValueExpression(new IntValue(2)),
@@ -149,7 +66,7 @@ public class GUIMenu {
 
         Repository repo2 = new Repository("log2.txt");
         repo2.add(state2);
-        //Controller ctr2 = new Controller(repo2, true);
+        Controller ctr2 = new Controller(repo2, true);
 
 
         IStmt statement3 = new CompStmt (new VarDeclStmt("a",new BoolType()),
@@ -164,7 +81,7 @@ public class GUIMenu {
 
         Repository repo3 = new Repository("log3.txt");
         repo3.add(state3);
-        //Controller ctr3 = new Controller(repo3, true);
+        Controller ctr3 = new Controller(repo3, true);
 
         
         IStmt statement4 = new CompStmt(new VarDeclStmt("varf", new StringType()), 
@@ -182,7 +99,7 @@ public class GUIMenu {
 
         Repository repo4 = new Repository("log4.txt");
         repo4.add(state4);
-        //Controller ctr4 = new Controller(repo4, true);
+        Controller ctr4 = new Controller(repo4, true);
 
 
         IStmt statement5 = new CompStmt(new VarDeclStmt("a", new IntType()), 
@@ -199,7 +116,7 @@ public class GUIMenu {
 
         Repository repo5 = new Repository("log5.txt");
         repo5.add(state5);
-        //Controller ctr5 = new Controller(repo5, true);
+        Controller ctr5 = new Controller(repo5, true);
 
 
         IStmt statement6 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())), 
@@ -214,7 +131,7 @@ public class GUIMenu {
 
         Repository repo6 = new Repository("log6.txt");
         repo6.add(state6);
-        //Controller ctr6 = new Controller(repo6, true);
+        Controller ctr6 = new Controller(repo6, true);
 
 
         IStmt statement7 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())), 
@@ -229,7 +146,7 @@ public class GUIMenu {
 
         Repository repo7 = new Repository("log7.txt");
         repo7.add(state7);
-        //Controller ctr7 = new Controller(repo7, true);
+        Controller ctr7 = new Controller(repo7, true);
 
 
         IStmt statement8 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())), 
@@ -243,7 +160,7 @@ public class GUIMenu {
 
         Repository repo8 = new Repository("log8.txt");
         repo8.add(state8);
-        //Controller ctr8 = new Controller(repo8, true);
+        Controller ctr8 = new Controller(repo8, true);
 
         IStmt statement9 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())), 
         new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(20)), "v"), 
@@ -257,7 +174,7 @@ public class GUIMenu {
 
         Repository repo9 = new Repository("log9.txt");
         repo9.add(state9);
-        //Controller ctr9 = new Controller(repo9, true);
+        Controller ctr9 = new Controller(repo9, true);
 
         IStmt statement10 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())), 
         new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(20)), "v"), 
@@ -272,7 +189,7 @@ public class GUIMenu {
 
         Repository repo10 = new Repository("log10.txt");
         repo10.add(state10);
-        //Controller ctr10 = new Controller(repo10, true);
+        Controller ctr10 = new Controller(repo10, true);
 
         IStmt statement11 = new CompStmt(new VarDeclStmt("v", new IntType()), 
         new CompStmt(new AssignStmt("v", new ValueExpression(new IntValue(2))), 
@@ -289,7 +206,7 @@ public class GUIMenu {
 
         Repository repo11 = new Repository("log11.txt");
         repo11.add(state11);
-        //Controller ctr11 = new Controller(repo11, true);
+        Controller ctr11 = new Controller(repo11, true);
 
         IStmt statement13 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())), 
         new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(20)), "v"), 
@@ -306,7 +223,7 @@ public class GUIMenu {
 
         Repository repo13 = new Repository("log13.txt");
         repo13.add(state13);
-        //Controller ctr13 = new Controller(repo13, true);
+        Controller ctr13 = new Controller(repo13, true);
 
 
         IStmt statement14 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())), 
@@ -321,7 +238,7 @@ public class GUIMenu {
 
         Repository repo14 = new Repository("log14.txt");
         repo14.add(state14);
-        //Controller ctr14 = new Controller(repo14, true);
+        Controller ctr14 = new Controller(repo14, true);
 
 
         IStmt badstatement = new CompStmt(new VarDeclStmt("v", new IntType()),
@@ -335,7 +252,7 @@ public class GUIMenu {
 
         Repository repob = new Repository("logb.txt");
         repob.add(stateb);
-        //Controller ctrb = new Controller(repob, true);
+        Controller ctrb = new Controller(repob, true);
 
         IStmt badstatement1 = new CompStmt(new VarDeclStmt("v", new IntType()),
         new WhileStmt(new ValueExpression(new IntValue(5)), new PrintStmt(new VariableExpression("v"))));
@@ -345,26 +262,26 @@ public class GUIMenu {
 
         Repository repob1 = new Repository("logb1.txt");
         repob1.add(stateb1);
-        //Controller ctrb1 = new Controller(repob1, true);
+        Controller ctrb1 = new Controller(repob1, true);
 
-        this.addProgram(statement2.toString(), repo2);
-        this.addProgram(statement3.toString(), repo3);
-        this.addProgram(statement4.toString(), repo4);
-        this.addProgram(statement5.toString(), repo5);
-        this.addProgram(statement6.toString(), repo6);
-        this.addProgram(statement7.toString(), repo7);
-        this.addProgram(statement8.toString(), repo8);
-        this.addProgram(statement9.toString(), repo9);
-        this.addProgram(statement10.toString(), repo10);
-        this.addProgram(statement11.toString(), repo11);
-        this.addProgram(statement13.toString(), repo13);
-        this.addProgram(statement14.toString(), repo14);
-        this.addProgram(badstatement.toString(), repob);
-        this.addProgram(badstatement1.toString(), repob1);
+        this.addProgram(statement2.toString(), ctr2);
+        this.addProgram(statement3.toString(), ctr3);
+        this.addProgram(statement4.toString(), ctr4);
+        this.addProgram(statement5.toString(), ctr5);
+        this.addProgram(statement6.toString(), ctr6);
+        this.addProgram(statement7.toString(), ctr7);
+        this.addProgram(statement8.toString(), ctr8);
+        this.addProgram(statement9.toString(), ctr9);
+        this.addProgram(statement10.toString(), ctr10);
+        this.addProgram(statement11.toString(), ctr11);
+        this.addProgram(statement13.toString(), ctr13);
+        this.addProgram(statement14.toString(), ctr14);
+        this.addProgram(badstatement.toString(), ctrb);
+        this.addProgram(badstatement1.toString(), ctrb1);
     }
 
-    public void addProgram(String desc, IRepository repo) {
-        this.programs.put(desc, repo);
+    public void addProgram(String desc, IController ctr) {
+        this.programs.put(desc, ctr);
     }
 
     public List<String> getProgramsDesc() {
@@ -375,7 +292,7 @@ public class GUIMenu {
         return result;
     }
 
-    public IRepository getRepository(String desc) {
+    public IController getController(String desc) {
         return this.programs.get(desc);
     }
 

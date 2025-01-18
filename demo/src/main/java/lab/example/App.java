@@ -20,8 +20,9 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.util.Pair;
+import lab.example.controller.IController;
 import lab.example.model.state.ProgramState;
-import lab.example.repository.IRepository;
+import lab.example.service.IService;
 import lab.example.service.Service;
 import lab.example.view.GUIMenu;
 import java.io.IOException;
@@ -35,7 +36,7 @@ import javafx.scene.control.TableColumn;
  */
 public class App extends Application {
 
-    private Service service;
+    private IService service;
     private GUIMenu menu;
 
     private TextField noOfPrgStates;
@@ -90,8 +91,8 @@ public class App extends Application {
                 // RunExampleCommand runCommand = (RunExampleCommand) command;
                 // Controller controller = (Controller) runCommand.getController();
 
-                IRepository repository = this.menu.getRepository(new_val);
-                this.service = new Service(repository);
+                IController controller = this.menu.getController(new_val);
+                this.service = new Service(controller);
                 try {
                     this.service.runTypeChecker();
                     this.mainWindow();

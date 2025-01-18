@@ -1,0 +1,60 @@
+Program id: 2
+Execution Stack: Boolean a, ( Int v; ( a = true; ( (IF(a) THEN(v = 2) ELSE(v = 3)); print(v) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Program id: 2
+Execution Stack: ( Int v; ( a = true; ( (IF(a) THEN(v = 2) ELSE(v = 3)); print(v) ) ) )
+Symbols Table: a -> false, 
+Out: 
+Heap: 
+
+Program id: 2
+Execution Stack: Int v, ( a = true; ( (IF(a) THEN(v = 2) ELSE(v = 3)); print(v) ) )
+Symbols Table: a -> false, 
+Out: 
+Heap: 
+
+Program id: 2
+Execution Stack: ( a = true; ( (IF(a) THEN(v = 2) ELSE(v = 3)); print(v) ) )
+Symbols Table: a -> false, v -> 0, 
+Out: 
+Heap: 
+
+Program id: 2
+Execution Stack: a = true, ( (IF(a) THEN(v = 2) ELSE(v = 3)); print(v) )
+Symbols Table: a -> false, v -> 0, 
+Out: 
+Heap: 
+
+Program id: 2
+Execution Stack: ( (IF(a) THEN(v = 2) ELSE(v = 3)); print(v) )
+Symbols Table: a -> true, v -> 0, 
+Out: 
+Heap: 
+
+Program id: 2
+Execution Stack: (IF(a) THEN(v = 2) ELSE(v = 3)), print(v)
+Symbols Table: a -> true, v -> 0, 
+Out: 
+Heap: 
+
+Program id: 2
+Execution Stack: v = 2, print(v)
+Symbols Table: a -> true, v -> 0, 
+Out: 
+Heap: 
+
+Program id: 2
+Execution Stack: print(v)
+Symbols Table: a -> true, v -> 2, 
+Out: 
+Heap: 
+
+Program id: 2
+Execution Stack: 
+Symbols Table: a -> true, v -> 2, 
+Out: 2 
+Heap: 
+

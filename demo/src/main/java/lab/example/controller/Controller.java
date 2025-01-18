@@ -26,7 +26,20 @@ public class Controller implements IController{
         this.displayFlag = flag;
     }
 
-    public void runTypeChecker(List<ProgramState> prgList) throws Exception {
+    public IRepository getRepository() {
+        return this.repo;
+    }
+
+    public void setExecutor() {
+        this.executor = Executors.newFixedThreadPool(3);
+    }
+
+    public void closeExecutor() {
+        this.executor.shutdown();
+    }
+
+    public void runTypeChecker() throws Exception {
+        List<ProgramState> prgList = this.repo.getPrgList();
         for (ProgramState state : prgList) {
             IMyMap<String, IType> typeEnv = new MyMap<>();
             if (!state.getExeStack().isEmpty())
@@ -83,9 +96,10 @@ public class Controller implements IController{
     }
 
     public void allStep() throws Exception, RepoException, InterruptedException {
-        this.executor = Executors.newFixedThreadPool(2);
-        List<ProgramState> prgList = removeCompletedPrg(this.repo.getPrgList());
-        this.runTypeChecker(prgList);
+        this.runTypeChecker();
+        this.setExecutor();
+        this.repo.setPrgList(removeCompletedPrg(this.repo.getPrgList()));
+        List<ProgramState> prgList = this.repo.getPrgList();
 
         if (this.displayFlag) {
             for (ProgramState state : prgList)
@@ -109,7 +123,7 @@ public class Controller implements IController{
             prgList = removeCompletedPrg(this.repo.getPrgList());
         }
 
-        this.executor.shutdownNow();
+        this.closeExecutor();
         this.repo.setPrgList(prgList);
     }
 

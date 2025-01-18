@@ -1,118 +1,118 @@
-Program id: 13
+Program id: 11
 Execution Stack: ( Ref(Int) v; ( new(v, 20); ( Ref(Ref(Int)) a; ( new(a, v); ( fork(( new(v, 30); new(a, v) )); ( new(v, 50); ( new(a, v); print(rH(v)) ) ) ) ) ) ) )
 Symbols Table: 
 Out: 
 Heap: 
 
-Program id: 13
+Program id: 11
 Execution Stack: Ref(Int) v, ( new(v, 20); ( Ref(Ref(Int)) a; ( new(a, v); ( fork(( new(v, 30); new(a, v) )); ( new(v, 50); ( new(a, v); print(rH(v)) ) ) ) ) ) )
 Symbols Table: 
 Out: 
 Heap: 
 
-Program id: 13
+Program id: 11
 Execution Stack: ( new(v, 20); ( Ref(Ref(Int)) a; ( new(a, v); ( fork(( new(v, 30); new(a, v) )); ( new(v, 50); ( new(a, v); print(rH(v)) ) ) ) ) ) )
 Symbols Table: v -> (0, Int), 
 Out: 
 Heap: 
 
-Program id: 13
+Program id: 11
 Execution Stack: new(v, 20), ( Ref(Ref(Int)) a; ( new(a, v); ( fork(( new(v, 30); new(a, v) )); ( new(v, 50); ( new(a, v); print(rH(v)) ) ) ) ) )
 Symbols Table: v -> (0, Int), 
 Out: 
 Heap: 
 
-Program id: 13
+Program id: 11
 Execution Stack: ( Ref(Ref(Int)) a; ( new(a, v); ( fork(( new(v, 30); new(a, v) )); ( new(v, 50); ( new(a, v); print(rH(v)) ) ) ) ) )
 Symbols Table: v -> (1, Int), 
 Out: 
 Heap: 1 -> 20, 
 
-Program id: 13
+Program id: 11
 Execution Stack: Ref(Ref(Int)) a, ( new(a, v); ( fork(( new(v, 30); new(a, v) )); ( new(v, 50); ( new(a, v); print(rH(v)) ) ) ) )
 Symbols Table: v -> (1, Int), 
 Out: 
 Heap: 1 -> 20, 
 
-Program id: 13
+Program id: 11
 Execution Stack: ( new(a, v); ( fork(( new(v, 30); new(a, v) )); ( new(v, 50); ( new(a, v); print(rH(v)) ) ) ) )
 Symbols Table: a -> (0, Ref(Int)), v -> (1, Int), 
 Out: 
 Heap: 1 -> 20, 
 
-Program id: 13
+Program id: 11
 Execution Stack: new(a, v), ( fork(( new(v, 30); new(a, v) )); ( new(v, 50); ( new(a, v); print(rH(v)) ) ) )
 Symbols Table: a -> (0, Ref(Int)), v -> (1, Int), 
 Out: 
 Heap: 1 -> 20, 
 
-Program id: 13
+Program id: 11
 Execution Stack: ( fork(( new(v, 30); new(a, v) )); ( new(v, 50); ( new(a, v); print(rH(v)) ) ) )
 Symbols Table: a -> (2, Ref(Int)), v -> (1, Int), 
 Out: 
 Heap: 1 -> 20, 2 -> (1, Int), 
 
-Program id: 13
+Program id: 11
 Execution Stack: fork(( new(v, 30); new(a, v) )), ( new(v, 50); ( new(a, v); print(rH(v)) ) )
 Symbols Table: a -> (2, Ref(Int)), v -> (1, Int), 
 Out: 
 Heap: 1 -> 20, 2 -> (1, Int), 
 
-Program id: 13
+Program id: 11
 Execution Stack: ( new(v, 50); ( new(a, v); print(rH(v)) ) )
 Symbols Table: a -> (2, Ref(Int)), v -> (1, Int), 
 Out: 
 Heap: 1 -> 20, 2 -> (1, Int), 
 
-Program id: 17
+Program id: 15
 Execution Stack: ( new(v, 30); new(a, v) )
 Symbols Table: a -> (2, Ref(Int)), v -> (1, Int), 
 Out: 
 Heap: 1 -> 20, 2 -> (1, Int), 
 
-Program id: 13
+Program id: 11
 Execution Stack: new(v, 50), ( new(a, v); print(rH(v)) )
 Symbols Table: a -> (2, Ref(Int)), v -> (1, Int), 
 Out: 
 Heap: 1 -> 20, 2 -> (1, Int), 
 
-Program id: 17
+Program id: 15
 Execution Stack: new(v, 30), new(a, v)
 Symbols Table: a -> (2, Ref(Int)), v -> (1, Int), 
 Out: 
 Heap: 1 -> 20, 2 -> (1, Int), 
 
-Program id: 13
+Program id: 11
 Execution Stack: ( new(a, v); print(rH(v)) )
 Symbols Table: a -> (2, Ref(Int)), v -> (3, Int), 
 Out: 
 Heap: 1 -> 20, 2 -> (1, Int), 3 -> 50, 4 -> 30, 
 
-Program id: 17
+Program id: 15
 Execution Stack: new(a, v)
 Symbols Table: a -> (2, Ref(Int)), v -> (4, Int), 
 Out: 
 Heap: 1 -> 20, 2 -> (1, Int), 3 -> 50, 4 -> 30, 
 
-Program id: 13
+Program id: 11
 Execution Stack: new(a, v), print(rH(v))
 Symbols Table: a -> (2, Ref(Int)), v -> (3, Int), 
 Out: 
 Heap: 1 -> 20, 2 -> (1, Int), 3 -> 50, 4 -> 30, 5 -> (4, Int), 
 
-Program id: 17
+Program id: 15
 Execution Stack: 
 Symbols Table: a -> (5, Ref(Int)), v -> (4, Int), 
 Out: 
 Heap: 1 -> 20, 2 -> (1, Int), 3 -> 50, 4 -> 30, 5 -> (4, Int), 
 
-Program id: 13
+Program id: 11
 Execution Stack: print(rH(v))
 Symbols Table: a -> (6, Ref(Int)), v -> (3, Int), 
 Out: 
 Heap: 1 -> 20, 2 -> (1, Int), 3 -> 50, 6 -> (3, Int), 
 
-Program id: 13
+Program id: 11
 Execution Stack: 
 Symbols Table: a -> (6, Ref(Int)), v -> (3, Int), 
 Out: 50 
