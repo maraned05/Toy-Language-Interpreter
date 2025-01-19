@@ -21,7 +21,7 @@ public class WhileStmt implements IStmt{
     }
 
     public ProgramState execute (ProgramState state) throws StatementException, ExpressionException {
-        IValue res = this.exp.evaluate(state.getSymTable(), state.getHeap());
+        IValue res = this.exp.evaluate(state.getCurrentSymTable(), state.getHeap());
         if (! (res.getType().equals(new BoolType())))   
             throw new ExpressionException("Expression isn't of bool type.");
 

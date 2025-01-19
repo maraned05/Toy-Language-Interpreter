@@ -24,7 +24,7 @@ public class ReadFileStmt implements IStmt{
     }
 
     public ProgramState execute(ProgramState state) throws StatementException, ExpressionException {
-        var table = state.getSymTable();
+        var table = state.getCurrentSymTable();
 
         try  {
             if (! table.get(varName).getType().equals(new IntType())) {
@@ -35,7 +35,7 @@ public class ReadFileStmt implements IStmt{
             throw new StatementException("Variable name is undefined!");
         }
 
-        IValue res = exp.evaluate(state.getSymTable(), state.getHeap());
+        IValue res = exp.evaluate(state.getCurrentSymTable(), state.getHeap());
         if (! res.getType().equals(new StringType())) {
             throw new StatementException("The read value is not a string!\n");
         }
@@ -55,7 +55,7 @@ public class ReadFileStmt implements IStmt{
                 readResult = "0";
             }
             int parsedResult = Integer.parseInt(readResult);
-            state.getSymTable().insert(this.varName, new IntValue(parsedResult));
+            state.getCurrentSymTable().insert(this.varName, new IntValue(parsedResult));
         }
         catch (IOException e) {
             throw new StatementException("I/O Exception trying to read file " + ((StringValue) res).getValue());

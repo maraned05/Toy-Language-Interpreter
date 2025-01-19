@@ -23,7 +23,7 @@ public class WriteHeapStmt implements IStmt {
     public ProgramState execute (ProgramState state) throws StatementException, ExpressionException {
         IValue varValue;
         try {
-            varValue = state.getSymTable().get(varName);
+            varValue = state.getCurrentSymTable().get(varName);
             if (! (varValue.getType() instanceof RefType))
                 throw new StatementException("The variable isn't of reference type.");
             
@@ -32,7 +32,7 @@ public class WriteHeapStmt implements IStmt {
             throw new StatementException("The variable isn't declared.");
         }
         
-        IValue expValue = this.exp.evaluate(state.getSymTable(), state.getHeap());
+        IValue expValue = this.exp.evaluate(state.getCurrentSymTable(), state.getHeap());
         if (! (expValue.getType().equals(((RefValue)varValue).getLocationType())))
             throw new StatementException("The types don't match.");
 

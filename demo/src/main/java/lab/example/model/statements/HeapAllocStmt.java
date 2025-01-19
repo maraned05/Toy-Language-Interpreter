@@ -23,7 +23,7 @@ public class HeapAllocStmt implements IStmt {
     public ProgramState execute (ProgramState state) throws StatementException, ExpressionException {
         IValue varValue;
         try {
-            varValue = state.getSymTable().get(varName);
+            varValue = state.getCurrentSymTable().get(varName);
             if (! (varValue.getType() instanceof RefType))
                 throw new StatementException("The variable isn't of reference type.");
         }
@@ -31,12 +31,12 @@ public class HeapAllocStmt implements IStmt {
             throw new StatementException("The variable is not defined.");
         }
 
-        var res = this.expr.evaluate(state.getSymTable(), state.getHeap());
+        var res = this.expr.evaluate(state.getCurrentSymTable(), state.getHeap());
         if (! (res.getType().equals(((RefValue)varValue).getLocationType())))
             throw new ExpressionException("The types don't match.");
 
         int newAddr = state.getHeap().allocate(res);
-        state.getSymTable().insert(varName, new RefValue(newAddr, res.getType()));
+        state.getCurrentSymTable().insert(varName, new RefValue(newAddr, res.getType()));
         
         return null;
     }

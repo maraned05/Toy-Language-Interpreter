@@ -50,6 +50,25 @@ public class Service implements IService {
         return result;
     }
 
+    public List<Pair<String, String>> getProcTable() {
+        List<Pair<String, String>> result = new ArrayList<Pair<String, String>>();
+        Map<String, Pair<List<String>, IStmt>> procTable = this.controller.getRepository().getPrgList().get(0).getProcTable().getContent();
+        for (String key : procTable.keySet()) {
+            Pair<List<String>, IStmt> val = procTable.get(key);
+            String signature = key + "(";
+            for (int i = 0; i < val.getKey().size(); i++) {
+                if (i == val.getKey().size() - 1)
+                    signature += val.getKey().get(i);
+                else 
+                    signature += val.getKey().get(i) + ", ";
+            }
+            signature += ")";
+            String body = val.getValue().toString();
+            result.add(new Pair<String,String>(signature, body));
+        }
+        return result;
+    }
+
     public List<String> getOutList() {
         List<String> result = new ArrayList<String>();
         for (IValue val : this.controller.getRepository().getPrgList().get(0).getOut().getAll())
@@ -76,7 +95,7 @@ public class Service implements IService {
 
     public List<Pair<String, String>> getSymbTable(int id) throws RepoException {
         List<Pair<String, String>> result = new ArrayList<Pair<String, String>>();
-        Map<String, IValue> table = this.controller.getRepository().getProgramState(id).getSymTable().getContent();
+        Map<String, IValue> table = this.controller.getRepository().getProgramState(id).getCurrentSymTable().getContent();
         for (String var : table.keySet()) {
             Pair<String, String> elem = new Pair<String, String>(var, table.get(var).toString());
             result.add(elem);
@@ -92,11 +111,13 @@ public class Service implements IService {
     public void oneStepForAllPrg() throws Exception {
         IRepository repository = this.controller.getRepository();
         repository.setPrgList(this.controller.removeCompletedPrg(repository.getPrgList()));
-        
+        if (repository.getPrgList().size() == 0)
+            return;
+
         List<ProgramState> states = repository.getPrgList();
         List<Integer> symbTables = new ArrayList<Integer>();
         for (ProgramState state : states) {
-            List<Integer> list = this.controller.getAddrFromSymTable(state.getSymTable().getContent().values(), state.getHeap().getContent());
+            List<Integer> list = this.controller.getAddrFromSymTable(state.getCurrentSymTable().getContent().values(), state.getHeap().getContent());
             for (Integer elem : list) {
                 if (! symbTables.contains(elem))
                     symbTables.add(elem);

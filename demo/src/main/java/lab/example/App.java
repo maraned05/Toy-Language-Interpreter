@@ -21,11 +21,14 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.util.Pair;
 import lab.example.controller.IController;
+import lab.example.model.adt.IProcTable;
 import lab.example.model.state.ProgramState;
+import lab.example.model.statements.IStmt;
 import lab.example.service.IService;
 import lab.example.service.Service;
 import lab.example.view.GUIMenu;
 import java.io.IOException;
+import java.util.List;
 
 import javafx.scene.control.TableColumn;
 
@@ -44,6 +47,7 @@ public class App extends Application {
     private ListView<String> fileTable;
     private TableView<Pair<Integer, String>> heapTable;
     private ListView<Integer> prgStateIdList;
+    private TableView<Pair<String, String>> procTable;
     private TableView<Pair<String, String>> symbTable;
     private ListView<String> exeStack;
     private Button oneStepButton;
@@ -63,34 +67,42 @@ public class App extends Application {
         //     }
         // });
 
-        inputStage.setTitle("Input Programs");
+        inputStage.setTitle("Procedures");
 
         this.menu = new GUIMenu();
-        this.menu.populateMenu();
+        this.menu.populateMenuProcedures();
 
+        VBox root = new VBox();
+        Scene scene1 = new Scene(root, 500, 500, Color.WHITE);
+        ListView<String> proceduresList = new ListView<String>();
+        proceduresList.setItems(FXCollections.observableArrayList(menu.getProceduresDesc()));
+        root.getChildren().add(proceduresList);
+        
+        inputStage.setScene(scene1);
+        inputStage.show();
+
+        proceduresList.getSelectionModel().selectedItemProperty().addListener(
+            (ObservableValue<? extends String> ov, String old_val, String new_val) -> {
+                IProcTable<String, Pair<List<String>, IStmt>> procTable = this.menu.getProcTable(new_val);
+                this.menu.populateMenuPrograms(procTable);
+                this.programsWindow();
+                inputStage.close();
+        });
+    }
+
+    public void programsWindow() {
+        Stage programsWindow = new Stage();
+        programsWindow.setTitle("Input Programs");
         VBox root = new VBox();
         Scene scene1 = new Scene(root, 500, 500, Color.WHITE);
         ListView<String> programList = new ListView<String>();
         programList.setItems(FXCollections.observableArrayList(menu.getProgramsDesc()));
         root.getChildren().add(programList);
-        
-        inputStage.setScene(scene1);
-        inputStage.show();
+        programsWindow.setScene(scene1);
+        programsWindow.show();
 
         programList.getSelectionModel().selectedItemProperty().addListener(
             (ObservableValue<? extends String> ov, String old_val, String new_val) -> {
-                // String commandKey = new_val.substring(0, new_val.indexOf(".", 0));
-                // Command command = menu.getCommand(commandKey);
-
-                // if (command instanceof ExitCommand) {
-                //     Platform.exit();
-                //     System.exit(0);
-                // }
-                
-
-                // RunExampleCommand runCommand = (RunExampleCommand) command;
-                // Controller controller = (Controller) runCommand.getController();
-
                 IController controller = this.menu.getController(new_val);
                 this.service = new Service(controller);
                 try {
@@ -134,9 +146,21 @@ public class App extends Application {
         this.heapTable.getColumns().add(secondColHeap);
         rootPane.add(this.heapTable, 0, 4, 2, 1);
 
-        rootPane.add(new Label("Program States Identifiers"), 0, 5, 2, 1);
+        rootPane.add(new Label("Procedures Table"), 0, 5, 2, 1);
+        this.procTable = new TableView<Pair<String, String>>();
+        TableColumn<Pair<String, String>, String> firstColProc = new TableColumn<Pair<String, String>, String>("Procedure's Signature");
+        firstColProc.setCellValueFactory(new PropertyValueFactory<>("key"));
+        TableColumn<Pair<String, String>, String> secondColProc = new TableColumn<Pair<String, String>, String>("Procedure's Body");
+        secondColProc.setCellValueFactory(new PropertyValueFactory<>("value"));
+        firstColProc.prefWidthProperty().bind(this.heapTable.widthProperty().multiply(0.5));
+        secondColProc.prefWidthProperty().bind(this.heapTable.widthProperty().multiply(0.5));
+        this.procTable.getColumns().add(firstColProc);
+        this.procTable.getColumns().add(secondColProc);
+        rootPane.add(this.procTable, 0, 6, 2, 1);
+
+        rootPane.add(new Label("Program States Identifiers"), 2, 0, 2, 1);
         this.prgStateIdList = new ListView<Integer>();
-        rootPane.add(this.prgStateIdList, 0, 6, 2, 1);
+        rootPane.add(this.prgStateIdList, 2, 1, 2, 1);
 
         this.prgStateIdList.getSelectionModel().selectedItemProperty().addListener(
             (ObservableValue<? extends Integer> ov, Integer old_val, Integer new_val) -> {
@@ -148,7 +172,7 @@ public class App extends Application {
                 }
         });
 
-        rootPane.add(new Label("Symbols Table"), 2, 0);
+        rootPane.add(new Label("Symbols Table"), 2, 2);
         this.symbTable = new TableView<Pair<String, String>>();
         TableColumn<Pair<String, String>, String> firstColSymb = new TableColumn<Pair<String, String>, String>("Variable Name");
         firstColSymb.setCellValueFactory(new PropertyValueFactory<>("key"));
@@ -158,11 +182,11 @@ public class App extends Application {
         secondColSymb.prefWidthProperty().bind(this.symbTable.widthProperty().multiply(0.5));
         this.symbTable.getColumns().add(firstColSymb);
         this.symbTable.getColumns().add(secondColSymb);
-        rootPane.add(this.symbTable, 2, 1);
+        rootPane.add(this.symbTable, 2, 3);
 
-        rootPane.add(new Label("Execution Stack"), 3, 0);
+        rootPane.add(new Label("Execution Stack"), 3, 2);
         this.exeStack = new ListView<String>();
-        rootPane.add(this.exeStack, 3, 1);
+        rootPane.add(this.exeStack, 3, 3);
 
         this.oneStepButton = new Button("Run One Step");
         this.oneStepButton.setOnAction(event -> {
@@ -180,7 +204,7 @@ public class App extends Application {
                 this.service.closeService();
             }
         });
-        rootPane.add(oneStepButton, 3, 2, 2, 1);
+        rootPane.add(oneStepButton, 3, 4, 2, 1);
 
         this.populateGeneralInformation();
 
@@ -192,6 +216,7 @@ public class App extends Application {
         this.noOfPrgStates.setText(String.valueOf(this.service.getNoOfPrgStates()));
         this.prgStateIdList.setItems(FXCollections.observableArrayList(this.service.getProgramsId()));
         if (! this.prgStateIdList.getItems().isEmpty()) {
+            this.procTable.setItems(FXCollections.observableArrayList(this.service.getProcTable()));
             this.outList.setItems(FXCollections.observableArrayList(this.service.getOutList()));
             this.fileTable.setItems(FXCollections.observableArrayList(this.service.getFileTable()));
             this.heapTable.setItems(FXCollections.observableArrayList(this.service.getHeapTable()));

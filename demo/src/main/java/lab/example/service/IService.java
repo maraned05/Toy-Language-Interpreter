@@ -13,6 +13,7 @@ public interface IService {
     public List<Pair<Integer, String>> getHeapTable();
     public List<String> getOutList();
     public List<String> getFileTable();
+    public List<Pair<String, String>> getProcTable();
     public List<String> getExeStack(int id) throws RepoException;
     public List<Pair<String, String>> getSymbTable(int id) throws RepoException;
     public void runTypeChecker() throws Exception;

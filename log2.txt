@@ -1,0 +1,3015 @@
+Program id: 1
+Execution Stack: Int v, ( v = 2; ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( v = 2; ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: v = 2, ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) )
+Symbols Table: v -> 2, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int w, ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) )
+Symbols Table: v -> 2, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) )
+Symbols Table: v -> 2, w -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: w = 5, ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) )
+Symbols Table: v -> 2, w -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: sum(v MULTIPLY 10, w), ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( Int v; ( v = a ADD b; print(v) ) ), lab.example.model.statements.ReturnStmt@34cbcd0c, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int v, ( v = a ADD b; print(v) ), lab.example.model.statements.ReturnStmt@34cbcd0c, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( v = a ADD b; print(v) ), lab.example.model.statements.ReturnStmt@34cbcd0c, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: v = a ADD b, print(v), lab.example.model.statements.ReturnStmt@34cbcd0c, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: print(v), lab.example.model.statements.ReturnStmt@34cbcd0c, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 25, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: lab.example.model.statements.ReturnStmt@34cbcd0c, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 25, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: print(v), fork(( product(v, w); fork(sum(v, w)) ))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: fork(( product(v, w); fork(sum(v, w)) ))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( product(v, w); fork(sum(v, w)) )
+Symbols Table: 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: product(v, w), fork(sum(v, w))
+Symbols Table: 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int v, ( v = 2; ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( v = 2; ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: v = 2, ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) )
+Symbols Table: v -> 2, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int w, ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) )
+Symbols Table: v -> 2, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) )
+Symbols Table: v -> 2, w -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: w = 5, ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) )
+Symbols Table: v -> 2, w -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: sum(v MULTIPLY 10, w), ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( Int v; ( v = a ADD b; print(v) ) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int v, ( v = a ADD b; print(v) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( v = a ADD b; print(v) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: v = a ADD b, print(v), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: print(v), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 25, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 25, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: print(v), fork(( product(v, w); fork(sum(v, w)) ))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: fork(( product(v, w); fork(sum(v, w)) ))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int v, ( v = 2; ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( v = 2; ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: v = 2, ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) )
+Symbols Table: v -> 2, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int w, ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) )
+Symbols Table: v -> 2, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) )
+Symbols Table: v -> 2, w -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: w = 5, ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) )
+Symbols Table: v -> 2, w -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: sum(v MULTIPLY 10, w), ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( Int v; ( v = a ADD b; print(v) ) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int v, ( v = a ADD b; print(v) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( v = a ADD b; print(v) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: v = a ADD b, print(v), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: print(v), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 25, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 25, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: print(v), fork(( product(v, w); fork(sum(v, w)) ))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: fork(( product(v, w); fork(sum(v, w)) ))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( product(v, w); fork(sum(v, w)) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: product(v, w), fork(sum(v, w))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( Int v; ( v = a MULTIPLY b; print(v) ) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: Int v, ( v = a MULTIPLY b; print(v) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( v = a MULTIPLY b; print(v) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: v = a MULTIPLY b, print(v), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: print(v), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 10, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 10, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: fork(sum(v, w))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: sum(v, w)
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: ( Int v; ( v = a ADD b; print(v) ) ), return
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: Int v, ( v = a ADD b; print(v) ), return
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: ( v = a ADD b; print(v) ), return
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: v = a ADD b, print(v), return
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: print(v), return
+Symbols Table: a -> 2, b -> 5, v -> 7, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: return
+Symbols Table: a -> 2, b -> 5, v -> 7, 
+Out: 25 2 10 7 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 7 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int v, ( v = 2; ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( v = 2; ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: v = 2, ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) )
+Symbols Table: v -> 2, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int w, ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) )
+Symbols Table: v -> 2, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) )
+Symbols Table: v -> 2, w -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: w = 5, ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) )
+Symbols Table: v -> 2, w -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: sum(v MULTIPLY 10, w), ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( Int v; ( v = a ADD b; print(v) ) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int v, ( v = a ADD b; print(v) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( v = a ADD b; print(v) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: v = a ADD b, print(v), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: print(v), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 25, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 25, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: print(v), fork(( product(v, w); fork(sum(v, w)) ))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: fork(( product(v, w); fork(sum(v, w)) ))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( product(v, w); fork(sum(v, w)) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: product(v, w), fork(sum(v, w))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( Int v; ( v = a MULTIPLY b; print(v) ) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: Int v, ( v = a MULTIPLY b; print(v) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( v = a MULTIPLY b; print(v) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: v = a MULTIPLY b, print(v), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: print(v), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 10, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 10, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: fork(sum(v, w))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: sum(v, w)
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: ( Int v; ( v = a ADD b; print(v) ) ), return
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: Int v, ( v = a ADD b; print(v) ), return
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: ( v = a ADD b; print(v) ), return
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: v = a ADD b, print(v), return
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: print(v), return
+Symbols Table: a -> 2, b -> 5, v -> 7, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: return
+Symbols Table: a -> 2, b -> 5, v -> 7, 
+Out: 25 2 10 7 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 7 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int v, ( v = 2; ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( v = 2; ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: v = 2, ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) )
+Symbols Table: v -> 2, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int w, ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) )
+Symbols Table: v -> 2, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) )
+Symbols Table: v -> 2, w -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: w = 5, ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) )
+Symbols Table: v -> 2, w -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: sum(v MULTIPLY 10, w), ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( Int v; ( v = a ADD b; print(v) ) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int v, ( v = a ADD b; print(v) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( v = a ADD b; print(v) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: v = a ADD b, print(v), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: print(v), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 25, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 25, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: print(v), fork(( product(v, w); fork(sum(v, w)) ))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: fork(( product(v, w); fork(sum(v, w)) ))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( product(v, w); fork(sum(v, w)) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: product(v, w), fork(sum(v, w))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( Int v; ( v = a MULTIPLY b; print(v) ) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: Int v, ( v = a MULTIPLY b; print(v) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( v = a MULTIPLY b; print(v) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: v = a MULTIPLY b, print(v), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: print(v), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 10, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 10, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: fork(sum(v, w))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: sum(v, w)
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: ( Int v; ( v = a ADD b; print(v) ) ), return
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: Int v, ( v = a ADD b; print(v) ), return
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: ( v = a ADD b; print(v) ), return
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: v = a ADD b, print(v), return
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: print(v), return
+Symbols Table: a -> 2, b -> 5, v -> 7, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: return
+Symbols Table: a -> 2, b -> 5, v -> 7, 
+Out: 25 2 10 7 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 7 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int v, ( v = 2; ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( v = 2; ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: v = 2, ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) )
+Symbols Table: v -> 2, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int w, ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) )
+Symbols Table: v -> 2, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) )
+Symbols Table: v -> 2, w -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: w = 5, ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) )
+Symbols Table: v -> 2, w -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: sum(v MULTIPLY 10, w), ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( Int v; ( v = a ADD b; print(v) ) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int v, ( v = a ADD b; print(v) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( v = a ADD b; print(v) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: v = a ADD b, print(v), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: print(v), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 25, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 25, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: print(v), fork(( product(v, w); fork(sum(v, w)) ))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: fork(( product(v, w); fork(sum(v, w)) ))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( product(v, w); fork(sum(v, w)) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: product(v, w), fork(sum(v, w))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( Int v; ( v = a MULTIPLY b; print(v) ) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: Int v, ( v = a MULTIPLY b; print(v) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( v = a MULTIPLY b; print(v) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: v = a MULTIPLY b, print(v), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: print(v), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 10, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 10, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: fork(sum(v, w))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: sum(v, w)
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: ( Int v; ( v = a ADD b; print(v) ) ), return
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: Int v, ( v = a ADD b; print(v) ), return
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: ( v = a ADD b; print(v) ), return
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: v = a ADD b, print(v), return
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: print(v), return
+Symbols Table: a -> 2, b -> 5, v -> 7, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: return
+Symbols Table: a -> 2, b -> 5, v -> 7, 
+Out: 25 2 10 7 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 7 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int v, ( v = 2; ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( v = 2; ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: v = 2, ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) )
+Symbols Table: v -> 2, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int w, ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) )
+Symbols Table: v -> 2, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) )
+Symbols Table: v -> 2, w -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: w = 5, ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) )
+Symbols Table: v -> 2, w -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: sum(v MULTIPLY 10, w), ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( Int v; ( v = a ADD b; print(v) ) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int v, ( v = a ADD b; print(v) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( v = a ADD b; print(v) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: v = a ADD b, print(v), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: print(v), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 25, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 25, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: print(v), fork(( product(v, w); fork(sum(v, w)) ))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: fork(( product(v, w); fork(sum(v, w)) ))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( product(v, w); fork(sum(v, w)) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: product(v, w), fork(sum(v, w))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( Int v; ( v = a MULTIPLY b; print(v) ) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: Int v, ( v = a MULTIPLY b; print(v) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( v = a MULTIPLY b; print(v) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: v = a MULTIPLY b, print(v), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: print(v), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 10, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 10, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: fork(sum(v, w))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: sum(v, w)
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: ( Int v; ( v = a ADD b; print(v) ) ), return
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: Int v, ( v = a ADD b; print(v) ), return
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: ( v = a ADD b; print(v) ), return
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: v = a ADD b, print(v), return
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: print(v), return
+Symbols Table: a -> 2, b -> 5, v -> 7, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: return
+Symbols Table: a -> 2, b -> 5, v -> 7, 
+Out: 25 2 10 7 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 7 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int v, ( v = 2; ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( v = 2; ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: v = 2, ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) )
+Symbols Table: v -> 2, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int w, ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) )
+Symbols Table: v -> 2, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) )
+Symbols Table: v -> 2, w -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: w = 5, ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) )
+Symbols Table: v -> 2, w -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: sum(v MULTIPLY 10, w), ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( Int v; ( v = a ADD b; print(v) ) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int v, ( v = a ADD b; print(v) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( v = a ADD b; print(v) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: v = a ADD b, print(v), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: print(v), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 25, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 25, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: print(v), fork(( product(v, w); fork(sum(v, w)) ))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: fork(( product(v, w); fork(sum(v, w)) ))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( product(v, w); fork(sum(v, w)) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: product(v, w), fork(sum(v, w))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( Int v; ( v = a MULTIPLY b; print(v) ) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: Int v, ( v = a MULTIPLY b; print(v) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( v = a MULTIPLY b; print(v) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: v = a MULTIPLY b, print(v), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: print(v), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 10, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 10, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: fork(sum(v, w))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: sum(v, w)
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: ( Int v; ( v = a ADD b; print(v) ) ), return
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: Int v, ( v = a ADD b; print(v) ), return
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: ( v = a ADD b; print(v) ), return
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: v = a ADD b, print(v), return
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: print(v), return
+Symbols Table: a -> 2, b -> 5, v -> 7, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: return
+Symbols Table: a -> 2, b -> 5, v -> 7, 
+Out: 25 2 10 7 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 7 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int v, ( v = 2; ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( v = 2; ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: v = 2, ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) )
+Symbols Table: v -> 2, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int w, ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) )
+Symbols Table: v -> 2, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) )
+Symbols Table: v -> 2, w -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: w = 5, ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) )
+Symbols Table: v -> 2, w -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: sum(v MULTIPLY 10, w), ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( Int v; ( v = a ADD b; print(v) ) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int v, ( v = a ADD b; print(v) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( v = a ADD b; print(v) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: v = a ADD b, print(v), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: print(v), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 25, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 25, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: print(v), fork(( product(v, w); fork(sum(v, w)) ))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: fork(( product(v, w); fork(sum(v, w)) ))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( product(v, w); fork(sum(v, w)) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: product(v, w), fork(sum(v, w))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( Int v; ( v = a MULTIPLY b; print(v) ) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: Int v, ( v = a MULTIPLY b; print(v) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( v = a MULTIPLY b; print(v) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: v = a MULTIPLY b, print(v), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: print(v), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 10, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 10, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: fork(sum(v, w))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: sum(v, w)
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: ( Int v; ( v = a ADD b; print(v) ) ), return
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: Int v, ( v = a ADD b; print(v) ), return
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: ( v = a ADD b; print(v) ), return
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: v = a ADD b, print(v), return
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: print(v), return
+Symbols Table: a -> 2, b -> 5, v -> 7, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: return
+Symbols Table: a -> 2, b -> 5, v -> 7, 
+Out: 25 2 10 7 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 7 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int v, ( v = 2; ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( v = 2; ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: v = 2, ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( Int w; ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) ) )
+Symbols Table: v -> 2, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int w, ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) )
+Symbols Table: v -> 2, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( w = 5; ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) ) )
+Symbols Table: v -> 2, w -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: w = 5, ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) )
+Symbols Table: v -> 2, w -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( sum(v MULTIPLY 10, w); ( print(v); fork(( product(v, w); fork(sum(v, w)) )) ) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: sum(v MULTIPLY 10, w), ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( Int v; ( v = a ADD b; print(v) ) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: Int v, ( v = a ADD b; print(v) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( v = a ADD b; print(v) ), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: v = a ADD b, print(v), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 0, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: print(v), return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 25, 
+Out: 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: return, ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: a -> 20, b -> 5, v -> 25, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: ( print(v); fork(( product(v, w); fork(sum(v, w)) )) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: print(v), fork(( product(v, w); fork(sum(v, w)) ))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: fork(( product(v, w); fork(sum(v, w)) ))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 1
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( product(v, w); fork(sum(v, w)) )
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: product(v, w), fork(sum(v, w))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( Int v; ( v = a MULTIPLY b; print(v) ) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: Int v, ( v = a MULTIPLY b; print(v) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: ( v = a MULTIPLY b; print(v) ), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: v = a MULTIPLY b, print(v), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: print(v), return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 10, 
+Out: 25 2 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: return, fork(sum(v, w))
+Symbols Table: a -> 2, b -> 5, v -> 10, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: fork(sum(v, w))
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 15
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: sum(v, w)
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: ( Int v; ( v = a ADD b; print(v) ) ), return
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: Int v, ( v = a ADD b; print(v) ), return
+Symbols Table: a -> 2, b -> 5, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: ( v = a ADD b; print(v) ), return
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: v = a ADD b, print(v), return
+Symbols Table: a -> 2, b -> 5, v -> 0, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: print(v), return
+Symbols Table: a -> 2, b -> 5, v -> 7, 
+Out: 25 2 10 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: return
+Symbols Table: a -> 2, b -> 5, v -> 7, 
+Out: 25 2 10 7 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+
+Program id: 16
+Execution Stack: 
+Symbols Table: v -> 2, w -> 5, 
+Out: 25 2 10 7 
+Heap: 
+Procedures Table: procedure product (a, b) ( Int v; ( v = a MULTIPLY b; print(v) ) )
+procedure sum (a, b) ( Int v; ( v = a ADD b; print(v) ) )
+
+

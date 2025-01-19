@@ -111,7 +111,7 @@ public class Controller implements IController{
         while (prgList.size() > 0) {
             List<Integer> symbTables = new ArrayList<Integer>();
             for (ProgramState state : prgList) {
-                List<Integer> list = getAddrFromSymTable(state.getSymTable().getContent().values(), state.getHeap().getContent());
+                List<Integer> list = getAddrFromSymTable(state.getCurrentSymTable().getContent().values(), state.getHeap().getContent());
                 for (Integer elem : list) {
                     if (! symbTables.contains(elem))
                         symbTables.add(elem);

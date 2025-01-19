@@ -1,5 +1,6 @@
 package lab.example.model.adt;
 import java.util.Stack;
+import java.util.stream.Collectors;
 
 import lab.example.exceptions.EmptyStackException;;
 
@@ -64,6 +65,12 @@ public class MyStack<T> implements IMyStack<T> {
 
     public void setStack(Stack<T> stack) {
         this.stack = stack;
+    }
+
+    public MyStack<T> deepCopy() {
+        MyStack<T> newStack = new MyStack<T> ();
+        newStack.getStack().addAll(this.stack.stream().collect(Collectors.toList()));
+        return newStack;
     }
     
     @Override

@@ -31,20 +31,20 @@ public class VarDeclStmt implements IStmt {
 
     public ProgramState execute (ProgramState state) throws StatementException {
 
-        if (state.getSymTable().contains(this.name))
+        if (state.getCurrentSymTable().contains(this.name))
             throw new StatementException("Variable already declared!");
 
         if (this.varType.equals(new IntType())) 
-            state.getSymTable().insert(this.name, new IntType().defaultValue());
+            state.getCurrentSymTable().insert(this.name, new IntType().defaultValue());
         
         else if (this.varType.equals(new BoolType()))
-            state.getSymTable().insert(this.name, new BoolType().defaultValue());
+            state.getCurrentSymTable().insert(this.name, new BoolType().defaultValue());
 
         else if (this.varType.equals(new StringType()))
-            state.getSymTable().insert(this.name, new StringType().defaultValue());
+            state.getCurrentSymTable().insert(this.name, new StringType().defaultValue());
 
         else if (this.varType instanceof RefType) {
-            state.getSymTable().insert(this.name, createRef(((RefType)this.varType)).defaultValue());    
+            state.getCurrentSymTable().insert(this.name, createRef(((RefType)this.varType)).defaultValue());    
         }
 
         return null;

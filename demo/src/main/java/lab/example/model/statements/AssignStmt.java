@@ -19,16 +19,16 @@ public class AssignStmt implements IStmt {
     }
 
     public ProgramState execute (ProgramState state) throws ExpressionException, StatementException {
-        if (!state.getSymTable().contains(this.variable)) {
+        if (!state.getCurrentSymTable().contains(this.variable)) {
             throw new ExpressionException("The variable is not defined.");
         }
 
 
-        IValue evalValue = this.exp.evaluate(state.getSymTable(), state.getHeap());
+        IValue evalValue = this.exp.evaluate(state.getCurrentSymTable(), state.getHeap());
         try {
-            IType type = state.getSymTable().get(this.variable).getType();
+            IType type = state.getCurrentSymTable().get(this.variable).getType();
             if (evalValue.getType().equals(type)) 
-                state.getSymTable().insert(this.variable, evalValue);
+                state.getCurrentSymTable().insert(this.variable, evalValue);
 
             else throw new StatementException("The values do not match.");
 

@@ -12,4 +12,5 @@ public interface IMyStack<T> {
     int getSize();
     boolean isEmpty();
     String getInversedStack();
+    IMyStack<T> deepCopy();
 }
