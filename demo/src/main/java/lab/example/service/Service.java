@@ -50,6 +50,17 @@ public class Service implements IService {
         return result;
     }
 
+    public List<Pair<Integer, Integer>> getLockTable() {
+        List<Pair<Integer, Integer>> result = new ArrayList<Pair<Integer, Integer>>();
+        Map<Integer, Integer> lockTable = this.controller.getRepository().getPrgList().get(0).getLockTable().getContent();
+        for (int key : lockTable.keySet()) {
+            Pair<Integer, Integer> elem = new Pair<Integer, Integer>(key, lockTable.get(key));
+            result.add(elem);
+        }
+
+        return result;
+    }
+
     public List<String> getOutList() {
         List<String> result = new ArrayList<String>();
         for (IValue val : this.controller.getRepository().getPrgList().get(0).getOut().getAll())

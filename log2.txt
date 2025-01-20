@@ -1,0 +1,3955 @@
+Program id: 1
+Execution Stack: Ref(Int) v1, ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v1, 20), ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: Ref(Int) v2, ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v2, 30), ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: newlock(x), ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )), ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )), ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: ( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: print(rH(v1)), print(rH(v2))
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: lock(x), ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: fork(wH(v2, rH(v2) ADD 1)), ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: print(rH(v2))
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 15
+Execution Stack: ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 17
+Execution Stack: ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 18
+Execution Stack: wH(v2, rH(v2) ADD 1)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 1
+Execution Stack: 
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 20, 2 -> 31, 
+Lock Table: 1 -> 15, 
+
+Program id: 15
+Execution Stack: wH(v1, rH(v1) ADD 1), unlock(x)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 20, 2 -> 31, 
+Lock Table: 1 -> 15, 
+
+Program id: 17
+Execution Stack: wH(v2, rH(v2) ADD 1), unlock(x)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 20, 2 -> 31, 
+Lock Table: 1 -> 15, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 20, 2 -> 31, 
+Lock Table: 1 -> 15, 
+
+Program id: 18
+Execution Stack: 
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 20, 2 -> 31, 
+Lock Table: 1 -> 15, 
+
+Program id: 15
+Execution Stack: unlock(x)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> 15, 
+
+Program id: 17
+Execution Stack: unlock(x)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> 15, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> 15, 
+
+Program id: 15
+Execution Stack: 
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: 
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> 16, 
+
+Program id: 16
+Execution Stack: wH(v1, rH(v1) SUBTRACT 1), unlock(x)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> 16, 
+
+Program id: 16
+Execution Stack: unlock(x)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 20, 2 -> 32, 
+Lock Table: 1 -> 16, 
+
+Program id: 16
+Execution Stack: 
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 20, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: Ref(Int) v1, ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v1, 20), ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: Ref(Int) v2, ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: Ref(Int) v1, ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v1, 20), ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: Ref(Int) v2, ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v2, 30), ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: newlock(x), ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )), ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )), ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: ( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: print(rH(v1)), print(rH(v2))
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: lock(x), ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: fork(wH(v2, rH(v2) ADD 1)), ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: print(rH(v2))
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 15
+Execution Stack: ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 17
+Execution Stack: ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 18
+Execution Stack: wH(v2, rH(v2) ADD 1)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 1
+Execution Stack: 
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 20, 2 -> 31, 
+Lock Table: 1 -> 15, 
+
+Program id: 15
+Execution Stack: wH(v1, rH(v1) ADD 1), unlock(x)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 20, 2 -> 31, 
+Lock Table: 1 -> 15, 
+
+Program id: 17
+Execution Stack: wH(v2, rH(v2) ADD 1), unlock(x)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 20, 2 -> 31, 
+Lock Table: 1 -> 15, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 20, 2 -> 31, 
+Lock Table: 1 -> 15, 
+
+Program id: 18
+Execution Stack: 
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 20, 2 -> 31, 
+Lock Table: 1 -> 15, 
+
+Program id: 15
+Execution Stack: unlock(x)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> 15, 
+
+Program id: 17
+Execution Stack: unlock(x)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> 15, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> 15, 
+
+Program id: 15
+Execution Stack: 
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: 
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 30 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> 16, 
+
+Program id: 1
+Execution Stack: Ref(Int) v1, ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v1, 20), ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: Ref(Int) v2, ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v2, 30), ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: newlock(x), ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )), ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )), ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )), ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: ( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(9), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: lock(x), ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: fork(wH(v2, rH(v2) ADD 1)), ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(8), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 16, 
+
+Program id: 15
+Execution Stack: ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 16, 
+
+Program id: 17
+Execution Stack: ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 16, 
+
+Program id: 16
+Execution Stack: ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 16, 
+
+Program id: 18
+Execution Stack: wH(v2, rH(v2) ADD 1)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 16, 
+
+Program id: 1
+Execution Stack: sleep(7), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 31, 
+Lock Table: 1 -> 16, 
+
+Program id: 15
+Execution Stack: wH(v1, rH(v1) ADD 1), unlock(x)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 31, 
+Lock Table: 1 -> 16, 
+
+Program id: 17
+Execution Stack: wH(v2, rH(v2) ADD 1), unlock(x)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 31, 
+Lock Table: 1 -> 16, 
+
+Program id: 16
+Execution Stack: wH(v1, rH(v1) SUBTRACT 1), unlock(x)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 31, 
+Lock Table: 1 -> 16, 
+
+Program id: 18
+Execution Stack: 
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 31, 
+Lock Table: 1 -> 16, 
+
+Program id: 1
+Execution Stack: sleep(6), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 19, 2 -> 32, 
+Lock Table: 1 -> 16, 
+
+Program id: 15
+Execution Stack: unlock(x)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 19, 2 -> 32, 
+Lock Table: 1 -> 16, 
+
+Program id: 17
+Execution Stack: unlock(x)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 19, 2 -> 32, 
+Lock Table: 1 -> 16, 
+
+Program id: 16
+Execution Stack: unlock(x)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 19, 2 -> 32, 
+Lock Table: 1 -> 16, 
+
+Program id: 1
+Execution Stack: sleep(5), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 19, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: 
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 19, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: 
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 19, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: 
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 19, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(4), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 19, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(3), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 19, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(2), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 19, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(1), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 19, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(0), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 19, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 19, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: print(rH(v1)), print(rH(v2))
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 19, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: print(rH(v2))
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 19 
+Heap: 1 -> 19, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: 
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 19 32 
+Heap: 1 -> 19, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: Ref(Int) v1, ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v1, 20), ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: Ref(Int) v2, ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v2, 30), ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: newlock(x), ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )), ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )), ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )), ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(9), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: lock(x), ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: fork(wH(v2, rH(v2) ADD 1)), ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(8), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 15
+Execution Stack: ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 16
+Execution Stack: ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 17
+Execution Stack: ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 18
+Execution Stack: wH(v2, rH(v2) ADD 1)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 1
+Execution Stack: Ref(Int) v1, ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v1, 20), ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: Ref(Int) v2, ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v2, 30), ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: newlock(x), ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )), ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )), ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )), ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(9), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: lock(x), ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: fork(wH(v2, rH(v2) ADD 1)), ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: Ref(Int) v1, ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v1, 20), ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: Ref(Int) v2, ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v2, 30), ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: newlock(x), ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )), ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )), ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )), ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(9), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: lock(x), ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: fork(wH(v2, rH(v2) ADD 1)), ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(8), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 15
+Execution Stack: ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 16
+Execution Stack: ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 17
+Execution Stack: wH(v2, rH(v2) ADD 1)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 1
+Execution Stack: Ref(Int) v1, ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v1, 20), ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: Ref(Int) v2, ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v2, 30), ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: newlock(x), ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )), ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )), ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )), ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: ( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(9), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: lock(x), ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: fork(wH(v2, rH(v2) ADD 1)), ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(8), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 15
+Execution Stack: ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 17
+Execution Stack: ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 18
+Execution Stack: wH(v2, rH(v2) ADD 1)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 1
+Execution Stack: Ref(Int) v1, ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v1, 20), ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: Ref(Int) v2, ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v2, 30), ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: newlock(x), ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )), ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )), ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )), ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: ( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: Ref(Int) v1, ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v1, 20), ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: Ref(Int) v2, ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v2, 30), ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: newlock(x), ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )), ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )), ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )), ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: ( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(9), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: lock(x), ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: fork(wH(v2, rH(v2) ADD 1)), ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: Ref(Int) v1, ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v1, 20), ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: Ref(Int) v2, ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v2, 30), ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: newlock(x), ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )), ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )), ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )), ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: ( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(9), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: lock(x), ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: fork(wH(v2, rH(v2) ADD 1)), ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: Ref(Int) v1, ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v1, 20), ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: Ref(Int) v2, ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v2, 30), ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: newlock(x), ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )), ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )), ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )), ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: ( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(9), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: lock(x), ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: fork(wH(v2, rH(v2) ADD 1)), ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: Ref(Int) v1, ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v1, 20), ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: Ref(Int) v2, ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v2, 30), ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: newlock(x), ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )), ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )), ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )), ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: ( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(9), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: lock(x), ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: fork(wH(v2, rH(v2) ADD 1)), ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(8), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 15
+Execution Stack: ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 17
+Execution Stack: ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 18
+Execution Stack: wH(v2, rH(v2) ADD 1)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 1
+Execution Stack: Ref(Int) v1, ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v1, 20), ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: Ref(Int) v2, ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v2, 30), ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: newlock(x), ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )), ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )), ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )), ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: ( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(9), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: lock(x), ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: fork(wH(v2, rH(v2) ADD 1)), ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(8), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 15
+Execution Stack: ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 17
+Execution Stack: ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 18
+Execution Stack: wH(v2, rH(v2) ADD 1)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 1
+Execution Stack: Ref(Int) v1, ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v1, 20), ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: Ref(Int) v2, ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v2, 30), ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: newlock(x), ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )), ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )), ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )), ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: ( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(9), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: lock(x), ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: fork(wH(v2, rH(v2) ADD 1)), ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: Ref(Int) v1, ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v1, 20), ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: Ref(Int) v2, ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v2, 30), ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: newlock(x), ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )), ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )), ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )), ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: Ref(Int) v1, ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v1, 20), ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: Ref(Int) v2, ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v2, 30), ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: newlock(x), ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )), ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )), ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )), ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(9), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: lock(x), ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: fork(wH(v2, rH(v2) ADD 1)), ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(8), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 17, 
+
+Program id: 15
+Execution Stack: lock(x), ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 17, 
+
+Program id: 16
+Execution Stack: ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 17, 
+
+Program id: 17
+Execution Stack: ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 17, 
+
+Program id: 18
+Execution Stack: wH(v2, rH(v2) ADD 1)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 17, 
+
+Program id: 1
+Execution Stack: Ref(Int) v1, ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v1, 20), ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: Ref(Int) v2, ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v2, 30), ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: newlock(x), ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )), ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )), ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )), ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(9), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: lock(x), ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: fork(wH(v2, rH(v2) ADD 1)), ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(8), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 17, 
+
+Program id: 15
+Execution Stack: lock(x), ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 17, 
+
+Program id: 16
+Execution Stack: ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 17, 
+
+Program id: 17
+Execution Stack: ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 17, 
+
+Program id: 18
+Execution Stack: wH(v2, rH(v2) ADD 1)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 17, 
+
+Program id: 1
+Execution Stack: Ref(Int) v1, ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v1, 20), ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: Ref(Int) v2, ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v2, 30), ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: newlock(x), ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )), ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )), ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )), ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: ( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(9), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: lock(x), ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: fork(wH(v2, rH(v2) ADD 1)), ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: Ref(Int) v1, ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v1, 20); ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v1, 20), ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (0, Int), 
+Out: 
+Heap: 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( Ref(Int) v2; ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: Ref(Int) v2, ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( new(v2, 30); ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: new(v2, 30), ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (0, Int), 
+Out: 
+Heap: 1 -> 20, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( newlock(x); ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: newlock(x), ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 
+
+Program id: 1
+Execution Stack: ( fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )); ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )), ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )); ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )); ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: fork(( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )), ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: fork(( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )), ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( sleep(9); ( print(rH(v1)); print(rH(v2)) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: ( fork(wH(v2, rH(v2) ADD 1)); ( wH(v2, rH(v2) ADD 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: ( lock(x); ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) ) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(9), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: lock(x), ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: fork(wH(v2, rH(v2) ADD 1)), ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(8), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 15
+Execution Stack: ( wH(v1, rH(v1) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 16
+Execution Stack: ( wH(v2, rH(v2) ADD 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 17
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 18
+Execution Stack: wH(v2, rH(v2) ADD 1)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 30, 
+Lock Table: 1 -> 15, 
+
+Program id: 1
+Execution Stack: sleep(7), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 31, 
+Lock Table: 1 -> 15, 
+
+Program id: 15
+Execution Stack: wH(v1, rH(v1) ADD 1), unlock(x)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 31, 
+Lock Table: 1 -> 15, 
+
+Program id: 16
+Execution Stack: wH(v2, rH(v2) ADD 1), unlock(x)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 31, 
+Lock Table: 1 -> 15, 
+
+Program id: 17
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 31, 
+Lock Table: 1 -> 15, 
+
+Program id: 18
+Execution Stack: 
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 31, 
+Lock Table: 1 -> 15, 
+
+Program id: 1
+Execution Stack: sleep(6), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> 15, 
+
+Program id: 15
+Execution Stack: unlock(x)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> 15, 
+
+Program id: 16
+Execution Stack: unlock(x)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> 15, 
+
+Program id: 17
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> 15, 
+
+Program id: 1
+Execution Stack: sleep(5), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 15
+Execution Stack: 
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 16
+Execution Stack: 
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: lock(x), ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(4), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> 17, 
+
+Program id: 17
+Execution Stack: ( wH(v1, rH(v1) SUBTRACT 1); unlock(x) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> 17, 
+
+Program id: 1
+Execution Stack: sleep(3), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> 17, 
+
+Program id: 17
+Execution Stack: wH(v1, rH(v1) SUBTRACT 1), unlock(x)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 21, 2 -> 32, 
+Lock Table: 1 -> 17, 
+
+Program id: 1
+Execution Stack: sleep(2), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 32, 
+Lock Table: 1 -> 17, 
+
+Program id: 17
+Execution Stack: unlock(x)
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 32, 
+Lock Table: 1 -> 17, 
+
+Program id: 1
+Execution Stack: sleep(1), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 17
+Execution Stack: 
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: sleep(0), ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: ( print(rH(v1)); print(rH(v2)) )
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: print(rH(v1)), print(rH(v2))
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 
+Heap: 1 -> 20, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: print(rH(v2))
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 
+Heap: 1 -> 20, 2 -> 32, 
+Lock Table: 1 -> -1, 
+
+Program id: 1
+Execution Stack: 
+Symbols Table: x -> 1, v1 -> (1, Int), v2 -> (2, Int), 
+Out: 20 32 
+Heap: 1 -> 20, 2 -> 32, 
+Lock Table: 1 -> -1, 
+

@@ -16,7 +16,8 @@ public class ForkStmt implements IStmt{
     }
 
     public ProgramState execute(ProgramState state) throws StatementException, ExpressionException {
-        ProgramState newState = new ProgramState(new MyStack<IStmt>(), state.getSymTable().deepCopy(), state.getOut(), this.statement, state.getFileTable(), state.getHeap());
+        ProgramState newState = new ProgramState(new MyStack<IStmt>(), state.getSymTable().deepCopy(), state.getOut(), 
+        this.statement, state.getFileTable(), state.getHeap(), state.getLockTable());
         return newState;
     }
 

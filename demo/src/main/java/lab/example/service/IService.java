@@ -11,6 +11,7 @@ public interface IService {
     public ProgramState getProgramState (int id) throws KeyNotFoundException;
     public List<Integer> getProgramsId();
     public List<Pair<Integer, String>> getHeapTable();
+    public List<Pair<Integer, Integer>> getLockTable();
     public List<String> getOutList();
     public List<String> getFileTable();
     public List<String> getExeStack(int id) throws RepoException;

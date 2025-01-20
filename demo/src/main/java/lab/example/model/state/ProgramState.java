@@ -6,6 +6,10 @@ import lab.example.model.values.StringValue;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReadWriteLock;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 import lab.example.exceptions.EmptyStackException;
 import lab.example.exceptions.ExpressionException;
@@ -18,11 +22,15 @@ public class ProgramState {
     private IMyList<IValue> out;
     private IMyMap<StringValue, BufferedReader> fileTable;
     private IMyHeap<Integer, IValue> heap;
+    private ILockTable lockTable;
+    public static ReadWriteLock lock = new ReentrantReadWriteLock();
+    public static Lock lock1 = new ReentrantLock();
 
     private int id;
     private static int noOfPrograms = 0;
 
-    public ProgramState(IMyStack<IStmt> stk, IMyMap<String, IValue> symtbl, IMyList<IValue> out, IStmt prg, IMyMap<StringValue, BufferedReader> fTb, IMyHeap<Integer, IValue> h) {
+    public ProgramState(IMyStack<IStmt> stk, IMyMap<String, IValue> symtbl, IMyList<IValue> out, IStmt prg, IMyMap<StringValue, BufferedReader> fTb, 
+    IMyHeap<Integer, IValue> h, ILockTable lockTable) {
         this.exeStack = stk;
         this.symTable = symtbl;
         this.out = out;
@@ -32,8 +40,11 @@ public class ProgramState {
             
         this.fileTable = fTb;
         this.heap = h;
+        this.lockTable = lockTable;
 
+        lock1.lock();
         noOfPrograms++;
+        lock1.unlock();
         this.id = noOfPrograms;
     }
 
@@ -61,13 +72,17 @@ public class ProgramState {
         return this.heap;
     }
 
+    public ILockTable getLockTable() {
+        return this.lockTable;
+    }
+
     public boolean isNotCompleted() {
         return ! (this.exeStack.isEmpty());
     }
 
     public ProgramState oneStep() throws EmptyStackException, StatementException, ExpressionException, IOException {
         if (this.exeStack.isEmpty())
-            throw new EmptyStackException("The execution stack is empty.");
+            throw new EmptyStackException("The execution stack is empty.");     
 
         IStmt currentStmt = this.exeStack.pop();
         return currentStmt.execute(this);
@@ -76,6 +91,6 @@ public class ProgramState {
     @Override
     public String toString() {
         return "Program id: " + String.valueOf(this.id) + "\n" + "Execution Stack: " + this.exeStack.getInversedStack() + "\nSymbols Table: " + this.symTable.toString() 
-        + "\nOut: " + this.out.toString() + "\nHeap: " + this.heap.toString(); 
+        + "\nOut: " + this.out.toString() + "\nHeap: " + this.heap.toString() + "\nLock Table: " + this.lockTable.toString(); 
     }
 }

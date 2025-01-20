@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 import lab.example.controller.Controller;
+import lab.example.model.adt.LockTable;
 import lab.example.model.adt.MyHeap;
 import lab.example.model.adt.MyList;
 import lab.example.model.adt.MyMap;
@@ -65,7 +66,7 @@ public class TextMenu {
         );
 
         ProgramState state2 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        new MyList<IValue>(), statement2, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
+        new MyList<IValue>(), statement2, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>(), new LockTable());
 
         Repository repo2 = new Repository("log2.txt");
         repo2.add(state2);
@@ -80,7 +81,7 @@ public class TextMenu {
         VariableExpression("v"))))));
 
         ProgramState state3 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        new MyList<IValue>(), statement3, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
+        new MyList<IValue>(), statement3, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>(), new LockTable());
 
         Repository repo3 = new Repository("log3.txt");
         repo3.add(state3);
@@ -98,7 +99,7 @@ public class TextMenu {
         new CloseRFileStmt(new VariableExpression("varf"))))))))));
 
         ProgramState state4 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        new MyList<IValue>(), statement4, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
+        new MyList<IValue>(), statement4, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>(), new LockTable());
 
         Repository repo4 = new Repository("log4.txt");
         repo4.add(state4);
@@ -115,7 +116,7 @@ public class TextMenu {
         new AssignStmt("c", new ValueExpression(new IntValue(-1)))))))));
 
         ProgramState state5 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        new MyList<IValue>(), statement5, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
+        new MyList<IValue>(), statement5, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>(), new LockTable());
 
         Repository repo5 = new Repository("log5.txt");
         repo5.add(state5);
@@ -130,7 +131,7 @@ public class TextMenu {
         new PrintStmt(new VariableExpression("a")))))));
 
         ProgramState state6 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        new MyList<IValue>(), statement6, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
+        new MyList<IValue>(), statement6, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>(), new LockTable());
 
         Repository repo6 = new Repository("log6.txt");
         repo6.add(state6);
@@ -145,7 +146,7 @@ public class TextMenu {
         new PrintStmt(new ArithmeticExpression(new ReadHeapExpression(new ReadHeapExpression(new VariableExpression("a"))), new ValueExpression(new IntValue(5)), ArithmeticOperation.ADD)))))));
 
         ProgramState state7 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        new MyList<IValue>(), statement7, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
+        new MyList<IValue>(), statement7, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>(), new LockTable());
 
         Repository repo7 = new Repository("log7.txt");
         repo7.add(state7);
@@ -159,7 +160,7 @@ public class TextMenu {
         new PrintStmt(new ArithmeticExpression(new ReadHeapExpression(new VariableExpression("v")), new ValueExpression(new IntValue(5)), ArithmeticOperation.ADD))))));
 
         ProgramState state8 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        new MyList<IValue>(), statement8, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
+        new MyList<IValue>(), statement8, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>(), new LockTable());
 
         Repository repo8 = new Repository("log8.txt");
         repo8.add(state8);
@@ -173,7 +174,7 @@ public class TextMenu {
         new PrintStmt(new ReadHeapExpression(new ReadHeapExpression(new VariableExpression("a")))))))));
 
         ProgramState state9 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        new MyList<IValue>(), statement9, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
+        new MyList<IValue>(), statement9, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>(), new LockTable());
 
         Repository repo9 = new Repository("log9.txt");
         repo9.add(state9);
@@ -188,7 +189,7 @@ public class TextMenu {
         new PrintStmt(new ReadHeapExpression(new ReadHeapExpression(new VariableExpression("a"))))))))));
 
         ProgramState state10 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        new MyList<IValue>(), statement10, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
+        new MyList<IValue>(), statement10, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>(), new LockTable());
 
         Repository repo10 = new Repository("log10.txt");
         repo10.add(state10);
@@ -205,7 +206,7 @@ public class TextMenu {
         new AssignStmt("b", new ArithmeticExpression(new VariableExpression("b"), new ValueExpression(new IntValue(2)), ArithmeticOperation.MULTIPLY))))))));
 
         ProgramState state11 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        new MyList<IValue>(), statement11, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
+        new MyList<IValue>(), statement11, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>(), new LockTable());
 
         Repository repo11 = new Repository("log11.txt");
         repo11.add(state11);
@@ -222,7 +223,7 @@ public class TextMenu {
         new PrintStmt(new ReadHeapExpression(new VariableExpression("v"))))))))));
 
         ProgramState state13 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        new MyList<IValue>(), statement13, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
+        new MyList<IValue>(), statement13, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>(), new LockTable());
 
         Repository repo13 = new Repository("log13.txt");
         repo13.add(state13);
@@ -237,7 +238,7 @@ public class TextMenu {
         new PrintStmt(new ReadHeapExpression(new VariableExpression("v")))))));
 
         ProgramState state14 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        new MyList<IValue>(), statement14, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
+        new MyList<IValue>(), statement14, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>(), new LockTable());
 
         Repository repo14 = new Repository("log14.txt");
         repo14.add(state14);
@@ -251,7 +252,7 @@ public class TextMenu {
         new PrintStmt(new ReadHeapExpression(new VariableExpression("v"))))));
 
         ProgramState stateb = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        new MyList<IValue>(), badstatement, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
+        new MyList<IValue>(), badstatement, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>(), new LockTable());
 
         Repository repob = new Repository("logb.txt");
         repob.add(stateb);
@@ -261,7 +262,7 @@ public class TextMenu {
         new WhileStmt(new ValueExpression(new IntValue(5)), new PrintStmt(new VariableExpression("v"))));
 
         ProgramState stateb1 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        new MyList<IValue>(), badstatement1, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
+        new MyList<IValue>(), badstatement1, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>(), new LockTable());
 
         Repository repob1 = new Repository("logb1.txt");
         repob1.add(stateb1);

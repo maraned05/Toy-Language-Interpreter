@@ -33,7 +33,7 @@ public class Controller implements IController{
     }
 
     public void setExecutor() {
-        this.executor = Executors.newFixedThreadPool(3);
+        this.executor = Executors.newFixedThreadPool(6);
     }
 
     public void closeExecutor() {

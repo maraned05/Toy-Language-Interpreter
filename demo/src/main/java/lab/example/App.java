@@ -43,6 +43,7 @@ public class App extends Application {
     private ListView<String> outList;
     private ListView<String> fileTable;
     private TableView<Pair<Integer, String>> heapTable;
+    private TableView<Pair<Integer, Integer>> lockTable;
     private ListView<Integer> prgStateIdList;
     private TableView<Pair<String, String>> symbTable;
     private ListView<String> exeStack;
@@ -134,9 +135,21 @@ public class App extends Application {
         this.heapTable.getColumns().add(secondColHeap);
         rootPane.add(this.heapTable, 0, 4, 2, 1);
 
-        rootPane.add(new Label("Program States Identifiers"), 0, 5, 2, 1);
+        rootPane.add(new Label("Lock Table"), 0, 5, 2, 1);
+        this.lockTable = new TableView<Pair<Integer, Integer>>();
+        TableColumn<Pair<Integer, Integer>, Integer> firstColLock = new TableColumn<Pair<Integer, Integer>, Integer>("Address");
+        firstColLock.setCellValueFactory(new PropertyValueFactory<>("key"));
+        TableColumn<Pair<Integer, Integer>, Integer> secondColLock = new TableColumn<Pair<Integer, Integer>, Integer>("Program Id");
+        secondColLock.setCellValueFactory(new PropertyValueFactory<>("value"));
+        firstColLock.prefWidthProperty().bind(this.lockTable.widthProperty().multiply(0.5));
+        secondColLock.prefWidthProperty().bind(this.lockTable.widthProperty().multiply(0.5));
+        this.lockTable.getColumns().add(firstColLock);
+        this.lockTable.getColumns().add(secondColLock);
+        rootPane.add(this.lockTable, 0, 6, 2, 1);
+
+        rootPane.add(new Label("Program States Identifiers"), 2, 0, 2, 1);
         this.prgStateIdList = new ListView<Integer>();
-        rootPane.add(this.prgStateIdList, 0, 6, 2, 1);
+        rootPane.add(this.prgStateIdList, 2, 1, 2, 1);
 
         this.prgStateIdList.getSelectionModel().selectedItemProperty().addListener(
             (ObservableValue<? extends Integer> ov, Integer old_val, Integer new_val) -> {
@@ -148,7 +161,7 @@ public class App extends Application {
                 }
         });
 
-        rootPane.add(new Label("Symbols Table"), 2, 0);
+        rootPane.add(new Label("Symbols Table"), 2, 2);
         this.symbTable = new TableView<Pair<String, String>>();
         TableColumn<Pair<String, String>, String> firstColSymb = new TableColumn<Pair<String, String>, String>("Variable Name");
         firstColSymb.setCellValueFactory(new PropertyValueFactory<>("key"));
@@ -158,11 +171,11 @@ public class App extends Application {
         secondColSymb.prefWidthProperty().bind(this.symbTable.widthProperty().multiply(0.5));
         this.symbTable.getColumns().add(firstColSymb);
         this.symbTable.getColumns().add(secondColSymb);
-        rootPane.add(this.symbTable, 2, 1);
+        rootPane.add(this.symbTable, 2, 3);
 
-        rootPane.add(new Label("Execution Stack"), 3, 0);
+        rootPane.add(new Label("Execution Stack"), 3, 2);
         this.exeStack = new ListView<String>();
-        rootPane.add(this.exeStack, 3, 1);
+        rootPane.add(this.exeStack, 3, 3);
 
         this.oneStepButton = new Button("Run One Step");
         this.oneStepButton.setOnAction(event -> {
@@ -180,7 +193,7 @@ public class App extends Application {
                 this.service.closeService();
             }
         });
-        rootPane.add(oneStepButton, 3, 2, 2, 1);
+        rootPane.add(oneStepButton, 3, 4, 2, 1);
 
         this.populateGeneralInformation();
 
@@ -192,6 +205,7 @@ public class App extends Application {
         this.noOfPrgStates.setText(String.valueOf(this.service.getNoOfPrgStates()));
         this.prgStateIdList.setItems(FXCollections.observableArrayList(this.service.getProgramsId()));
         if (! this.prgStateIdList.getItems().isEmpty()) {
+            this.lockTable.setItems(FXCollections.observableArrayList(this.service.getLockTable()));
             this.outList.setItems(FXCollections.observableArrayList(this.service.getOutList()));
             this.fileTable.setItems(FXCollections.observableArrayList(this.service.getFileTable()));
             this.heapTable.setItems(FXCollections.observableArrayList(this.service.getHeapTable()));
