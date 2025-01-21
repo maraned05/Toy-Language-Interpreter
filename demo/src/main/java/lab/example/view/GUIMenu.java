@@ -8,43 +8,42 @@ import java.util.Map;
 
 import lab.example.controller.Controller;
 import lab.example.controller.IController;
-import lab.example.model.adt.LockTable;
+import lab.example.model.adt.BarrierTable;
 import lab.example.model.adt.MyHeap;
 import lab.example.model.adt.MyList;
 import lab.example.model.adt.MyMap;
 import lab.example.model.adt.MyStack;
 import lab.example.model.expressions.ArithmeticExpression;
 import lab.example.model.expressions.ArithmeticOperation;
-import lab.example.model.expressions.LogicalExpression;
-import lab.example.model.expressions.LogicalOperation;
+// import lab.example.model.expressions.LogicalExpression;
+// import lab.example.model.expressions.LogicalOperation;
 import lab.example.model.expressions.ReadHeapExpression;
-import lab.example.model.expressions.RelationalExpression;
-import lab.example.model.expressions.RelationalOperation;
+// import lab.example.model.expressions.RelationalExpression;
+// import lab.example.model.expressions.RelationalOperation;
 import lab.example.model.expressions.ValueExpression;
 import lab.example.model.expressions.VariableExpression;
 import lab.example.model.state.ProgramState;
-import lab.example.model.statements.AssignStmt;
-import lab.example.model.statements.CloseRFileStmt;
+// import lab.example.model.statements.AssignStmt;
+import lab.example.model.statements.AwaitStmt;
+// import lab.example.model.statements.CloseRFileStmt;
 import lab.example.model.statements.CompStmt;
-import lab.example.model.statements.CreateLockStmt;
+import lab.example.model.statements.CreateBarrierStmt;
 import lab.example.model.statements.ForkStmt;
 import lab.example.model.statements.HeapAllocStmt;
 import lab.example.model.statements.IStmt;
-import lab.example.model.statements.IfStmt;
-import lab.example.model.statements.LockStmt;
-import lab.example.model.statements.OpenRFileStmt;
+// import lab.example.model.statements.IfStmt;
+// import lab.example.model.statements.OpenRFileStmt;
 import lab.example.model.statements.PrintStmt;
-import lab.example.model.statements.ReadFileStmt;
-import lab.example.model.statements.SleepStmt;
-import lab.example.model.statements.UnlockStmt;
+// import lab.example.model.statements.ReadFileStmt;
+// import lab.example.model.statements.SleepStmt;
 import lab.example.model.statements.VarDeclStmt;
-import lab.example.model.statements.WhileStmt;
+// import lab.example.model.statements.WhileStmt;
 import lab.example.model.statements.WriteHeapStmt;
-import lab.example.model.types.BoolType;
+// import lab.example.model.types.BoolType;
 import lab.example.model.types.IntType;
 import lab.example.model.types.RefType;
-import lab.example.model.types.StringType;
-import lab.example.model.values.BoolValue;
+// import lab.example.model.types.StringType;
+// import lab.example.model.values.BoolValue;
 import lab.example.model.values.IValue;
 import lab.example.model.values.IntValue;
 import lab.example.model.values.StringValue;
@@ -58,32 +57,31 @@ public class GUIMenu {
     }
 
     public void populateMenu() {
-        IStmt statement2 = new CompStmt(new VarDeclStmt("v1", new RefType(new IntType())), 
-        new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(20)), "v1"), 
-        new CompStmt(new VarDeclStmt("v2", new RefType(new IntType())), 
-        new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(30)), "v2"), 
-        new CompStmt(new CreateLockStmt("x"), 
-        new CompStmt(new ForkStmt(new CompStmt(new ForkStmt(new CompStmt(new LockStmt("x"), 
-        new CompStmt(new WriteHeapStmt(new ArithmeticExpression(new ReadHeapExpression(new VariableExpression("v1")), new ValueExpression(new IntValue(1)), ArithmeticOperation.SUBTRACT), "v1"), 
-        new UnlockStmt("x")))), 
-        new CompStmt(new LockStmt("x"), 
-        new CompStmt(new WriteHeapStmt(new ArithmeticExpression(new ReadHeapExpression(new VariableExpression("v1")), new ValueExpression(new IntValue(1)), ArithmeticOperation.ADD), "v1"), 
-        new UnlockStmt("x"))))), 
-        new CompStmt(new ForkStmt(new CompStmt(new ForkStmt(new WriteHeapStmt(new ArithmeticExpression(new ReadHeapExpression(new VariableExpression("v2")), new ValueExpression(new IntValue(1)), ArithmeticOperation.ADD), "v2")), 
-        new CompStmt(new WriteHeapStmt(new ArithmeticExpression(new ReadHeapExpression(new VariableExpression("v2")), new ValueExpression(new IntValue(1)), ArithmeticOperation.ADD), "v2"), 
-        new UnlockStmt("x")))), 
-        new CompStmt(new SleepStmt(9),
-        new CompStmt(new PrintStmt(new ReadHeapExpression(new VariableExpression("v1"))), 
-        new PrintStmt(new ReadHeapExpression(new VariableExpression("v2"))))))))))));
+        IStmt statement1 = new CompStmt(new VarDeclStmt("v1", new RefType(new IntType())), 
+        new CompStmt(new VarDeclStmt("v2", new RefType(new IntType())),
+        new CompStmt(new VarDeclStmt("v3", new RefType(new IntType())), 
+        new CompStmt(new VarDeclStmt("cnt", new IntType()), 
+        new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(2)), "v1"), 
+        new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(3)), "v2"), 
+        new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(4)), "v3"), 
+        new CompStmt(new CreateBarrierStmt("cnt", new ReadHeapExpression(new VariableExpression("v2"))), 
+        new CompStmt(new ForkStmt(new CompStmt(new AwaitStmt("cnt"), 
+        new CompStmt(new WriteHeapStmt(new ArithmeticExpression(new ReadHeapExpression(new VariableExpression("v1")), new ValueExpression(new IntValue(10)), ArithmeticOperation.MULTIPLY), "v1"), 
+        new PrintStmt(new ReadHeapExpression(new VariableExpression("v1")))))), 
+        new CompStmt(new ForkStmt(new CompStmt(new AwaitStmt("cnt"), 
+        new CompStmt(new WriteHeapStmt(new ArithmeticExpression(new ReadHeapExpression(new VariableExpression("v2")), new ValueExpression(new IntValue(10)), ArithmeticOperation.MULTIPLY), "v2"), 
+        new CompStmt(new WriteHeapStmt(new ArithmeticExpression(new ReadHeapExpression(new VariableExpression("v2")), new ValueExpression(new IntValue(10)), ArithmeticOperation.MULTIPLY), "v2"), 
+        new PrintStmt(new ReadHeapExpression(new VariableExpression("v2"))))))), 
+        new CompStmt(new AwaitStmt("cnt"), new PrintStmt(new ReadHeapExpression(new VariableExpression("v3"))))))))))))));
 
-        ProgramState state2 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        new MyList<IValue>(), statement2, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>(), new LockTable());
+        ProgramState state1 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
+        new MyList<IValue>(), statement1, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>(), new BarrierTable());
 
-        Repository repo2 = new Repository("log2.txt");
-        repo2.add(state2);
-        Controller ctr2 = new Controller(repo2, true);
+        Repository repo1 = new Repository("log1.txt");
+        repo1.add(state1);
+        Controller ctr1 = new Controller(repo1, true);
 
-
+        /*
         IStmt statement3 = new CompStmt (new VarDeclStmt("a",new BoolType()),
         new CompStmt(new VarDeclStmt("v", new IntType()),
         new CompStmt(new AssignStmt("a", new ValueExpression(new BoolValue(true))),
@@ -278,21 +276,22 @@ public class GUIMenu {
         Repository repob1 = new Repository("logb1.txt");
         repob1.add(stateb1);
         Controller ctrb1 = new Controller(repob1, true);
+        */
 
-        this.addProgram(statement2.toString(), ctr2);
-        this.addProgram(statement3.toString(), ctr3);
-        this.addProgram(statement4.toString(), ctr4);
-        this.addProgram(statement5.toString(), ctr5);
-        this.addProgram(statement6.toString(), ctr6);
-        this.addProgram(statement7.toString(), ctr7);
-        this.addProgram(statement8.toString(), ctr8);
-        this.addProgram(statement9.toString(), ctr9);
-        this.addProgram(statement10.toString(), ctr10);
-        this.addProgram(statement11.toString(), ctr11);
-        this.addProgram(statement13.toString(), ctr13);
-        this.addProgram(statement14.toString(), ctr14);
-        this.addProgram(badstatement.toString(), ctrb);
-        this.addProgram(badstatement1.toString(), ctrb1);
+        this.addProgram(statement1.toString(), ctr1);
+        // this.addProgram(statement3.toString(), ctr3);
+        // this.addProgram(statement4.toString(), ctr4);
+        // this.addProgram(statement5.toString(), ctr5);
+        // this.addProgram(statement6.toString(), ctr6);
+        // this.addProgram(statement7.toString(), ctr7);
+        // this.addProgram(statement8.toString(), ctr8);
+        // this.addProgram(statement9.toString(), ctr9);
+        // this.addProgram(statement10.toString(), ctr10);
+        // this.addProgram(statement11.toString(), ctr11);
+        // this.addProgram(statement13.toString(), ctr13);
+        // this.addProgram(statement14.toString(), ctr14);
+        // this.addProgram(badstatement.toString(), ctrb);
+        // this.addProgram(badstatement1.toString(), ctrb1);
     }
 
     public void addProgram(String desc, IController ctr) {

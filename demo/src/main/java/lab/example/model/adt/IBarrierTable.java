@@ -7,7 +7,7 @@ import javafx.util.Pair;
 import lab.example.exceptions.KeyNotFoundException;
 
 public interface IBarrierTable {
-    int createLock(int nr);
+    int createBarrier(int nr);
     void delete(int addr) throws KeyNotFoundException;
     boolean exists(int addr);
     void set(int addr, Pair<Integer, List<Integer>> barrier);

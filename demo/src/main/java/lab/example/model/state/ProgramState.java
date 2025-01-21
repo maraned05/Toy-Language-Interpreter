@@ -22,7 +22,7 @@ public class ProgramState {
     private IMyList<IValue> out;
     private IMyMap<StringValue, BufferedReader> fileTable;
     private IMyHeap<Integer, IValue> heap;
-    private ILockTable lockTable;
+    private IBarrierTable barrierTable;
     public static ReadWriteLock lock = new ReentrantReadWriteLock();
     public static Lock lock1 = new ReentrantLock();
 
@@ -30,7 +30,7 @@ public class ProgramState {
     private static int noOfPrograms = 0;
 
     public ProgramState(IMyStack<IStmt> stk, IMyMap<String, IValue> symtbl, IMyList<IValue> out, IStmt prg, IMyMap<StringValue, BufferedReader> fTb, 
-    IMyHeap<Integer, IValue> h, ILockTable lockTable) {
+    IMyHeap<Integer, IValue> h, IBarrierTable barrierTable) {
         this.exeStack = stk;
         this.symTable = symtbl;
         this.out = out;
@@ -40,7 +40,7 @@ public class ProgramState {
             
         this.fileTable = fTb;
         this.heap = h;
-        this.lockTable = lockTable;
+        this.barrierTable = barrierTable;
 
         lock1.lock();
         noOfPrograms++;
@@ -72,8 +72,8 @@ public class ProgramState {
         return this.heap;
     }
 
-    public ILockTable getLockTable() {
-        return this.lockTable;
+    public IBarrierTable getBarrierTable() {
+        return this.barrierTable;
     }
 
     public boolean isNotCompleted() {
@@ -91,6 +91,6 @@ public class ProgramState {
     @Override
     public String toString() {
         return "Program id: " + String.valueOf(this.id) + "\n" + "Execution Stack: " + this.exeStack.getInversedStack() + "\nSymbols Table: " + this.symTable.toString() 
-        + "\nOut: " + this.out.toString() + "\nHeap: " + this.heap.toString() + "\nLock Table: " + this.lockTable.toString(); 
+        + "\nOut: " + this.out.toString() + "\nHeap: " + this.heap.toString() + "\nBarrier Table: " + this.barrierTable.toString(); 
     }
 }

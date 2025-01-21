@@ -15,7 +15,7 @@ public class BarrierTable implements IBarrierTable {
         this.freeAddr = 1;
     }
 
-    public int createLock(int nr) {
+    public int createBarrier (int nr) {
         this.values.insert(this.freeAddr++, new Pair<Integer, List<Integer>>(nr, new ArrayList<Integer>()));
         return this.freeAddr - 1;
     }

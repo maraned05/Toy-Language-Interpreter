@@ -26,6 +26,7 @@ import lab.example.service.IService;
 import lab.example.service.Service;
 import lab.example.view.GUIMenu;
 import java.io.IOException;
+import java.util.List;
 
 import javafx.scene.control.TableColumn;
 
@@ -43,7 +44,7 @@ public class App extends Application {
     private ListView<String> outList;
     private ListView<String> fileTable;
     private TableView<Pair<Integer, String>> heapTable;
-    private TableView<Pair<Integer, Integer>> lockTable;
+    private TableView<Pair<Integer, Pair<Integer, List<Integer>>>> barrierTable;
     private ListView<Integer> prgStateIdList;
     private TableView<Pair<String, String>> symbTable;
     private ListView<String> exeStack;
@@ -135,17 +136,42 @@ public class App extends Application {
         this.heapTable.getColumns().add(secondColHeap);
         rootPane.add(this.heapTable, 0, 4, 2, 1);
 
-        rootPane.add(new Label("Lock Table"), 0, 5, 2, 1);
-        this.lockTable = new TableView<Pair<Integer, Integer>>();
-        TableColumn<Pair<Integer, Integer>, Integer> firstColLock = new TableColumn<Pair<Integer, Integer>, Integer>("Address");
-        firstColLock.setCellValueFactory(new PropertyValueFactory<>("key"));
-        TableColumn<Pair<Integer, Integer>, Integer> secondColLock = new TableColumn<Pair<Integer, Integer>, Integer>("Program Id");
-        secondColLock.setCellValueFactory(new PropertyValueFactory<>("value"));
-        firstColLock.prefWidthProperty().bind(this.lockTable.widthProperty().multiply(0.5));
-        secondColLock.prefWidthProperty().bind(this.lockTable.widthProperty().multiply(0.5));
-        this.lockTable.getColumns().add(firstColLock);
-        this.lockTable.getColumns().add(secondColLock);
-        rootPane.add(this.lockTable, 0, 6, 2, 1);
+        rootPane.add(new Label("Barrier Table"), 0, 5, 2, 1);
+        // this.barrierTable = new TableView<Pair<Integer, Pair<Integer, List<Integer>>>>();
+        // TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, Integer> firstColBarrier = new TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, Integer>("Address");
+        // firstColBarrier.setCellValueFactory(new PropertyValueFactory<>("key"));
+        // TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, Pair<Integer, List<Integer>>> secondColBarrier = new TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, Pair<Integer, List<Integer>>>("Barrier");
+        // //secondColBarrier.setCellValueFactory(new PropertyValueFactory<>("value"));
+
+        // TableColumn<Pair<Integer, List<Integer>>, Integer> thirdColBarrier = new TableColumn<Pair<Integer, List<Integer>>, Integer>("Barrier Limit");
+        // thirdColBarrier.setCellValueFactory(new PropertyValueFactory<>("value"));
+        // TableColumn<Pair<Integer, List<Integer>>, List<Integer>> fourthColBarrier = new TableColumn<Pair<Integer, List<Integer>>, List<Integer>>("Programs Id");
+        // thirdColBarrier.setCellValueFactory(new PropertyValueFactory<>("value"));
+
+        // firstColBarrier.prefWidthProperty().bind(this.barrierTable.widthProperty().multiply(0.5));
+        // secondColBarrier.prefWidthProperty().bind(this.barrierTable.widthProperty().multiply(0.5));
+        // thirdColBarrier.prefWidthProperty().bind(this.barrierTable.widthProperty().multiply(0.25));
+        // fourthColBarrier.prefWidthProperty().bind(this.barrierTable.widthProperty().multiply(0.25));
+
+        // secondColBarrier.getColumns().addAll(thirdColBarrier, fourthColBarrier);
+
+        this.barrierTable = new TableView<Pair<Integer, Pair<Integer, List<Integer>>>>();
+        TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, Integer> firstColBarrier = new TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, Integer>("Address");
+        firstColBarrier.setCellValueFactory(new PropertyValueFactory<>("key"));
+        TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, Integer> secondColBarrier = new TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, Integer>("Barrier Limit");
+        secondColBarrier.setCellValueFactory(new PropertyValueFactory<>("value"));
+        TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, List<Integer>> thirdColBarrier = new TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, List<Integer>>("Programs Id");
+        thirdColBarrier.setCellValueFactory(new PropertyValueFactory<>("value"));
+
+        firstColBarrier.prefWidthProperty().bind(this.barrierTable.widthProperty().multiply(0.33));
+        secondColBarrier.prefWidthProperty().bind(this.barrierTable.widthProperty().multiply(0.33));
+        thirdColBarrier.prefWidthProperty().bind(this.barrierTable.widthProperty().multiply(0.33));
+
+
+        this.barrierTable.getColumns().add(firstColBarrier);
+        this.barrierTable.getColumns().add(secondColBarrier);
+        this.barrierTable.getColumns().add(thirdColBarrier);
+        rootPane.add(this.barrierTable, 0, 6, 2, 1);
 
         rootPane.add(new Label("Program States Identifiers"), 2, 0, 2, 1);
         this.prgStateIdList = new ListView<Integer>();
@@ -205,7 +231,7 @@ public class App extends Application {
         this.noOfPrgStates.setText(String.valueOf(this.service.getNoOfPrgStates()));
         this.prgStateIdList.setItems(FXCollections.observableArrayList(this.service.getProgramsId()));
         if (! this.prgStateIdList.getItems().isEmpty()) {
-            this.lockTable.setItems(FXCollections.observableArrayList(this.service.getLockTable()));
+            this.barrierTable.setItems(FXCollections.observableArrayList(this.service.getBarrierTable()));
             this.outList.setItems(FXCollections.observableArrayList(this.service.getOutList()));
             this.fileTable.setItems(FXCollections.observableArrayList(this.service.getFileTable()));
             this.heapTable.setItems(FXCollections.observableArrayList(this.service.getHeapTable()));
