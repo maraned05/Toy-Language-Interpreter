@@ -42,6 +42,7 @@ import lab.example.model.statements.WriteHeapStmt;
 // import lab.example.model.types.BoolType;
 import lab.example.model.types.IntType;
 import lab.example.model.types.RefType;
+import lab.example.model.types.StringType;
 // import lab.example.model.types.StringType;
 // import lab.example.model.values.BoolValue;
 import lab.example.model.values.IValue;
@@ -58,11 +59,11 @@ public class GUIMenu {
 
     public void populateMenu() {
         IStmt statement1 = new CompStmt(new VarDeclStmt("v1", new RefType(new IntType())), 
-        new CompStmt(new VarDeclStmt("v2", new RefType(new IntType())),
+        new CompStmt(new VarDeclStmt("v2", new RefType(new StringType())),
         new CompStmt(new VarDeclStmt("v3", new RefType(new IntType())), 
         new CompStmt(new VarDeclStmt("cnt", new IntType()), 
         new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(2)), "v1"), 
-        new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(3)), "v2"), 
+        new CompStmt(new HeapAllocStmt(new ValueExpression(new StringValue("")), "v2"), 
         new CompStmt(new HeapAllocStmt(new ValueExpression(new IntValue(4)), "v3"), 
         new CompStmt(new CreateBarrierStmt("cnt", new ReadHeapExpression(new VariableExpression("v2"))), 
         new CompStmt(new ForkStmt(new CompStmt(new AwaitStmt("cnt"), 

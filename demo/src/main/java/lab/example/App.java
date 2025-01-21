@@ -3,6 +3,10 @@ package lab.example;
 import javafx.application.Application;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
+// import javafx.collections.ObservableList;
+import javafx.beans.property.SimpleIntegerProperty;
+// import javafx.beans.property.SimpleListProperty;
+//import javafx.beans.property.ListProperty;
 //import javafx.fxml.FXMLLoader;
 //import javafx.scene.Group;
 //import javafx.scene.Parent;
@@ -137,31 +141,21 @@ public class App extends Application {
         rootPane.add(this.heapTable, 0, 4, 2, 1);
 
         rootPane.add(new Label("Barrier Table"), 0, 5, 2, 1);
-        // this.barrierTable = new TableView<Pair<Integer, Pair<Integer, List<Integer>>>>();
+        this.barrierTable = new TableView<Pair<Integer, Pair<Integer, List<Integer>>>>();
+
+        TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, Integer> firstColBarrier = new TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, Integer>("Address");
+        firstColBarrier.setCellValueFactory(cellData -> new SimpleIntegerProperty(cellData.getValue().getKey()).asObject());
+        TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, Integer> secondColBarrier = new TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, Integer>("Barrier Limit");
+        secondColBarrier.setCellValueFactory(cellData -> new SimpleIntegerProperty(cellData.getValue().getValue().getKey()).asObject());
+        TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, List<Integer>> thirdColBarrier = new TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, List<Integer>>("Programs Id");
+        //thirdColBarrier.setCellValueFactory(cellData -> new ListProperty<>(cellData.getValue().getValue().getValue()));
+        
         // TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, Integer> firstColBarrier = new TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, Integer>("Address");
         // firstColBarrier.setCellValueFactory(new PropertyValueFactory<>("key"));
-        // TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, Pair<Integer, List<Integer>>> secondColBarrier = new TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, Pair<Integer, List<Integer>>>("Barrier");
-        // //secondColBarrier.setCellValueFactory(new PropertyValueFactory<>("value"));
-
-        // TableColumn<Pair<Integer, List<Integer>>, Integer> thirdColBarrier = new TableColumn<Pair<Integer, List<Integer>>, Integer>("Barrier Limit");
-        // thirdColBarrier.setCellValueFactory(new PropertyValueFactory<>("value"));
-        // TableColumn<Pair<Integer, List<Integer>>, List<Integer>> fourthColBarrier = new TableColumn<Pair<Integer, List<Integer>>, List<Integer>>("Programs Id");
-        // thirdColBarrier.setCellValueFactory(new PropertyValueFactory<>("value"));
-
-        // firstColBarrier.prefWidthProperty().bind(this.barrierTable.widthProperty().multiply(0.5));
-        // secondColBarrier.prefWidthProperty().bind(this.barrierTable.widthProperty().multiply(0.5));
-        // thirdColBarrier.prefWidthProperty().bind(this.barrierTable.widthProperty().multiply(0.25));
-        // fourthColBarrier.prefWidthProperty().bind(this.barrierTable.widthProperty().multiply(0.25));
-
-        // secondColBarrier.getColumns().addAll(thirdColBarrier, fourthColBarrier);
-
-        this.barrierTable = new TableView<Pair<Integer, Pair<Integer, List<Integer>>>>();
-        TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, Integer> firstColBarrier = new TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, Integer>("Address");
-        firstColBarrier.setCellValueFactory(new PropertyValueFactory<>("key"));
-        TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, Integer> secondColBarrier = new TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, Integer>("Barrier Limit");
-        secondColBarrier.setCellValueFactory(new PropertyValueFactory<>("value"));
-        TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, List<Integer>> thirdColBarrier = new TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, List<Integer>>("Programs Id");
-        thirdColBarrier.setCellValueFactory(new PropertyValueFactory<>("value"));
+        // TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, Integer> secondColBarrier = new TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, Integer>("Barrier Limit");
+        // secondColBarrier.setCellValueFactory(new PropertyValueFactory<>("value"));
+        // TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, List<Integer>> thirdColBarrier = new TableColumn<Pair<Integer, Pair<Integer, List<Integer>>>, List<Integer>>("Programs Id");
+        // thirdColBarrier.setCellValueFactory(new PropertyValueFactory<>("list"));
 
         firstColBarrier.prefWidthProperty().bind(this.barrierTable.widthProperty().multiply(0.33));
         secondColBarrier.prefWidthProperty().bind(this.barrierTable.widthProperty().multiply(0.33));

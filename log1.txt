@@ -131,3 +131,164 @@ Out:
 Heap: 1 -> 2, 2 -> 3, 3 -> 4, 
 Barrier Table: 1 -> 3=[], 
 
+Program id: 1
+Execution Stack: fork(( await(cnt); ( wH(v2, rH(v2) MULTIPLY 10); ( wH(v2, rH(v2) MULTIPLY 10); print(rH(v2)) ) ) )), ( await(cnt); print(rH(v3)) )
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 
+Heap: 1 -> 2, 2 -> 3, 3 -> 4, 
+Barrier Table: 1 -> 3=[], 
+
+Program id: 2
+Execution Stack: await(cnt), ( wH(v1, rH(v1) MULTIPLY 10); print(rH(v1)) )
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 
+Heap: 1 -> 2, 2 -> 3, 3 -> 4, 
+Barrier Table: 1 -> 3=[], 
+
+Program id: 1
+Execution Stack: ( await(cnt); print(rH(v3)) )
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 
+Heap: 1 -> 2, 2 -> 3, 3 -> 4, 
+Barrier Table: 1 -> 3=[2], 
+
+Program id: 2
+Execution Stack: await(cnt), ( wH(v1, rH(v1) MULTIPLY 10); print(rH(v1)) )
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 
+Heap: 1 -> 2, 2 -> 3, 3 -> 4, 
+Barrier Table: 1 -> 3=[2], 
+
+Program id: 3
+Execution Stack: ( await(cnt); ( wH(v2, rH(v2) MULTIPLY 10); ( wH(v2, rH(v2) MULTIPLY 10); print(rH(v2)) ) ) )
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 
+Heap: 1 -> 2, 2 -> 3, 3 -> 4, 
+Barrier Table: 1 -> 3=[2], 
+
+Program id: 1
+Execution Stack: await(cnt), print(rH(v3))
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 
+Heap: 1 -> 2, 2 -> 3, 3 -> 4, 
+Barrier Table: 1 -> 3=[2], 
+
+Program id: 2
+Execution Stack: await(cnt), ( wH(v1, rH(v1) MULTIPLY 10); print(rH(v1)) )
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 
+Heap: 1 -> 2, 2 -> 3, 3 -> 4, 
+Barrier Table: 1 -> 3=[2], 
+
+Program id: 3
+Execution Stack: await(cnt), ( wH(v2, rH(v2) MULTIPLY 10); ( wH(v2, rH(v2) MULTIPLY 10); print(rH(v2)) ) )
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 
+Heap: 1 -> 2, 2 -> 3, 3 -> 4, 
+Barrier Table: 1 -> 3=[2], 
+
+Program id: 1
+Execution Stack: await(cnt), print(rH(v3))
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 
+Heap: 1 -> 2, 2 -> 3, 3 -> 4, 
+Barrier Table: 1 -> 3=[2, 3, 1], 
+
+Program id: 2
+Execution Stack: await(cnt), ( wH(v1, rH(v1) MULTIPLY 10); print(rH(v1)) )
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 
+Heap: 1 -> 2, 2 -> 3, 3 -> 4, 
+Barrier Table: 1 -> 3=[2, 3, 1], 
+
+Program id: 3
+Execution Stack: await(cnt), ( wH(v2, rH(v2) MULTIPLY 10); ( wH(v2, rH(v2) MULTIPLY 10); print(rH(v2)) ) )
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 
+Heap: 1 -> 2, 2 -> 3, 3 -> 4, 
+Barrier Table: 1 -> 3=[2, 3, 1], 
+
+Program id: 1
+Execution Stack: print(rH(v3))
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 
+Heap: 1 -> 2, 2 -> 3, 3 -> 4, 
+Barrier Table: 1 -> 3=[2, 3, 1], 
+
+Program id: 2
+Execution Stack: ( wH(v1, rH(v1) MULTIPLY 10); print(rH(v1)) )
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 
+Heap: 1 -> 2, 2 -> 3, 3 -> 4, 
+Barrier Table: 1 -> 3=[2, 3, 1], 
+
+Program id: 3
+Execution Stack: ( wH(v2, rH(v2) MULTIPLY 10); ( wH(v2, rH(v2) MULTIPLY 10); print(rH(v2)) ) )
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 
+Heap: 1 -> 2, 2 -> 3, 3 -> 4, 
+Barrier Table: 1 -> 3=[2, 3, 1], 
+
+Program id: 1
+Execution Stack: 
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 4 
+Heap: 1 -> 2, 2 -> 3, 3 -> 4, 
+Barrier Table: 1 -> 3=[2, 3, 1], 
+
+Program id: 2
+Execution Stack: wH(v1, rH(v1) MULTIPLY 10), print(rH(v1))
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 4 
+Heap: 1 -> 2, 2 -> 3, 3 -> 4, 
+Barrier Table: 1 -> 3=[2, 3, 1], 
+
+Program id: 3
+Execution Stack: wH(v2, rH(v2) MULTIPLY 10), ( wH(v2, rH(v2) MULTIPLY 10); print(rH(v2)) )
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 4 
+Heap: 1 -> 2, 2 -> 3, 3 -> 4, 
+Barrier Table: 1 -> 3=[2, 3, 1], 
+
+Program id: 2
+Execution Stack: print(rH(v1))
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 4 
+Heap: 1 -> 20, 2 -> 30, 3 -> 4, 
+Barrier Table: 1 -> 3=[2, 3, 1], 
+
+Program id: 3
+Execution Stack: ( wH(v2, rH(v2) MULTIPLY 10); print(rH(v2)) )
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 4 
+Heap: 1 -> 20, 2 -> 30, 3 -> 4, 
+Barrier Table: 1 -> 3=[2, 3, 1], 
+
+Program id: 2
+Execution Stack: 
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 4 20 
+Heap: 1 -> 20, 2 -> 30, 3 -> 4, 
+Barrier Table: 1 -> 3=[2, 3, 1], 
+
+Program id: 3
+Execution Stack: wH(v2, rH(v2) MULTIPLY 10), print(rH(v2))
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 4 20 
+Heap: 1 -> 20, 2 -> 30, 3 -> 4, 
+Barrier Table: 1 -> 3=[2, 3, 1], 
+
+Program id: 3
+Execution Stack: print(rH(v2))
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 4 20 
+Heap: 1 -> 20, 2 -> 300, 3 -> 4, 
+Barrier Table: 1 -> 3=[2, 3, 1], 
+
+Program id: 3
+Execution Stack: 
+Symbols Table: cnt -> 1, v1 -> (1, Int), v2 -> (2, Int), v3 -> (3, Int), 
+Out: 4 20 300 
+Heap: 1 -> 20, 2 -> 300, 3 -> 4, 
+Barrier Table: 1 -> 3=[2, 3, 1], 
+
