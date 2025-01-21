@@ -1,0 +1,264 @@
+Program id: 1
+Execution Stack: Int v, ( Int x; ( Int y; ( v = 0; ( repeat(( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 )) until v EQUAL 3; ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) ) ) ) ) )
+Symbols Table: 
+Out: 
+Heap: 
+
+Program id: 1
+Execution Stack: ( Int x; ( Int y; ( v = 0; ( repeat(( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 )) until v EQUAL 3; ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) ) ) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+
+Program id: 1
+Execution Stack: Int x, ( Int y; ( v = 0; ( repeat(( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 )) until v EQUAL 3; ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) ) ) ) )
+Symbols Table: v -> 0, 
+Out: 
+Heap: 
+
+Program id: 1
+Execution Stack: ( Int y; ( v = 0; ( repeat(( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 )) until v EQUAL 3; ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) ) ) ) )
+Symbols Table: v -> 0, x -> 0, 
+Out: 
+Heap: 
+
+Program id: 1
+Execution Stack: Int y, ( v = 0; ( repeat(( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 )) until v EQUAL 3; ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) ) ) )
+Symbols Table: v -> 0, x -> 0, 
+Out: 
+Heap: 
+
+Program id: 1
+Execution Stack: ( v = 0; ( repeat(( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 )) until v EQUAL 3; ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) ) ) )
+Symbols Table: v -> 0, x -> 0, y -> 0, 
+Out: 
+Heap: 
+
+Program id: 1
+Execution Stack: v = 0, ( repeat(( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 )) until v EQUAL 3; ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) ) )
+Symbols Table: v -> 0, x -> 0, y -> 0, 
+Out: 
+Heap: 
+
+Program id: 1
+Execution Stack: ( repeat(( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 )) until v EQUAL 3; ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) ) )
+Symbols Table: v -> 0, x -> 0, y -> 0, 
+Out: 
+Heap: 
+
+Program id: 1
+Execution Stack: repeat(( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 )) until v EQUAL 3, ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) )
+Symbols Table: v -> 0, x -> 0, y -> 0, 
+Out: 
+Heap: 
+
+Program id: 1
+Execution Stack: ( ( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 ); while not (v EQUAL 3) do ( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 ) ), ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) )
+Symbols Table: v -> 0, x -> 0, y -> 0, 
+Out: 
+Heap: 
+
+Program id: 1
+Execution Stack: ( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 ), while not (v EQUAL 3) do ( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 ), ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) )
+Symbols Table: v -> 0, x -> 0, y -> 0, 
+Out: 
+Heap: 
+
+Program id: 1
+Execution Stack: fork(( print(v); v = v SUBTRACT 1 )), v = v ADD 1, while not (v EQUAL 3) do ( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 ), ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) )
+Symbols Table: v -> 0, x -> 0, y -> 0, 
+Out: 
+Heap: 
+
+Program id: 1
+Execution Stack: v = v ADD 1, while not (v EQUAL 3) do ( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 ), ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) )
+Symbols Table: v -> 0, x -> 0, y -> 0, 
+Out: 
+Heap: 
+
+Program id: 2
+Execution Stack: ( print(v); v = v SUBTRACT 1 )
+Symbols Table: v -> 0, x -> 0, y -> 0, 
+Out: 
+Heap: 
+
+Program id: 1
+Execution Stack: while not (v EQUAL 3) do ( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 ), ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) )
+Symbols Table: v -> 1, x -> 0, y -> 0, 
+Out: 
+Heap: 
+
+Program id: 2
+Execution Stack: print(v), v = v SUBTRACT 1
+Symbols Table: v -> 0, x -> 0, y -> 0, 
+Out: 
+Heap: 
+
+Program id: 1
+Execution Stack: ( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 ), while not (v EQUAL 3) do ( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 ), ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) )
+Symbols Table: v -> 1, x -> 0, y -> 0, 
+Out: 0 
+Heap: 
+
+Program id: 2
+Execution Stack: v = v SUBTRACT 1
+Symbols Table: v -> 0, x -> 0, y -> 0, 
+Out: 0 
+Heap: 
+
+Program id: 1
+Execution Stack: fork(( print(v); v = v SUBTRACT 1 )), v = v ADD 1, while not (v EQUAL 3) do ( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 ), ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) )
+Symbols Table: v -> 1, x -> 0, y -> 0, 
+Out: 0 
+Heap: 
+
+Program id: 2
+Execution Stack: 
+Symbols Table: v -> -1, x -> 0, y -> 0, 
+Out: 0 
+Heap: 
+
+Program id: 1
+Execution Stack: v = v ADD 1, while not (v EQUAL 3) do ( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 ), ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) )
+Symbols Table: v -> 1, x -> 0, y -> 0, 
+Out: 0 
+Heap: 
+
+Program id: 3
+Execution Stack: ( print(v); v = v SUBTRACT 1 )
+Symbols Table: v -> 1, x -> 0, y -> 0, 
+Out: 0 
+Heap: 
+
+Program id: 1
+Execution Stack: while not (v EQUAL 3) do ( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 ), ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) )
+Symbols Table: v -> 2, x -> 0, y -> 0, 
+Out: 0 
+Heap: 
+
+Program id: 3
+Execution Stack: print(v), v = v SUBTRACT 1
+Symbols Table: v -> 1, x -> 0, y -> 0, 
+Out: 0 
+Heap: 
+
+Program id: 1
+Execution Stack: ( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 ), while not (v EQUAL 3) do ( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 ), ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) )
+Symbols Table: v -> 2, x -> 0, y -> 0, 
+Out: 0 1 
+Heap: 
+
+Program id: 3
+Execution Stack: v = v SUBTRACT 1
+Symbols Table: v -> 1, x -> 0, y -> 0, 
+Out: 0 1 
+Heap: 
+
+Program id: 1
+Execution Stack: fork(( print(v); v = v SUBTRACT 1 )), v = v ADD 1, while not (v EQUAL 3) do ( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 ), ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) )
+Symbols Table: v -> 2, x -> 0, y -> 0, 
+Out: 0 1 
+Heap: 
+
+Program id: 3
+Execution Stack: 
+Symbols Table: v -> 0, x -> 0, y -> 0, 
+Out: 0 1 
+Heap: 
+
+Program id: 1
+Execution Stack: v = v ADD 1, while not (v EQUAL 3) do ( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 ), ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) )
+Symbols Table: v -> 2, x -> 0, y -> 0, 
+Out: 0 1 
+Heap: 
+
+Program id: 4
+Execution Stack: ( print(v); v = v SUBTRACT 1 )
+Symbols Table: v -> 2, x -> 0, y -> 0, 
+Out: 0 1 
+Heap: 
+
+Program id: 1
+Execution Stack: while not (v EQUAL 3) do ( fork(( print(v); v = v SUBTRACT 1 )); v = v ADD 1 ), ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) )
+Symbols Table: v -> 3, x -> 0, y -> 0, 
+Out: 0 1 
+Heap: 
+
+Program id: 4
+Execution Stack: print(v), v = v SUBTRACT 1
+Symbols Table: v -> 2, x -> 0, y -> 0, 
+Out: 0 1 
+Heap: 
+
+Program id: 1
+Execution Stack: ( x = 1; ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) ) )
+Symbols Table: v -> 3, x -> 0, y -> 0, 
+Out: 0 1 2 
+Heap: 
+
+Program id: 4
+Execution Stack: v = v SUBTRACT 1
+Symbols Table: v -> 2, x -> 0, y -> 0, 
+Out: 0 1 2 
+Heap: 
+
+Program id: 1
+Execution Stack: x = 1, ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) )
+Symbols Table: v -> 3, x -> 0, y -> 0, 
+Out: 0 1 2 
+Heap: 
+
+Program id: 4
+Execution Stack: 
+Symbols Table: v -> 1, x -> 0, y -> 0, 
+Out: 0 1 2 
+Heap: 
+
+Program id: 1
+Execution Stack: ( No Statement.; ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) ) )
+Symbols Table: v -> 3, x -> 1, y -> 0, 
+Out: 0 1 2 
+Heap: 
+
+Program id: 1
+Execution Stack: No Statement., ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) )
+Symbols Table: v -> 3, x -> 1, y -> 0, 
+Out: 0 1 2 
+Heap: 
+
+Program id: 1
+Execution Stack: ( y = 3; ( No Statement.; print(v MULTIPLY 10) ) )
+Symbols Table: v -> 3, x -> 1, y -> 0, 
+Out: 0 1 2 
+Heap: 
+
+Program id: 1
+Execution Stack: y = 3, ( No Statement.; print(v MULTIPLY 10) )
+Symbols Table: v -> 3, x -> 1, y -> 0, 
+Out: 0 1 2 
+Heap: 
+
+Program id: 1
+Execution Stack: ( No Statement.; print(v MULTIPLY 10) )
+Symbols Table: v -> 3, x -> 1, y -> 3, 
+Out: 0 1 2 
+Heap: 
+
+Program id: 1
+Execution Stack: No Statement., print(v MULTIPLY 10)
+Symbols Table: v -> 3, x -> 1, y -> 3, 
+Out: 0 1 2 
+Heap: 
+
+Program id: 1
+Execution Stack: print(v MULTIPLY 10)
+Symbols Table: v -> 3, x -> 1, y -> 3, 
+Out: 0 1 2 
+Heap: 
+
+Program id: 1
+Execution Stack: 
+Symbols Table: v -> 3, x -> 1, y -> 3, 
+Out: 0 1 2 30 
+Heap: 
+

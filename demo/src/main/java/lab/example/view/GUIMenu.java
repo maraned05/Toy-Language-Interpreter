@@ -14,32 +14,34 @@ import lab.example.model.adt.MyMap;
 import lab.example.model.adt.MyStack;
 import lab.example.model.expressions.ArithmeticExpression;
 import lab.example.model.expressions.ArithmeticOperation;
-import lab.example.model.expressions.LogicalExpression;
-import lab.example.model.expressions.LogicalOperation;
-import lab.example.model.expressions.ReadHeapExpression;
+// import lab.example.model.expressions.LogicalExpression;
+// import lab.example.model.expressions.LogicalOperation;
+// import lab.example.model.expressions.ReadHeapExpression;
 import lab.example.model.expressions.RelationalExpression;
 import lab.example.model.expressions.RelationalOperation;
 import lab.example.model.expressions.ValueExpression;
 import lab.example.model.expressions.VariableExpression;
 import lab.example.model.state.ProgramState;
 import lab.example.model.statements.AssignStmt;
-import lab.example.model.statements.CloseRFileStmt;
+// import lab.example.model.statements.CloseRFileStmt;
 import lab.example.model.statements.CompStmt;
 import lab.example.model.statements.ForkStmt;
-import lab.example.model.statements.HeapAllocStmt;
+// import lab.example.model.statements.HeapAllocStmt;
 import lab.example.model.statements.IStmt;
-import lab.example.model.statements.IfStmt;
-import lab.example.model.statements.OpenRFileStmt;
+// import lab.example.model.statements.IfStmt;
+import lab.example.model.statements.NoStmt;
+// import lab.example.model.statements.OpenRFileStmt;
 import lab.example.model.statements.PrintStmt;
-import lab.example.model.statements.ReadFileStmt;
+// import lab.example.model.statements.ReadFileStmt;
+import lab.example.model.statements.RepeatUntilStmt;
 import lab.example.model.statements.VarDeclStmt;
-import lab.example.model.statements.WhileStmt;
-import lab.example.model.statements.WriteHeapStmt;
-import lab.example.model.types.BoolType;
+// import lab.example.model.statements.WhileStmt;
+// import lab.example.model.statements.WriteHeapStmt;
+// import lab.example.model.types.BoolType;
 import lab.example.model.types.IntType;
-import lab.example.model.types.RefType;
-import lab.example.model.types.StringType;
-import lab.example.model.values.BoolValue;
+// import lab.example.model.types.RefType;
+// import lab.example.model.types.StringType;
+// import lab.example.model.values.BoolValue;
 import lab.example.model.values.IValue;
 import lab.example.model.values.IntValue;
 import lab.example.model.values.StringValue;
@@ -53,22 +55,27 @@ public class GUIMenu {
     }
 
     public void populateMenu() {
-        IStmt statement2 = new CompStmt (new VarDeclStmt("a",new IntType()),
-        new CompStmt (new VarDeclStmt("b",new IntType()),
-        new CompStmt (new AssignStmt("a", new ArithmeticExpression (new ValueExpression(new IntValue(2)),
-        new ArithmeticExpression (new ValueExpression(new IntValue(3)), new ValueExpression(new IntValue(5)), ArithmeticOperation.MULTIPLY),
-        ArithmeticOperation.ADD)), new CompStmt(new AssignStmt("b",new ArithmeticExpression(new VariableExpression("a"), new ValueExpression(new
-        IntValue(1)), ArithmeticOperation.ADD)), new PrintStmt(new VariableExpression("b")))))
-        );
+        IStmt statement1 = new CompStmt(new VarDeclStmt("v", new IntType()), 
+        new CompStmt(new VarDeclStmt("x", new IntType()), 
+        new CompStmt(new VarDeclStmt("y", new IntType()), 
+        new CompStmt(new AssignStmt("v", new ValueExpression(new IntValue(0))), 
+        new CompStmt(new RepeatUntilStmt(new CompStmt(new ForkStmt(new CompStmt(new PrintStmt(new VariableExpression("v")), 
+        new AssignStmt("v", new ArithmeticExpression(new VariableExpression("v"), new ValueExpression(new IntValue(1)), ArithmeticOperation.SUBTRACT)))), 
+        new AssignStmt("v", new ArithmeticExpression(new VariableExpression("v"), new ValueExpression(new IntValue(1)), ArithmeticOperation.ADD))), 
+        new RelationalExpression(new VariableExpression("v"), new ValueExpression(new IntValue(3)), RelationalOperation.EQUAL)), 
+        new CompStmt(new AssignStmt("x", new ValueExpression(new IntValue(1))), 
+        new CompStmt(new NoStmt(), 
+        new CompStmt(new AssignStmt("y", new ValueExpression(new IntValue(3))), 
+        new CompStmt(new NoStmt(), new PrintStmt(new ArithmeticExpression(new VariableExpression("v"), new ValueExpression(new IntValue(10)), ArithmeticOperation.MULTIPLY))))))))))); 
 
-        ProgramState state2 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
-        new MyList<IValue>(), statement2, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
+        ProgramState state1 = new ProgramState(new MyStack<IStmt>(), new MyMap<String, IValue>(), 
+        new MyList<IValue>(), statement1, new MyMap<StringValue, BufferedReader>(), new MyHeap<Integer, IValue>());
 
-        Repository repo2 = new Repository("log2.txt");
-        repo2.add(state2);
-        Controller ctr2 = new Controller(repo2, true);
+        Repository repo1 = new Repository("log1.txt");
+        repo1.add(state1);
+        Controller ctr1 = new Controller(repo1, true);
 
-
+        /* 
         IStmt statement3 = new CompStmt (new VarDeclStmt("a",new BoolType()),
         new CompStmt(new VarDeclStmt("v", new IntType()),
         new CompStmt(new AssignStmt("a", new ValueExpression(new BoolValue(true))),
@@ -264,20 +271,22 @@ public class GUIMenu {
         repob1.add(stateb1);
         Controller ctrb1 = new Controller(repob1, true);
 
-        this.addProgram(statement2.toString(), ctr2);
-        this.addProgram(statement3.toString(), ctr3);
-        this.addProgram(statement4.toString(), ctr4);
-        this.addProgram(statement5.toString(), ctr5);
-        this.addProgram(statement6.toString(), ctr6);
-        this.addProgram(statement7.toString(), ctr7);
-        this.addProgram(statement8.toString(), ctr8);
-        this.addProgram(statement9.toString(), ctr9);
-        this.addProgram(statement10.toString(), ctr10);
-        this.addProgram(statement11.toString(), ctr11);
-        this.addProgram(statement13.toString(), ctr13);
-        this.addProgram(statement14.toString(), ctr14);
-        this.addProgram(badstatement.toString(), ctrb);
-        this.addProgram(badstatement1.toString(), ctrb1);
+        */
+
+        this.addProgram(statement1.toString(), ctr1);
+        // this.addProgram(statement3.toString(), ctr3);
+        // this.addProgram(statement4.toString(), ctr4);
+        // this.addProgram(statement5.toString(), ctr5);
+        // this.addProgram(statement6.toString(), ctr6);
+        // this.addProgram(statement7.toString(), ctr7);
+        // this.addProgram(statement8.toString(), ctr8);
+        // this.addProgram(statement9.toString(), ctr9);
+        // this.addProgram(statement10.toString(), ctr10);
+        // this.addProgram(statement11.toString(), ctr11);
+        // this.addProgram(statement13.toString(), ctr13);
+        // this.addProgram(statement14.toString(), ctr14);
+        // this.addProgram(badstatement.toString(), ctrb);
+        // this.addProgram(badstatement1.toString(), ctrb1);
     }
 
     public void addProgram(String desc, IController ctr) {
