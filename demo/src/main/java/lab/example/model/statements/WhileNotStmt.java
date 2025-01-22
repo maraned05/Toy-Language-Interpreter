@@ -28,7 +28,6 @@ public class WhileNotStmt implements IStmt{
         if (! ((BoolValue)res).getValue()) {
             state.getExeStack().push(this);
             state.getExeStack().push(statement);
-            
         }
 
         return null;
